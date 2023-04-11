@@ -1,0 +1,427 @@
+:root {
+  --topbar-height: 70px;
+  --startbar-width: 300px;
+  --endbar-width: 70px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter ExtraBold"), local("Inter-ExtraBold"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Black"), local("Inter-Black"), url("../fonts/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"), local("Inter-SemiBold"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter ExtraLight"), local("Inter-ExtraLight"), url("../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../fonts/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Light"), local("Inter-Light"), url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Thin"), local("Inter-Thin"), url("../fonts/Inter-Thin.woff2") format("woff2"), url("../fonts/Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+[href*=javascript][target=_blank] {
+  pointer-events: none;
+}
+
+a.active[href],
+a.accordion-button:not(.collapsed) {
+  pointer-events: none;
+}
+
+[data-scrollbar] > canvas {
+  z-index: 1000;
+}
+
+body {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  outline: 0 !important;
+  display: block !important;
+  user-select: none !important;
+  font-family: "Inter" !important;
+}
+body input, body textarea, body select {
+  user-select: auto;
+}
+body main {
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100% !important;
+  margin: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+}
+body main > .mainInner {
+  height: 100% !important;
+  border: 0 !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  outline: 0 !important;
+  overflow: hidden !important;
+  margin: 0px !important;
+  flex-wrap: nowrap;
+}
+body main > .mainInner > [data-page-name] {
+  overflow: hidden auto;
+}
+body .overflow-hidden-auto {
+  overflow: hidden auto !important;
+}
+body .overflow-auto-hidden {
+  overflow: auto hidden !important;
+}
+
+@media (min-width: 768px) {
+  * > * {
+    scrollbar-width: thin !important;
+    scrollbar-color: white !important;
+  }
+  * > *::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  * > *::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50em;
+  }
+  * > *::-webkit-scrollbar-thumb {
+    background: rgba(173, 181, 189, 0);
+    border-radius: 50em;
+  }
+  * > *::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 212, 218, 0.6);
+  }
+  * > * > *:hover::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  * > * > *:hover::-webkit-scrollbar-thumb {
+    background: rgba(173, 181, 189, 0.1);
+    border-radius: 50em;
+  }
+  * > * > *:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 212, 218, 0.8);
+  }
+}
+.topNavbar .topBarFluid {
+  padding: 20px 0;
+}
+.topNavbar .topBarFluid .topBarContainer .logoParent {
+  max-width: 200px;
+  height: auto;
+}
+.topNavbar .topBarFluid .topBarContainer .logoParent img {
+  width: 100%;
+  height: 100%;
+}
+.topNavbar .topBarFluid .topBarContainer .searchBar .navBarInp {
+  width: 360px !important;
+  border: 1px solid #e9ecef;
+  height: 42px;
+  padding: 5px 45px 5px 15px;
+  margin: 0;
+  border-radius: 50px !important;
+  background: #fff;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #adb5bd;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn {
+  background-color: #FFD91C;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 248px;
+  top: 2px;
+}
+.topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn img {
+  height: 15px;
+}
+.topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn:hover {
+  background-color: #cb5499;
+  transition: 0.3s linear;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .accountBox {
+  padding-right: 15px;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .accountBox .accountLogo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFD91C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .accountBox .accountLogo img {
+  height: 20px;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .accountBox .accountTxt {
+  margin-left: 7px;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .accountBox .accountTxt span:first-child {
+  display: block;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .accountBox .accountTxt span:last-child {
+  display: block;
+  font-size: 13px;
+  color: #4d4d4d;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .cartBox .MyCartLogo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFD91C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .cartBox .MyCartLogo img {
+  height: 20px;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .cartBox .MyCartTxt {
+  margin-left: 7px;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .cartBox .MyCartTxt span:first-child {
+  display: block;
+  display: block;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+}
+.topNavbar .topBarFluid .topBarContainer .navEndItems .cartBox .MyCartTxt span:last-child {
+  display: block;
+  display: block;
+  font-size: 13px;
+  color: #4d4d4d;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar {
+  background-color: #cb5499;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl {
+  padding-left: 15px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi {
+  transition: 0.3s linear;
+  transform: translateY(0);
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .navItemsListBarAnchor {
+  color: #fff;
+  line-height: 20px;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .navItemsListBarAnchor:hover {
+  color: #FFD91C;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi:hover .dropdownList {
+  display: block;
+  transform: translateY(38px);
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .dropdownList {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid;
+  width: 500px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .dropdownList .dropdownlistPadding {
+  padding: 20px 20px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .dropdownList .dropdownlistPadding .dropMainHeading {
+  padding: 0;
+  padding-bottom: 15px;
+  margin-bottom: 17px;
+  font-weight: 500;
+  color: #232323;
+  text-transform: capitalize;
+  font-size: 15px;
+  display: block;
+  width: 60%;
+  border-bottom: 1px solid #dee2e6;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .dropdownList .dropdownlistPadding .dropUl .dropLi {
+  font-size: 13px;
+  padding-bottom: 7px;
+  font-weight: 400px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .dropdownList .dropdownlistPadding .dropUl .dropLi .dropAnchor {
+  color: #000;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 30%;
+  height: 46px;
+  padding: 8px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg img {
+  height: 30px;
+  margin-right: 8px;
+}
+.topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .typeWriterContainer .typewriter {
+  width: 21.5ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
+  font-size: 14px;
+  color: #000;
+}
+.topNavbar .headerFluid {
+  padding: 20px 0;
+}
+.topNavbar .headerFluid .headerContainer .iconBox1 img {
+  height: 20px;
+  padding: 0 8px;
+}
+.topNavbar .headerFluid .headerContainer .logoParent1 img {
+  max-width: 100%;
+  height: auto;
+}
+.topNavbar .headerFluid .headerContainer .iconBox2 img {
+  height: 20px;
+  padding: 0 8px;
+}
+
+.menuOffacnvavsMain {
+  width: 300px !important;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem {
+  border: none !important;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader {
+  border-color: #fff !important;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn {
+  box-shadow: none !important;
+  border-bottom: 1px solid #e9ecef !important;
+  border-radius: 0 !important;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn:not(.collapsed) {
+  background-color: #fff !important;
+  border: none !important;
+  color: #000;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl {
+  padding-left: 15px;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi {
+  padding: 10px 0;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .menuAccordionBodyAnchor {
+  color: #000;
+}
+
+@keyframes cursor {
+  0%, 100% {
+    border-color: #212121;
+  }
+}
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 21.5ch;
+  }
+}
+@media (max-width: 1399.98px) {
+  .topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn {
+    position: absolute;
+    right: 158px;
+  }
+  .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
+    width: 35%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn {
+    position: absolute;
+    right: 68px;
+  }
+  .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
+    width: 40%;
+  }
+}/*# sourceMappingURL=style.min.css.map */

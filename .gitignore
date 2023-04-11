@@ -1,0 +1,5 @@
+# node_modules/
+# assets/css/*
+.vscode/
+*.zip
+dev-buildin-plugins.hbs

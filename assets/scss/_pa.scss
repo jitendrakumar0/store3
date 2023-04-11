@@ -1,0 +1,793 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+// [data-page-name=example] {
+    @include media-breakpoint(basic) {
+        .topNavbar{
+            & .topBarFluid{
+                padding: 20px 0;
+                & .topBarContainer{
+                    & .logoParent{
+                        max-width: 200px;
+                        height: auto;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    & .searchBar{
+                        & .navBarInp{
+                            width: 360px !important;
+                            border: 1px solid $gray-200;
+                            height: 42px;
+                            padding: 5px 45px 5px 15px;
+                            margin: 0;
+                            border-radius: 50px !important;
+                            background: $white;
+                            text-transform: capitalize;
+                            font-size: 12px;
+                            font-weight: 400;
+                            letter-spacing: 0.3px;
+                            color:$gray-500;
+                            box-shadow: none !important;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        & .topBarSearchBtn{
+                            background-color: $theme3;
+                            width: 38px;
+                            height: 38px;
+                            border-radius: 50%;
+                            border: none;
+                            position: absolute;
+                            right: 248px;
+                            top: 2px;
+                            & img{
+                                height: 15px;
+                            }
+                            &:hover{
+                                background-color: $theme1;
+                                transition: 0.3s linear;
+                            }
+                        }
+                    }
+                    & .navEndItems{
+                        & .accountBox{
+                            padding-right: 15px;
+                            & .accountLogo{
+                                width: 42px;
+                                height: 42px;
+                                border-radius: 50%;
+                                background-color: $theme3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                & img{
+                                    height: 20px;
+                                }
+                            }
+                            & .accountTxt{
+                                margin-left: 7px;
+                                & span:first-child{
+                                    display: block;
+                                    font-size: 15px;
+                                    color: $black;
+                                    font-weight: 600;
+                                    font-family: 'Nunito Sans', sans-serif;
+                                }
+                                & span:last-child{
+                                    display: block;
+                                    font-size: 13px;
+                                    color: lighten($color: $black, $amount: 30);
+                                }
+                            }
+                        }
+                        & .cartBox{
+                            & .MyCartLogo{
+                                width: 42px;
+                                height: 42px;
+                                border-radius: 50%;
+                                background-color: $theme3;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                & img{
+                                    height: 20px;
+                                }
+                            }
+                            & .MyCartTxt{
+                                margin-left: 7px;
+                                & span:first-child{
+                                    display: block;
+                                    display: block;
+                                    font-size: 15px;
+                                    color: $black;
+                                    font-weight: 600;
+                                    font-family: 'Nunito Sans', sans-serif;
+                                }
+                                & span:last-child{
+                                    display: block;
+                                    display: block;
+                                    font-size: 13px;
+                                    color: lighten($color: $black, $amount: 30);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .navItemsListBarFluid{
+                & .navItemsListBarContainer{
+                    & .navItemsListBar{
+                        background-color: $theme1;
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 25px;
+                        & .navItemsListBarUl{
+                            padding-left: 15px;
+                            & .navItemsListBarLi{
+                                transition: 0.3s linear;
+                                transform: translateY(0);
+                                & .navItemsListBarAnchor{
+                                    color: $white;
+                                    line-height: 20px;
+                                    padding: 15px 10px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    &:hover{
+                                        color: $theme3;
+                                    }
+                                }
+                                &:hover{
+                                    & .dropdownList{
+                                        display: block;
+                                        transform: translateY(38px);
+                                    }
+                                }
+                                & .dropdownList{
+                                    display: none;
+                                    position: absolute;
+                                    top: 0;
+                                    background-color: $white;
+                                    border: 1px solid;
+                                    width: 500px;
+                                    & .dropdownlistPadding{
+                                        padding: 20px 20px;
+                                        & .dropMainHeading{
+                                            padding: 0;
+                                            padding-bottom: 15px;
+                                            margin-bottom: 17px;
+                                            font-weight: 500;
+                                            color: #232323;
+                                            text-transform: capitalize;
+                                            font-size: 15px;
+                                            display: block;
+                                            width: 60%;
+                                            border-bottom: 1px solid $gray-300;
+                                        }
+                                        & .dropUl{
+                                            & .dropLi{
+                                                font-size: 13px;
+                                                padding-bottom: 7px;
+                                                font-weight: 400px;
+                                                & .dropAnchor{
+                                                    color: $black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .percentBox{
+                            width: 50%;
+                            display: flex;
+                            justify-content: end;
+                            position: absolute;
+                            right: 2px;
+                            top: 2px;
+                            & .percentBoxBg{
+                                background-color: $white;
+                                border-radius: 25px;
+                                width: 30%;
+                                height: 46px;
+                                padding: 8px;
+                                & img{
+                                    height: 30px;
+                                    margin-right: 8px;
+                                }
+                            }
+                            & .typeWriterContainer{
+                                & .typewriter{
+                                    width: 21.5ch;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    animation: cursor 1s step-start infinite, 
+                                    text 5s steps(18) alternate infinite;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .headerFluid{
+                padding: 20px 0;
+                & .headerContainer{
+                    & .iconBox1{
+                        & img{
+                            height: 20px;
+                            padding: 0 8px;
+                        }
+                    }
+                    & .logoParent1{
+                        & img{
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                    & .iconBox2{
+                        & img{
+                            height: 20px;
+                            padding: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // menu offcanvas
+    .menuOffacnvavsMain{
+        width: 300px !important;
+        & .menuOffcanvsHeader{
+            & .menuOffcanvsHeaderBtn{
+            }
+        }
+        & .menuOffcanvasBody{
+            & .menuoffcanvasAccordion{
+                & .menuoffcanvasAccordionItem{
+                    border: none !important;
+                    & .menuAccordionHeader{
+                        border-color: $white !important;
+                        & .menuAccordionHeaderBtn{
+                            box-shadow: none !important;
+                            border-bottom: 1px solid $gray-200 !important;
+                            border-radius: 0 !important;
+                            &:not(.collapsed){
+                                background-color: $white !important;
+                                border: none !important;
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+            & .menuCollapseDiv{
+                & .menuAccordionBody{
+                    & .menuAccordionBodyUl{
+                        padding-left: 15px;
+                        & .menuAccordionBodyLi{
+                            padding: 10px 0;
+                            & .menuAccordionBodyAnchor{
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+        @keyframes cursor {
+            0%, 100% { 
+            border-color: #212121; 
+            }
+        }
+        
+        @keyframes text {
+            0% { 
+            width: 0; 
+            }
+            100% { 
+            width: 21.5ch; 
+            }
+        }
+        
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {
+        .topNavbar{
+            & .topBarFluid{
+                & .topBarContainer{
+                    & .logoParent{
+                        & img{
+                        }
+                    }
+                    & .searchBar{
+                        & .navBarInp{
+                        }
+                        & .topBarSearchBtn{
+                            position: absolute;
+                            right: 158px;
+                            & img{
+                            }
+                            &:hover{
+                            }
+                        }
+                    }
+                    & .navEndItems{
+                        & .accountBox{
+                            & .accountLogo{
+                                & img{
+                                }
+                            }
+                            & .accountTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                        & .cartBox{
+                            & .MyCartLogo{
+                                & img{
+                                }
+                            }
+                            & .MyCartTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .navItemsListBarFluid{
+                & .navItemsListBarContainer{
+                    & .navItemsListBar{
+                        & .navItemsListBarUl{
+                            & .navItemsListBarLi{
+                                & .navItemsListBarAnchor{
+                                    &:hover{
+                                    }
+                                }
+                                &:hover{
+                                    & .dropdownList{
+                                    }
+                                }
+                                & .dropdownList{
+                                    & .dropdownlistPadding{
+                                        & .dropMainHeading{
+                                        }
+                                        & .dropUl{
+                                            & .dropLi{
+                                                & .dropAnchor{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .percentBox{
+                            & .percentBoxBg{
+                                width: 35%;
+                                & img{
+                                }
+                            }
+                            & .typeWriterContainer{
+                                & .typewriter{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        .topNavbar{
+            & .topBarFluid{
+                & .topBarContainer{
+                    & .logoParent{
+                        & img{
+                        }
+                    }
+                    & .searchBar{
+                        & .navBarInp{
+                        }
+                        & .topBarSearchBtn{
+                            position: absolute;
+                            right: 68px;
+                            & img{
+                            }
+                            &:hover{
+                            }
+                        }
+                    }
+                    & .navEndItems{
+                        & .accountBox{
+                            & .accountLogo{
+                                & img{
+                                }
+                            }
+                            & .accountTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                        & .cartBox{
+                            & .MyCartLogo{
+                                & img{
+                                }
+                            }
+                            & .MyCartTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .navItemsListBarFluid{
+                & .navItemsListBarContainer{
+                    & .navItemsListBar{
+                        & .navItemsListBarUl{
+                            & .navItemsListBarLi{
+                                & .navItemsListBarAnchor{
+                                    &:hover{
+                                    }
+                                }
+                                &:hover{
+                                    & .dropdownList{
+                                    }
+                                }
+                                & .dropdownList{
+                                    & .dropdownlistPadding{
+                                        & .dropMainHeading{
+                                        }
+                                        & .dropUl{
+                                            & .dropLi{
+                                                & .dropAnchor{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .percentBox{
+                            & .percentBoxBg{
+                                width: 40%;
+                                & img{
+                                }
+                            }
+                            & .typeWriterContainer{
+                                & .typewriter{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .topNavbar{
+            & .topBarFluid{
+                & .topBarContainer{
+                    & .logoParent{
+                        & img{
+                        }
+                    }
+                    & .searchBar{
+                        & .navBarInp{
+                        }
+                        & .topBarSearchBtn{
+                            & img{
+                            }
+                            &:hover{
+                            }
+                        }
+                    }
+                    & .navEndItems{
+                        & .accountBox{
+                            & .accountLogo{
+                                & img{
+                                }
+                            }
+                            & .accountTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                        & .cartBox{
+                            & .MyCartLogo{
+                                & img{
+                                }
+                            }
+                            & .MyCartTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .navItemsListBarFluid{
+                & .navItemsListBarContainer{
+                    & .navItemsListBar{
+                        & .navItemsListBarUl{
+                            & .navItemsListBarLi{
+                                & .navItemsListBarAnchor{
+                                    &:hover{
+                                    }
+                                }
+                                &:hover{
+                                    & .dropdownList{
+                                    }
+                                }
+                                & .dropdownList{
+                                    & .dropdownlistPadding{
+                                        & .dropMainHeading{
+                                        }
+                                        & .dropUl{
+                                            & .dropLi{
+                                                & .dropAnchor{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .percentBox{
+                            & .percentBoxBg{
+                                & img{
+                                }
+                            }
+                            & .typeWriterContainer{
+                                & .typewriter{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .topNavbar{
+            & .topBarFluid{
+                & .topBarContainer{
+                    & .logoParent{
+                        & img{
+                        }
+                    }
+                    & .searchBar{
+                        & .navBarInp{
+                        }
+                        & .topBarSearchBtn{
+                            & img{
+                            }
+                            &:hover{
+                            }
+                        }
+                    }
+                    & .navEndItems{
+                        & .accountBox{
+                            & .accountLogo{
+                                & img{
+                                }
+                            }
+                            & .accountTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                        & .cartBox{
+                            & .MyCartLogo{
+                                & img{
+                                }
+                            }
+                            & .MyCartTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .navItemsListBarFluid{
+                & .navItemsListBarContainer{
+                    & .navItemsListBar{
+                        & .navItemsListBarUl{
+                            & .navItemsListBarLi{
+                                & .navItemsListBarAnchor{
+                                    &:hover{
+                                    }
+                                }
+                                &:hover{
+                                    & .dropdownList{
+                                    }
+                                }
+                                & .dropdownList{
+                                    & .dropdownlistPadding{
+                                        & .dropMainHeading{
+                                        }
+                                        & .dropUl{
+                                            & .dropLi{
+                                                & .dropAnchor{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .percentBox{
+                            & .percentBoxBg{
+                                & img{
+                                }
+                            }
+                            & .typeWriterContainer{
+                                & .typewriter{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .topNavbar{
+            & .topBarFluid{
+                & .topBarContainer{
+                    & .logoParent{
+                        & img{
+                        }
+                    }
+                    & .searchBar{
+                        & .navBarInp{
+                        }
+                        & .topBarSearchBtn{
+                            & img{
+                            }
+                            &:hover{
+                            }
+                        }
+                    }
+                    & .navEndItems{
+                        & .accountBox{
+                            & .accountLogo{
+                                & img{
+                                }
+                            }
+                            & .accountTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                        & .cartBox{
+                            & .MyCartLogo{
+                                & img{
+                                }
+                            }
+                            & .MyCartTxt{
+                                & span:first-child{
+                                }
+                                & span:last-child{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .navItemsListBarFluid{
+                & .navItemsListBarContainer{
+                    & .navItemsListBar{
+                        & .navItemsListBarUl{
+                            & .navItemsListBarLi{
+                                & .navItemsListBarAnchor{
+                                    &:hover{
+                                    }
+                                }
+                                &:hover{
+                                    & .dropdownList{
+                                    }
+                                }
+                                & .dropdownList{
+                                    & .dropdownlistPadding{
+                                        & .dropMainHeading{
+                                        }
+                                        & .dropUl{
+                                            & .dropLi{
+                                                & .dropAnchor{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .percentBox{
+                            & .percentBoxBg{
+                                & img{
+                                }
+                            }
+                            & .typeWriterContainer{
+                                & .typewriter{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// }
+
+[data-bs-theme=dark] {
+    // & [data-page-name=example] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    // }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+
