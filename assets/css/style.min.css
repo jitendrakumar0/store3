@@ -381,6 +381,39 @@ body .overflow-auto-hidden {
   font-size: 14px !important;
 }
 
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox {
+  background-color: #f7f7f7;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner {
+  padding: 15px;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperTxt .breadcrumbTxt {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem {
+  font-size: 14px;
+  font-weight: 400;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem:first-child::before {
+  content: "" !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem::before {
+  content: "|" !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem .productBreadcrumbNavItemAnchor {
+  color: #000 !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem.active {
+  color: #000 !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl img {
+  height: 15px;
+}
+
 .menuOffacnvavsMain {
   width: 300px !important;
 }

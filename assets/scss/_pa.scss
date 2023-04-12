@@ -255,6 +255,55 @@
                 }
             }
         }
+        // product detail breadcrumb
+        .productDetailBreadcrumbFluid{
+            & .productDetailBreadcrumbContainer{
+                & .breadcrumbBox{
+                    background-color: lighten($color: $black, $amount: 97);
+                    & .breadcrumbInner{
+                        padding: 15px;
+                        & .breadcrumbWrapper{
+                            & .breadcrumbWrapperTxt{
+                                & .breadcrumbTxt{
+                                    color: $black;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+                            & .breadcrumbWrapperLi{
+                                & .productBreadcrumbNav{
+                                    & .productBreadcrumbNavOl{
+                                        & .productBreadcrumbNavItem{
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            &:first-child{
+                                                &::before{
+                                                    content:'' !important;
+                                                }
+                                            }
+                                            &::before{
+                                                content: '|' !important;
+                                            }
+                                            & .productBreadcrumbNavItemAnchor{
+                                                color: $black !important;
+                                            }
+                                            &.active{
+                                                color: $black !important;
+                                            }
+                                        }
+                                            & img{
+                                                height: 15px;
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // menu offcanvas
     .menuOffacnvavsMain{
