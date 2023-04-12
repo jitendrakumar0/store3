@@ -589,7 +589,7 @@ body .overflow-auto-hidden {
   padding: 10px;
 }
 .footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.fb {
-  background-color: #6610f2;
+  background-color: #2370ff;
 }
 .footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.twiter {
   background-color: #377dff;
@@ -647,6 +647,40 @@ body .overflow-auto-hidden {
 }
 .footerFluid .footerContainer .footerPadding .footerMenu .footerMenuList .footerMenuItem .footerMenuItems .footerMenuItemsLink:hover {
   color: #cb5499;
+}
+
+.footerBottomBarFluid {
+  background-color: #cb5499;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .copyrytTxt {
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  transition: all 0.2s;
+  font-weight: 400;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .copyrytTxt a {
+  color: #fff;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .copyrytTxt:hover a {
+  color: #FFD91C;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .paymentBlock .paymentBlockItem {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .paymentBlock .paymentBlockItem .paymentBlockItems {
+  list-style: none;
+  margin: 0 2px;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .paymentBlock .paymentBlockItem .paymentBlockItems .paymentBlockListLink {
+  width: 40px;
+  height: 30px;
 }
 
 .form-control {
