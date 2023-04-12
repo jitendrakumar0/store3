@@ -4,7 +4,7 @@
         .footerFluid {
             margin-top: 30px;
             background: #e8e9ff url('../img/bg/footerBg.png') no-repeat;
-            color: #888;
+            color: $gray-600;
             clear: both;
             line-height: 1.25em;
             background-position: center;
@@ -22,6 +22,7 @@
 
             & .footerContainer {
                 & .footerPadding {
+                    padding: 70px 0 70px;
                     & .footerAddress {
                         & .footerAddressItem {
                             padding: 0;
@@ -88,7 +89,147 @@
                                     font-family: 'Poppins', sans-serif;
                                     font-weight: 400;
                                     letter-spacing: 0.5px;
-                                    color: #888;
+                                    color: $gray-600;
+                                }
+                            }
+                        }
+                    }
+
+                    & .footerSocial {
+                        & .footerLogo {
+                            max-width: 140px;
+                            height: 60px;
+                            margin: auto;
+                            width: 100%;
+                        } 
+                        & .footerContent {
+                            line-height: 24px;
+                            font-size: 14px;
+                            font-family: 'Poppins', sans-serif;
+                            margin-bottom: 0;
+                            letter-spacing: 0.5px;
+                            color: $gray-600;
+                            
+                        }
+                        & .footerSubscribe {
+                            position: relative;
+                            display: block;
+                            & .subsCribeButton {
+                                display: inline-block;
+                                padding: 8px 15px;
+                                border-radius: 0 50px 50px 0px;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                height: 45px;
+                                line-height: 26px;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                color: $white;
+                                background-color: $theme1;
+                                font-size: 14px;
+                                -webkit-transition: all 0.4s;
+                                -moz-transition: all 0.4s;
+                                -o-transition: all 0.4s;
+                                transition: all 0.4s;
+                                &:hover {
+                                    background-color: $theme3;
+                                    color: $black;
+                                }
+                            }
+                        }
+                        & .footerSocialIcon {
+                            & .footerSocialIconItem {
+                                margin: 0;
+                                padding: 0;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                & .footerSocialIconList {
+                                    list-style: none;
+                                    padding-right:5px ;
+                                    
+                                    &:last-child {
+                                        padding-right: 0px;
+                                    }
+                                    & .socialIcon {
+                                        width: 38px;
+                                        height: 38px;
+                                        cursor: pointer;
+                                        border-radius: 50%;
+                                        text-align: center;
+                                        -webkit-transition: all 0.4s;
+                                        -moz-transition: all 0.4s;
+                                        -o-transition: all 0.4s;
+                                        transition: all 0.4s;
+                                        padding: 10px;
+
+                                        &.fb {
+                                            background-color: $indigo;
+                                        }
+                                        &.twiter {
+                                            background-color: $blue;
+                                        }
+                                        &.youtube {
+                                            background-color:$red ;
+                                        }
+                                        &.pinterest {
+                                            background-color: $red;
+                                        }
+                                        &.insta {
+                                            background-color: $pink;
+                                        }
+
+                                        &:hover {
+                                            background-color: $theme1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .footerMenu {
+                        width: 50%;
+                        margin-left: auto;
+                        & .foterMenuHeading {
+                            margin: 0 0 20px 0;
+                            display: block;
+                            color: $theme1;
+                            text-transform: uppercase;
+                            font-size: 17px;
+                            font-weight: 600;
+                            cursor: pointer;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        & .footerMenuList {
+                            & .footerMenuItem {
+                                margin: 0;
+                                padding: 0;
+                                & .footerMenuItems {
+                                    list-style: none;
+                                    margin-bottom: 15px;
+                                    &:last-child {
+                                        margin-bottom: 0px;
+                                    }
+                                    & .footerMenuItemsLink {
+                                        font-family: 'Poppins', sans-serif;
+                                        font-weight: 400;
+                                        letter-spacing: 0.5px;
+                                        font-size: 14px;
+                                        color: $gray-600;
+                                        text-decoration: none;
+                                        position: relative;
+                                        overflow: hidden;
+                                        -webkit-transition: all 0.2s;
+                                        -moz-transition: all 0.2s;
+                                        -o-transition: all 0.2s;
+                                        transition: all 0.2s;
+
+                                        &:hover {
+                                            color: $theme1;
+                                        }
+                                    }
                                 }
                             }
                         }

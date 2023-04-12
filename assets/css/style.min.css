@@ -493,7 +493,7 @@ body .overflow-auto-hidden {
 .footerFluid {
   margin-top: 30px;
   background: #e8e9ff url("../img/bg/footerBg.png") no-repeat;
-  color: #888;
+  color: #6c757d;
   clear: both;
   line-height: 1.25em;
   background-position: center;
@@ -507,6 +507,9 @@ body .overflow-auto-hidden {
   width: 100%;
   background-image: url("../img/bg/footeBgCurve.png");
   top: 0px;
+}
+.footerFluid .footerContainer .footerPadding {
+  padding: 70px 0 70px;
 }
 .footerFluid .footerContainer .footerPadding .footerAddress .footerAddressItem {
   padding: 0;
@@ -581,5 +584,149 @@ body .overflow-auto-hidden {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
-  color: #888;
+  color: #6c757d;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerLogo {
+  max-width: 140px;
+  height: 60px;
+  margin: auto;
+  width: 100%;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerContent {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe {
+  position: relative;
+  display: block;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe .subsCribeButton {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 0 50px 50px 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  line-height: 26px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  background-color: #cb5499;
+  font-size: 14px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe .subsCribeButton:hover {
+  background-color: #FFD91C;
+  color: #000;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList {
+  list-style: none;
+  padding-right: 5px;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList:last-child {
+  padding-right: 0px;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 10px;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.fb {
+  background-color: #6610f2;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.twiter {
+  background-color: #377dff;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.youtube {
+  background-color: #d10015;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.pinterest {
+  background-color: #d10015;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon.insta {
+  background-color: #d63384;
+}
+.footerFluid .footerContainer .footerPadding .footerSocial .footerSocialIcon .footerSocialIconItem .footerSocialIconList .socialIcon:hover {
+  background-color: #cb5499;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu {
+  width: 50%;
+  margin-left: auto;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu .foterMenuHeading {
+  margin: 0 0 20px 0;
+  display: block;
+  color: #cb5499;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu .footerMenuList .footerMenuItem {
+  margin: 0;
+  padding: 0;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu .footerMenuList .footerMenuItem .footerMenuItems {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu .footerMenuList .footerMenuItem .footerMenuItems:last-child {
+  margin-bottom: 0px;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu .footerMenuList .footerMenuItem .footerMenuItems .footerMenuItemsLink {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #6c757d;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footerFluid .footerContainer .footerPadding .footerMenu .footerMenuList .footerMenuItem .footerMenuItems .footerMenuItemsLink:hover {
+  color: #cb5499;
+}
+
+.form-control {
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #f8f9fa;
+  box-shadow: 0px 5px 4.75px 0.25px #e6e6e6;
+  color: #21325b;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-right: 120px;
+  border-radius: 50px;
+}
+.form-control:focus {
+  border: none;
 }/*# sourceMappingURL=style.min.css.map */
