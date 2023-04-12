@@ -1,60 +1,709 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-// [data-page-name=example] {
+// ? @@@@@@@@@@@@@@@@@@@@@@[ Hero Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="indexPage"] {
     @include media-breakpoint(basic) {
+        & .herosection {
+            & .heroSlider {
+                transition: all ease-in-out 0.3s;
+                position: relative;
+                &::after{
+                    content: "";
+                    background: url(../img/bg/pattern_3.png);
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 20px;
+                    left: 0;
+                    right: 0;
+                }
+                & .owl-stage-outer {
+                    padding: 0px;
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    top: 35%;
+                                    left: 0;
+                                    right: 0;
+                                    & .contentSide {
+                                        & .sub-title {
+                                            clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+                                            background-color: $theme3;
+                                            color: rgba($black, 0.7);
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            letter-spacing: 8px;
+                                            padding: 12px 40px;
+                                            transition: all 1.2s ease-in-out;
+                                        }
+                                        & .main-title {
+                                            font-size: 70px;
+                                            line-height: 100%;
+                                            letter-spacing: 0.5px;
+                                            transition: all 1s ease-in-out;
+                                        }
+                                        & .sucontent {
+                                            letter-spacing: 0.5px;
+                                            font-size: 14px;
+                                            line-height: 140%;
+                                            transition: all 0.8s ease-in-out;
+                                        }
+                                        & .shopBtn {
+                                            font-size: 14px;
+                                            padding: 10px 20px;
+                                            transition: all 0.3s ease-in-out;
+                                            &:hover{
+                                                color: $black !important;
+                                                background-color: $theme3 !important;
+                                            }
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            transform: translateY(-100%);
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                                transform: translateY(0%);
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-nav {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transition: all ease-in-out 0.3s;
+                    opacity: 0;
+                    width: 85%;
+                    margin: 0px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    & .owl-prev, & .owl-next {
+                        position: relative;
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50px;
+                        background-color:   $theme1;
+                        overflow: hidden;
+                        transition: all 0.3s;
+                        &::before{
+                            content: "";
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            inset: 0;
+                            margin: 0;
+                        }
+                        &:hover{
+                            background-color: $theme3 !important;
+                            
+                        }
+                        & span {
+                            display: none;
+                        }
+                    }
+                    & .owl-prev {
+                        &::before{
+                            background-image: url(../img/svg/leftArrow.svg);
+                        }
+                    }
+                    & .owl-next {
+                        &::before{
+                            background-image: url(../img/svg/rightArrow.svg);
+                        }
+                    }
+                }
+                & .owl-dots {
+                    position: absolute;
+                    bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    & .owl-dot {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50px;
+                        border: 1px solid $theme1;
+                        background: transparent;
+                        &.active {
+                            background: $theme1 !important;
+                        }
+                    }
+                }
+                &:hover{
+                    & .owl-nav {
+                        width: 90%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
-
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
-
     @include media-breakpoint-up(md) {}
-
     @include media-breakpoint-up(lg) {}
-
     @include media-breakpoint-up(xl) {}
-
     @include media-breakpoint-up(xxl) {}
-
-    @include media-breakpoint-down(xxl) {}
-
+    @include media-breakpoint-down(xxl) {
+        & .herosection {
+            & .heroSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                            padding: 8px 40px;
+                                        }
+                                        & .main-title {
+                                            font-size: 60px;
+                                        }
+                                        & .sucontent {
+                                        }
+                                        & .shopBtn {
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev, & .owl-next {
+                    }
+                }
+                & .owl-dots {
+                }
+            }
+        }
+    }
     @include media-breakpoint-down(xl) {
+        & .herosection {
+            & .heroSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                        }
+                                        & .main-title {
+                                            font-size: 50px;
+                                        }
+                                        & .sucontent {
+                                        }
+                                        & .shopBtn {
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev, & .owl-next {
+                    }
+                }
+                & .owl-dots {
+                }
+            }
+        }
     }
-
     @include media-breakpoint-down(lg) {
+        & .herosection {
+            & .heroSlider {
+                &::after{
+                    display: none;
+                }
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                            font-size: 13px;
+                                            letter-spacing: 7px;
+                                        }
+                                        & .main-title {
+                                            font-size: 38px;
+                                            font-weight: 500 !important;
+                                        }
+                                        & .sucontent {
+                                        }
+                                        & .shopBtn {
+                                            padding: 6px 13px;
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    bottom: 10px;
+                }
+            }
+        }
     }
-
     @include media-breakpoint-down(md) {
+        & .herosection {
+            & .heroSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                            font-size: 13px;
+                                            letter-spacing: 4px;
+                                            padding: 8px 28px;
+                                        }
+                                        & .main-title {
+                                            font-size: 28px;
+                                            font-weight: 400 !important;
+                                        }
+                                        & .sucontent {
+                                        }
+                                        & .shopBtn {
+                                            padding: 6px 13px;
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev, & .owl-next {
+                    }
+                }
+                & .owl-dots {
+                }
+                &:hover {
+                    & .owl-nav{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        & .herosection {
+            & .heroSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                            font-size: 12px;
+                                            letter-spacing: 2px;
+                                            clip-path: unset;
+                                            padding: 0px;
+                                            color: $theme1 !important;
+                                            background: none;
+                                        }
+                                        & .main-title {
+                                            font-size: 25px;
+                                            font-weight: 400 !important;
+                                        }
+                                        & .sucontent {
+                                        }
+                                        & .shopBtn {
+                                            padding: 7px 12px;
+                                            font-size: 12px;
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev, & .owl-next {
+                    }
+                }
+                & .owl-dots {
+                }
+                &:hover {
+                    & .owl-nav{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 500px){
+        & .herosection {
+            & .heroSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                            font-size: 10px;
+                                        }
+                                        & .main-title {
+                                            font-size: 20px;
+                                            font-weight: 400 !important;
+                                        }
+                                        & .sucontent {
+                                        }
+                                        & .shopBtn {
+                                            padding: 5px 10px;
+                                            line-height: 120%;
+                                            font-size: 10px;
+                                        }
+                                        & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                & .item {
+                                    & .innerContainer {
+                                        & .contentSide {
+                                            & .sub-title,  & .main-title, & .sucontent,  & .shopBtn {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 359px){
+        & .herosection {
+            & .heroSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item  {
+                                & .innerContainer {
+                                    & .contentSide {
+                                        & .sub-title {
+                                            font-size: 10px;
+                                        }
+                                        & .main-title {
+                                            font-size: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ! @@@@@@@@@@@@@@@@@@@@@@[ Hero Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[ Banner Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="indexPage"] {
+    @include media-breakpoint(basic) {
+        & .bannerSection {
+            & .innersection {
+                & .subinnerBox {
+                    & .bannercard {
+                        & .card-body{
+                            transition: all 0.5s ease-in-out;
+                            & .bannerImg {
+                                & img {
+                                    transition: all 3s;
+                                }
+                            }
+                            & .contantSide {
+                                right: 30px;
+                                top: 50%;
+                                transform: translate(0, -50%);
+                                & .bannerSubtitle {
+                                    font-size: 11px;
+                                    line-height: 24px;
+                                    padding: 0 15px;
+                                    letter-spacing: 5px;
+                                    clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+                                }
+                                & .bannerTitle {
+                                    font-size: 28px;
+                                    line-height: 100%;
+                                    transition: all 0.7s;
+                                }
+                                & .shopBtn {
+                                    padding: 5px 12px;
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                    transition: all 0.3s ease-in-out;
+                                    &:hover{
+                                        background-color: $theme3 !important;
+                                        color: $black !important;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                & .bannerImg {
+                                    & img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                                & .contantSide {
+                                    & .bannerTitle{
+                                        transform: rotateX(360deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(xl) {
+        & .bannerSection {
+            margin-top: -80px;
+            position: relative;
+            z-index: 1;
+            & .innersection {
+                & .subinnerBox {
+                    box-shadow: 0px 0px 20px rgba($black, 0.05);
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {
+        & .bannerSection {
+            & .innersection {
+                & .subinnerBox {
+                    & .bannercard {
+                        & .card-body{
+                            & .contantSide {
+                                & .bannerSubtitle {
+                                }
+                                & .bannerTitle {
+                                    font-size: 25px;
+                                }
+                                & .shopBtn {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {}
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        & .bannerSection {
+            & .innersection {
+                & .subinnerBox {
+                    & .bannercard {
+                        & .card-body{
+                            & .contantSide {
+                                & .bannerSubtitle {
+                                }
+                                & .bannerTitle {
+                                    font-size: 17px;
+                                    line-height: 100%;
+                                }
+                                & .shopBtn {
+                                    line-height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        & .bannerSection {
+            & .innersection {
+                & .subinnerBox {
+                    & .bannercard {
+                        & .card-body{
+                            & .contantSide {
+                                right: 6px;
+                                & .bannerSubtitle {
+                                    line-height: 20px;
+                                }
+                                & .bannerTitle {
+                                    font-weight: 500 !important;
+                                    font-size: 17px;
+                                    line-height: 100%;
+                                }
+                                & .shopBtn {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        & .bannerSection {
+            & .innersection {
+                & .subinnerBox {
+                    & .bannercard {
+                        & .card-body{
+                            & .contantSide {
+                                & .bannerSubtitle {
+                                    line-height: 20px;
+                                }
+                                & .bannerTitle {
+                                    font-size: 22px;
+                                    line-height: 100%;
+                                }
+                                & .shopBtn {
+                                    font-size: 10px;
+                                    line-height: 16px
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    @include media-breakpoint-down(sm) {
+    @media only screen and (max-width: 350px) {
+        & .bannerSection {
+            & .innersection {
+                & .subinnerBox {
+                    & .bannercard {
+                        & .card-body{
+                            & .contantSide {
+                                right: 18px;
+                                & .bannerSubtitle {
+                                }
+                                & .bannerTitle {
+                                    font-size: 20px;
+                                }
+                                & .shopBtn {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-// }
+}
+// ! @@@@@@@@@@@@@@@@@@@@@@[ Banner Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
+
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
-        @include dark-media-breakpoint(basic) {
-            
-        }
+        @include dark-media-breakpoint(basic) {}
         // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-        @include dark-media-breakpoint-up(sm) {
-        }
-        @include dark-media-breakpoint-up(md) {
-        }
-        @include dark-media-breakpoint-up(lg) {
-        }
-        @include dark-media-breakpoint-up(xl) {
-        }
-        @include dark-media-breakpoint-up(xxl) {
-        }
-        @include dark-media-breakpoint-down(xxl) {
-        }
-        @include dark-media-breakpoint-down(xl) {
-        }
-        @include dark-media-breakpoint-down(lg) {
-        }
-        @include dark-media-breakpoint-down(md) {
-        }
-        @include dark-media-breakpoint-down(sm) {
-        }
+        @include dark-media-breakpoint-up(sm) {}
+        @include dark-media-breakpoint-up(md) {}
+        @include dark-media-breakpoint-up(lg) {}
+        @include dark-media-breakpoint-up(xl) {}
+        @include dark-media-breakpoint-up(xxl) {}
+        @include dark-media-breakpoint-down(xxl) {}
+        @include dark-media-breakpoint-down(xl) {}
+        @include dark-media-breakpoint-down(lg) {}
+        @include dark-media-breakpoint-down(md) {}
+        @include dark-media-breakpoint-down(sm) {}
     // }
 }
 
