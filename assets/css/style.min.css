@@ -414,6 +414,359 @@ body .overflow-auto-hidden {
   height: 15px;
 }
 
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailPageLeftPartImg {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailPageLeftPartImg img {
+  width: 100%;
+  height: 100%;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem {
+  border: none !important;
+  border-top: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #dee2e6 !important;
+  border-radius: 0 !important;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem.productDetailaAccordionItem1 {
+  border-top: unset !important;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaAccordionHeader .productDetailaAccordionBtn {
+  box-shadow: none !important;
+  border: none !important;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 0 !important;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaAccordionHeader .productDetailaAccordionBtn:not(.collapsed) {
+  background-color: unset !important;
+  color: #000;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaAccordionHeader .productDetailaAccordionBtn:not(.collapsed)::after {
+  content: "";
+  background-image: url(../img/minusstore3.svg);
+  background-size: 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaAccordionHeader .productDetailaAccordionBtn::after {
+  content: "";
+  background-image: url(../img/plusstore3.svg);
+  background-size: 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody {
+  padding: 0 1rem;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .productDetailaAccordionBodyMainHeading {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .para {
+  font-size: 13px;
+  font-weight: 400px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .productDetailaAccordionBodySecondHeading {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .productDetailaAccordionBodysubHeading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewLbl {
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewInp {
+  padding-left: 15px;
+  border: 1px solid;
+  border-color: #d9d9d9 !important;
+  height: 40px !important;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewInp.reviewTxtarea {
+  height: 100px !important;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewInp:focus-visible {
+  outline: unset;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .note {
+  color: #cb5499;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .note span {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .rating {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .rating span:first-child {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .rating span:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewBtnnParent {
+  display: flex;
+  justify-content: end;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewBtnnParent .reviewBtnn {
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 24px;
+  background-color: #cb5499;
+  border: none;
+  color: #fff;
+  margin: 1em 0;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaCollapse .productDetailaAccordionBody .reviewBtnnParent .reviewBtnn:hover {
+  background-color: #FFD91C;
+  color: #000;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .productDetailPageLeftPartMainHeading {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 0 12px;
+  color: #000;
+  line-height: 30px;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 20px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink {
+  margin-left: 20px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg {
+  padding: 3px 15px;
+  border-radius: 2px;
+  line-height: 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg.sharebg1 {
+  background-color: #6a9eff;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg.sharebg2 {
+  background-color: #fd7e14;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg img {
+  height: 14px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg span {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .starbox {
+  line-height: 10px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .starbox .starboxUl .starboxLi .reviewstar {
+  height: 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .starbox .totalReviews {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin: 20px 15px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .starbox .Comment {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin: 20px 15px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .starbox .Comment img {
+  height: 15px;
+  margin-right: 8px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .rupeeBox {
+  color: #000;
+  font-size: 22px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .rupeeBox span {
+  color: #999999;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 4px rgba(165, 165, 165, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 4px 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .number {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  padding-bottom: 1vw;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .number:not(:last-child) {
+  margin-right: 42px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .number:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -18px;
+  top: 3px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ced4da;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.65);
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .taxBox {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  padding: 25px 0;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .taxBox span {
+  margin-left: 5px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox {
+  margin: 20px 0;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox .availableboxHead {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox .availableboxsubHead {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 8px 8px 8px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox .availableboxsubHead::before {
+  content: "*";
+  color: #FF2800;
+  position: absolute;
+  top: 50px;
+  left: -2px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox .selectBox {
+  box-shadow: none;
+  border: 1px solid #dee2e6 !important;
+  width: 45% !important;
+  font-size: 12px;
+  color: #21325b;
+  border-radius: 0 !important;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .qtyLbl {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 8px 8px 0;
+  color: #000;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .qtyInp {
+  border: 1px solid #e9ecef;
+  width: 70px;
+  height: 40px;
+  padding-left: 32px;
+  color: #000;
+  font-size: 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .qtyInp:focus-visible {
+  outline: unset !important;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .cartBtn {
+  background-color: #FFD91C;
+  color: #000;
+  padding: 7px 15px;
+  font-size: 14px;
+  border: none;
+  margin-left: 8px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .cartBtn:hover {
+  background-color: #cb5499;
+  color: #fff;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #cb5499;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle:hover {
+  background-color: #FFD91C;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle:hover img {
+  filter: brightness(1);
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle img {
+  height: 12px;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .border {
+  border-top: 1px solid #e9ecef;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .border .detailBox {
+  border: 1px solid #e9ecef;
+  padding: 8px;
+  margin-top: 20px;
+}
 .menuOffacnvavsMain {
   width: 300px !important;
 }
