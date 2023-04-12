@@ -247,12 +247,13 @@
             & .menuoffcanvasAccordion{
                 & .menuoffcanvasAccordionItem{
                     border: none !important;
+                    border-bottom: 1px solid $gray-200 !important;
                     & .menuAccordionHeader{
                         border-color: $white !important;
                         & .menuAccordionHeaderBtn{
                             box-shadow: none !important;
-                            border-bottom: 1px solid $gray-200 !important;
                             border-radius: 0 !important;
+                            padding: 1rem 0;
                             &:not(.collapsed){
                                 background-color: $white !important;
                                 border: none !important;
@@ -264,10 +265,40 @@
             }
             & .menuCollapseDiv{
                 & .menuAccordionBody{
+                    padding-top: 0 !important;
                     & .menuAccordionBodyUl{
                         padding-left: 15px;
                         & .menuAccordionBodyLi{
                             padding: 10px 0;
+                            & .accordion2{
+                                & .accordionItem2{
+                                    border: none;
+                                    & .accordionHeader2{
+                                        & .accordionBtn2{
+                                            box-shadow: none !important;
+                                            border: none;
+                                            padding: 0;
+                                            &:not(.collapsed){
+                                                background-color: $white !important;
+                                                border: none !important;
+                                                color: $black;
+                                            }
+                                        }
+                                    }
+                                    & .accordionCollapse2{
+                                        & .accordionBody2{
+                                            & .accordionBody2Ul{
+                                                & .accordionBody2Li{
+                                                    padding-bottom: 10px;
+                                                    & .accordionBody2LiAnchor{
+                                                        color: $black;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             & .menuAccordionBodyAnchor{
                                 color: $black;
                             }

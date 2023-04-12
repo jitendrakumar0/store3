@@ -370,25 +370,48 @@ body .overflow-auto-hidden {
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem {
   border: none !important;
+  border-bottom: 1px solid #e9ecef !important;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader {
   border-color: #fff !important;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn {
   box-shadow: none !important;
-  border-bottom: 1px solid #e9ecef !important;
   border-radius: 0 !important;
+  padding: 1rem 0;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn:not(.collapsed) {
   background-color: #fff !important;
   border: none !important;
   color: #000;
 }
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody {
+  padding-top: 0 !important;
+}
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl {
   padding-left: 15px;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi {
   padding: 10px 0;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 {
+  border: none;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionHeader2 .accordionBtn2 {
+  box-shadow: none !important;
+  border: none;
+  padding: 0;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionHeader2 .accordionBtn2:not(.collapsed) {
+  background-color: #fff !important;
+  border: none !important;
+  color: #000;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionCollapse2 .accordionBody2 .accordionBody2Ul .accordionBody2Li {
+  padding-bottom: 10px;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionCollapse2 .accordionBody2 .accordionBody2Ul .accordionBody2Li .accordionBody2LiAnchor {
+  color: #000;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .menuAccordionBodyAnchor {
   color: #000;
