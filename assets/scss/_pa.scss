@@ -39,7 +39,7 @@
                             border-radius: 50%;
                             border: none;
                             position: absolute;
-                            right: 248px;
+                            right: 189px;
                             top: 2px;
                             & img{
                                 height: 15px;
@@ -188,7 +188,7 @@
                             & .percentBoxBg{
                                 background-color: $white;
                                 border-radius: 25px;
-                                width: 30%;
+                                width: 32%;
                                 height: 46px;
                                 padding: 8px;
                                 & img{
@@ -230,6 +230,75 @@
                         & img{
                             height: 20px;
                             padding: 0 8px;
+                            &.bagimg{
+                            }
+                        }
+                        & .badgeBag{
+                            position: absolute !important;
+                            top: 6px!important;
+                            right: 0;
+                            padding: 3px !important;
+                            font-size: 10px;
+                        }
+                        & .profileDropdown{
+                            position: absolute !important;
+                            top: 22px !important;
+                            min-width: 100px !important;
+                            & .profileDropdownLi{
+                                & .profileDropdownAnchor{
+                                    color: lighten($color: $black, $amount: 30);
+                                    font-size: 14px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // product detail breadcrumb
+        .productDetailBreadcrumbFluid{
+            & .productDetailBreadcrumbContainer{
+                & .breadcrumbBox{
+                    background-color: lighten($color: $black, $amount: 97);
+                    & .breadcrumbInner{
+                        padding: 15px;
+                        & .breadcrumbWrapper{
+                            & .breadcrumbWrapperTxt{
+                                & .breadcrumbTxt{
+                                    color: $black;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+                            & .breadcrumbWrapperLi{
+                                & .productBreadcrumbNav{
+                                    & .productBreadcrumbNavOl{
+                                        & .productBreadcrumbNavItem{
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            &:first-child{
+                                                &::before{
+                                                    content:'' !important;
+                                                }
+                                            }
+                                            &::before{
+                                                content: '|' !important;
+                                            }
+                                            & .productBreadcrumbNavItemAnchor{
+                                                color: $black !important;
+                                            }
+                                            &.active{
+                                                color: $black !important;
+                                            }
+                                        }
+                                            & img{
+                                                height: 15px;
+                                            }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -247,12 +316,13 @@
             & .menuoffcanvasAccordion{
                 & .menuoffcanvasAccordionItem{
                     border: none !important;
+                    border-bottom: 1px solid $gray-200 !important;
                     & .menuAccordionHeader{
                         border-color: $white !important;
                         & .menuAccordionHeaderBtn{
                             box-shadow: none !important;
-                            border-bottom: 1px solid $gray-200 !important;
                             border-radius: 0 !important;
+                            padding: 1rem 0;
                             &:not(.collapsed){
                                 background-color: $white !important;
                                 border: none !important;
@@ -264,10 +334,40 @@
             }
             & .menuCollapseDiv{
                 & .menuAccordionBody{
+                    padding-top: 0 !important;
                     & .menuAccordionBodyUl{
-                        padding-left: 15px;
+                        // padding-left: 15px;
                         & .menuAccordionBodyLi{
                             padding: 10px 0;
+                            & .accordion2{
+                                & .accordionItem2{
+                                    border: none;
+                                    & .accordionHeader2{
+                                        & .accordionBtn2{
+                                            box-shadow: none !important;
+                                            border: none;
+                                            padding: 0;
+                                            &:not(.collapsed){
+                                                background-color: $white !important;
+                                                border: none !important;
+                                                color: $black;
+                                            }
+                                        }
+                                    }
+                                    & .accordionCollapse2{
+                                        & .accordionBody2{
+                                            & .accordionBody2Ul{
+                                                & .accordionBody2Li{
+                                                    padding-bottom: 10px;
+                                                    & .accordionBody2LiAnchor{
+                                                        color: $black;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             & .menuAccordionBodyAnchor{
                                 color: $black;
                             }
@@ -277,6 +377,45 @@
             }
         }
 
+    }
+    // search offcanvas
+    .searchOffcanvasMain{
+        height: 78px !important;
+        & .searchOffcanvasBody{
+            & .searchOffcanvasInpBox{
+                & .searchOffcanvasInp{
+                    box-shadow: none;
+                    border-color: 1px solid $gray-500;
+                    border-radius: 25px;
+                    height: 46px;
+                    font-size: 15px;
+                    padding-left: 20px;
+                }
+                & .searchOffcanvasInpBtn{
+                    position: absolute;
+                    right: 3px;
+                    top: 3px;
+                    background-color: $theme3;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: none;
+                    & img{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // cart offcanvas
+    .cartOffcanvasMain{
+        width: 300px !important;
+        & .cartOffcanvasHeader{
+
+        }
+        & .cartOffcanvasBody{
+            color: $black;
+        }
     }
         @keyframes cursor {
             0%, 100% { 
@@ -318,7 +457,7 @@
                         }
                         & .topBarSearchBtn{
                             position: absolute;
-                            right: 158px;
+                            right: 59px;
                             & img{
                             }
                             &:hover{
@@ -382,7 +521,7 @@
                         }
                         & .percentBox{
                             & .percentBoxBg{
-                                width: 35%;
+                                width: 42%;
                                 & img{
                                 }
                             }

@@ -195,7 +195,7 @@ body .overflow-auto-hidden {
   border-radius: 50%;
   border: none;
   position: absolute;
-  right: 248px;
+  right: 189px;
   top: 2px;
 }
 .topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn img {
@@ -333,7 +333,7 @@ body .overflow-auto-hidden {
 .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
   background-color: #fff;
   border-radius: 25px;
-  width: 30%;
+  width: 32%;
   height: 46px;
   padding: 8px;
 }
@@ -364,33 +364,134 @@ body .overflow-auto-hidden {
   height: 20px;
   padding: 0 8px;
 }
+.topNavbar .headerFluid .headerContainer .iconBox2 .badgeBag {
+  position: absolute !important;
+  top: 6px !important;
+  right: 0;
+  padding: 3px !important;
+  font-size: 10px;
+}
+.topNavbar .headerFluid .headerContainer .iconBox2 .profileDropdown {
+  position: absolute !important;
+  top: 22px !important;
+  min-width: 100px !important;
+}
+.topNavbar .headerFluid .headerContainer .iconBox2 .profileDropdown .profileDropdownLi .profileDropdownAnchor {
+  color: #4d4d4d;
+  font-size: 14px !important;
+}
+
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox {
+  background-color: #f7f7f7;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner {
+  padding: 15px;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperTxt .breadcrumbTxt {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem {
+  font-size: 14px;
+  font-weight: 400;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem:first-child::before {
+  content: "" !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem::before {
+  content: "|" !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem .productBreadcrumbNavItemAnchor {
+  color: #000 !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem.active {
+  color: #000 !important;
+}
+.productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl img {
+  height: 15px;
+}
 
 .menuOffacnvavsMain {
   width: 300px !important;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem {
   border: none !important;
+  border-bottom: 1px solid #e9ecef !important;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader {
   border-color: #fff !important;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn {
   box-shadow: none !important;
-  border-bottom: 1px solid #e9ecef !important;
   border-radius: 0 !important;
+  padding: 1rem 0;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn:not(.collapsed) {
   background-color: #fff !important;
   border: none !important;
   color: #000;
 }
-.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl {
-  padding-left: 15px;
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody {
+  padding-top: 0 !important;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi {
   padding: 10px 0;
 }
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 {
+  border: none;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionHeader2 .accordionBtn2 {
+  box-shadow: none !important;
+  border: none;
+  padding: 0;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionHeader2 .accordionBtn2:not(.collapsed) {
+  background-color: #fff !important;
+  border: none !important;
+  color: #000;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionCollapse2 .accordionBody2 .accordionBody2Ul .accordionBody2Li {
+  padding-bottom: 10px;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionCollapse2 .accordionBody2 .accordionBody2Ul .accordionBody2Li .accordionBody2LiAnchor {
+  color: #000;
+}
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .menuAccordionBodyAnchor {
+  color: #000;
+}
+
+.searchOffcanvasMain {
+  height: 78px !important;
+}
+.searchOffcanvasMain .searchOffcanvasBody .searchOffcanvasInpBox .searchOffcanvasInp {
+  box-shadow: none;
+  border-color: 1px solid #adb5bd;
+  border-radius: 25px;
+  height: 46px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.searchOffcanvasMain .searchOffcanvasBody .searchOffcanvasInpBox .searchOffcanvasInpBtn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background-color: #FFD91C;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+.searchOffcanvasMain .searchOffcanvasBody .searchOffcanvasInpBox .searchOffcanvasInpBtn img {
+  height: 15px;
+}
+
+.cartOffcanvasMain {
+  width: 300px !important;
+}
+.cartOffcanvasMain .cartOffcanvasBody {
   color: #000;
 }
 
@@ -410,10 +511,10 @@ body .overflow-auto-hidden {
 @media (max-width: 1399.98px) {
   .topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn {
     position: absolute;
-    right: 158px;
+    right: 59px;
   }
   .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
-    width: 35%;
+    width: 42%;
   }
 }
 @media (max-width: 1199.98px) {
