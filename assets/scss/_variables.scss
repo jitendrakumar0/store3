@@ -133,13 +133,14 @@ $endbar-width:                            70px !default;
 // );
 // scss-docs-end container-max-widths
 
-
-
-
-
-
-
-
+@mixin keyframes-animation($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
 
 
 
