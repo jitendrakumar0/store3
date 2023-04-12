@@ -18,6 +18,8 @@
                 width: 100%;
                 background-image: url('../img/bg/footeBgCurve.png');
                 top: 0px;
+                height: 20px;
+                transform: rotate(180deg);
             }
 
             & .footerContainer {
@@ -33,6 +35,7 @@
                                 align-items: center;
                                 margin-bottom: 30px;
                                 & .phoneImg {
+                                    margin-right: 10px;
                                     width: 40px;
                                     height: 40px;
                                     display: flex;
@@ -84,12 +87,43 @@
                                     }
                                 }
                                 & .addressContent {
-                                    padding-left: 10px;
+                                    // padding-left: 10px;
                                     font-size: 14px;
                                     font-family: 'Poppins', sans-serif;
                                     font-weight: 400;
                                     letter-spacing: 0.5px;
                                     color: $gray-600;
+                                }
+                            }
+                        }
+                    }
+
+                    & .footerAddressColapse {
+                        & .accordionCollapse {
+                            & .accordianItem {
+                                & .accordianHeader {
+                                    & .collapseHeading {
+                                        background-color: transparent !important;
+                                        // margin: 0 0 20px 0;
+                                        display: block;
+                                        color: $theme1;
+                                        // padding: 0;
+                                        text-transform: uppercase;
+                                        font-size: 17px;
+                                        font-weight: 600;
+                                        cursor: pointer;
+                                        font-family: 'Poppins', sans-serif;
+                                        &.accordion-button {
+                                            background-color: transparent !important;
+                                            color: $theme1;
+                                            
+                                        }
+                                    }
+                                }
+                                & .accordionCollapse {
+                                    & .accordionBody {
+
+                                    }
                                 }
                             }
                         }
