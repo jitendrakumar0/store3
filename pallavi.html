@@ -216,7 +216,7 @@
                                     <div class="col-auto">
                                         <div class="iconBox1 d-flex align-items-center">
                                             <img src="assets/img/menu1.svg" alt="" srcset="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                            <img src="assets/img/searchstroe3.svg" alt="" srcset="">
+                                            <img src="assets/img/searchstroe3.svg" alt="" srcset=""data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                                         </div>
                                     </div>
                                     <div class="col">
@@ -226,15 +226,30 @@
                                     </div>
                                     <div class="col-auto">
                                         <div class="iconBox2 d-flex align-items-center">
-                                            <img src="assets/img/accountstoree3.svg" alt="" srcset="">
-                                            <img src="assets/img/bagstore3.svg" alt="" srcset="">
+                                            <img src="assets/img/accountstoree3.svg" alt="" srcset=""data-bs-toggle="dropdown" aria-expanded="false">
+                                            <ul class="dropdown-menu profileDropdown">
+                                                <li class="profileDropdownLi"><a class="dropdown-item profileDropdownAnchor" href="javascript:;">Register</a></li>
+                                                <li class="profileDropdownLi"><a class="dropdown-item profileDropdownAnchor" href="javascript:;">Login</a></li>
+                                                <li class="profileDropdownLi"><a class="dropdown-item profileDropdownAnchor" href="javascript:;">Wishlist(0)</a></li>
+                                            </ul>
+                                            <img src="assets/img/bagstore3.svg" class=" position-relative bagimg" alt="" srcset="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <span class="position-absolute translate-middle badge rounded-pill bg-danger badgeBag">
+                                                99+
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                            <!-- <button type="button" class="btn btn-primary position-relative">
+                                                Inbox
+                                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                  99+
+                                                  <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </button> -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </nav>
-
                 </div>
             </div>
         </main>
@@ -431,6 +446,29 @@
                 </div>
             </div>
         </div>
+        <!-- search offcanvas -->
+        <div class="offcanvas offcanvas-top searchOffcanvasMain" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <!-- <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div> -->
+            <div class="offcanvas-body searchOffcanvasBody">
+                <div class="searchOffcanvasInpBox position-relative">
+                    <input type="text" class="searchOffcanvasInp form-control" name="" id="" placeholder="Search">
+                    <button class="searchOffcanvasInpBtn"><img src="assets/img/searchstroe3.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <!-- cart(bag) offcanvas -->
+        <div class="offcanvas offcanvas-end cartOffcanvasMain" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header cartOffcanvasHeader d-flex justify-content-end">
+                <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body cartOffcanvasBody">
+                Your cart is empty now
+            </div>
+            </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>

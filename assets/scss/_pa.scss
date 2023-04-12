@@ -230,6 +230,23 @@
                         & img{
                             height: 20px;
                             padding: 0 8px;
+                            &.bagimg{
+                            }
+                            & .badgeBag{
+                                position: absolute !important;
+                                top: 0 !important;
+                            }
+                        }
+                        & .profileDropdown{
+                            position: absolute !important;
+                            top: 22px !important;
+                            min-width: 100px !important;
+                            & .profileDropdownLi{
+                                & .profileDropdownAnchor{
+                                    color: lighten($color: $black, $amount: 30);
+                                    font-size: 14px !important;
+                                }
+                            }
                         }
                     }
                 }
@@ -267,7 +284,7 @@
                 & .menuAccordionBody{
                     padding-top: 0 !important;
                     & .menuAccordionBodyUl{
-                        padding-left: 15px;
+                        // padding-left: 15px;
                         & .menuAccordionBodyLi{
                             padding: 10px 0;
                             & .accordion2{
@@ -308,6 +325,45 @@
             }
         }
 
+    }
+    // search offcanvas
+    .searchOffcanvasMain{
+        height: 78px !important;
+        & .searchOffcanvasBody{
+            & .searchOffcanvasInpBox{
+                & .searchOffcanvasInp{
+                    box-shadow: none;
+                    border-color: 1px solid $gray-500;
+                    border-radius: 25px;
+                    height: 46px;
+                    font-size: 15px;
+                    padding-left: 20px;
+                }
+                & .searchOffcanvasInpBtn{
+                    position: absolute;
+                    right: 3px;
+                    top: 3px;
+                    background-color: $theme3;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: none;
+                    & img{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // cart offcanvas
+    .cartOffcanvasMain{
+        width: 300px !important;
+        & .cartOffcanvasHeader{
+
+        }
+        & .cartOffcanvasBody{
+            color: $black;
+        }
     }
         @keyframes cursor {
             0%, 100% { 

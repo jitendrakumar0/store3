@@ -364,6 +364,19 @@ body .overflow-auto-hidden {
   height: 20px;
   padding: 0 8px;
 }
+.topNavbar .headerFluid .headerContainer .iconBox2 img .badgeBag {
+  position: absolute !important;
+  top: 0 !important;
+}
+.topNavbar .headerFluid .headerContainer .iconBox2 .profileDropdown {
+  position: absolute !important;
+  top: 22px !important;
+  min-width: 100px !important;
+}
+.topNavbar .headerFluid .headerContainer .iconBox2 .profileDropdown .profileDropdownLi .profileDropdownAnchor {
+  color: #4d4d4d;
+  font-size: 14px !important;
+}
 
 .menuOffacnvavsMain {
   width: 300px !important;
@@ -388,9 +401,6 @@ body .overflow-auto-hidden {
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody {
   padding-top: 0 !important;
 }
-.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl {
-  padding-left: 15px;
-}
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi {
   padding: 10px 0;
 }
@@ -414,6 +424,38 @@ body .overflow-auto-hidden {
   color: #000;
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .menuAccordionBodyAnchor {
+  color: #000;
+}
+
+.searchOffcanvasMain {
+  height: 78px !important;
+}
+.searchOffcanvasMain .searchOffcanvasBody .searchOffcanvasInpBox .searchOffcanvasInp {
+  box-shadow: none;
+  border-color: 1px solid #adb5bd;
+  border-radius: 25px;
+  height: 46px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.searchOffcanvasMain .searchOffcanvasBody .searchOffcanvasInpBox .searchOffcanvasInpBtn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background-color: #FFD91C;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+.searchOffcanvasMain .searchOffcanvasBody .searchOffcanvasInpBox .searchOffcanvasInpBtn img {
+  height: 15px;
+}
+
+.cartOffcanvasMain {
+  width: 300px !important;
+}
+.cartOffcanvasMain .cartOffcanvasBody {
   color: #000;
 }
 
