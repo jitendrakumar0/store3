@@ -1,6 +1,557 @@
+.custom-tooltip {
+    --bs-tooltip-bg: #{$black};
+    font-size: 12px;
+  }
+
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-// [data-page-name=example] {
+// [data-page-name=homePage] {
     @include media-breakpoint(basic) {
+        .trandingProductMain{
+            & .trandingProductContainer {
+                & .sectionHeader {
+                    padding: 8px 0;
+                    margin: 0 10px;
+                    border-bottom: 1px solid $gray-400;
+                    & .title{
+                        font-size: 22px;
+                        line-height: 22px;
+                        font-weight: 600;
+                    }
+                }
+                & .overServices{
+                    & .card{
+                        // border: 1px solid $gray-400;
+                        & .card-body {
+                            & .servicesOuter{
+                                padding: 14px 10px;
+                                & .icon {
+                                    width: 42px;
+                                    & img {
+                                        transition: ease-in-out .3s;
+                                    }
+                                }
+                                &:hover {
+                                    & .icon {
+                                        & img {
+                                            transform: rotateY(180deg);
+                                        }
+                                    }
+                                }
+                                & .serviceDetail{
+                                    & .serviceTitle {
+                                        font-size: 15px;
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                    }
+                                    & .serviceDec {
+                                        color: $gray-600;
+                                        font-size: 13px;
+                                        line-height: 1.5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .servicesBanner{
+                        & .bannerBlocks {
+                            &.bannerBlockFirst{
+                            }
+                            &:hover {
+                                & .bannerScale{
+                                    & .bannerData{
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle{
+                                            transform: rotateX(180deg);
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale{
+                                transition: all 0.5s;
+                                & .bannerData{
+                                    left: 15px;
+                                    top: 20px;
+                                    & .bannerSubtitle {
+                                        text-transform: capitalize;
+                                        display: inline-block;
+                                        font-weight: 400;
+                                        font-size: 11px;
+                                        line-height: 24px;
+                                        margin-bottom: 14px;
+                                        padding: 0 15px;
+                                        background-color: $white;
+                                        letter-spacing: 5px;
+                                        clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+                                        transition: all 0.7s;
+                                    }
+                                    & .bannerTitle{
+                                        font-size: 26px;
+                                        line-height: 26px;
+                                        font-weight: 700;
+                                        margin-bottom: 15px;
+                                        transition: all 0.7s;
+                                        &:hover {
+                                            transform: rotateX(180deg);
+                                        }
+                                    }
+                                    & .bannerBtn{
+                                        display: inline-block;
+                                        & .btnShopNow {
+                                            padding: 7px 10px;
+                                            opacity: 1;
+                                            font-size: 14px;
+                                            text-transform: unset;
+                                            border-radius: 50px;
+                                            transition: ease-in-out 0.3s;
+                                            outline: none;
+                                            background-color: $theme1;
+                                            border: 1px solid $theme1;
+                                            line-height: 20px;
+                                            &:hover {
+                                                background-color: $theme3;
+                                                border: 1px solid $theme3;
+                                                color: $black !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .trandingProductOuter{
+                    & .nav{
+                        top: 2px;
+                        right: 9%;
+                        & .nav-item{
+                            & .nav-link{
+                                background-color: transparent;
+                                border: none;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 14px;
+                                color: $gray-600;
+                                padding: 8px 15px;
+                                letter-spacing: 0.5px;
+                                position: relative;
+                                text-transform: capitalize;
+                                transition: ease-in-out .3s;
+                                &.active, &:hover {
+                                    background: $theme1;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    // & .card{
+                    //     &.itemOuter{
+                    //         & .imgOuter{
+                    //             &::after {
+                    //                 content: '';
+                    //                 width: 100%;
+                    //                 background-image: url(../img/bg/pattern_2.png);
+                    //                 height: 32px;
+                    //                 position: absolute;
+                    //                 left: 0;
+                    //                 right: 0;
+                    //                 text-align: center;
+                    //                 bottom: -15px;
+                    //                 z-index: 1;
+                    //             }
+                    //             & img {
+                    //                 transition: ease-in-out .5s;
+                    //                 &.hover {
+                    //                     position: absolute;
+                    //                     top: 0;
+                    //                     left: 0;
+                    //                     right: 0;
+                    //                 }
+                    //             }
+                    //             & .btnGroup {
+                    //                 top: 10px;
+                    //                 right: 10px;
+                    //                 & .productBtn {
+                    //                     width: 36px;
+                    //                     height: 36px;
+                    //                     opacity: 0;
+                    //                     transform: translateY(-50px);
+                    //                     &:hover {
+                    //                         background-color: $theme3;
+                    //                         border-color: $theme3;
+                    //                         & img {
+                    //                             filter: none !important;
+                    //                         }
+                    //                     }
+                    //                     &.btn1 {
+                    //                         transition: all ease-in-out 0.6s;
+                    //                     }
+                    //                     &.btn2 {
+                    //                         transition: all ease-in-out 0.4s;
+                    //                     }
+                    //                     &.btn3 {
+                    //                         transition: all ease-in-out 0.2s;
+                    //                     }
+                    //                     & img {
+                    //                         filter: invert(1);
+                    //                         transition: ease-in-out 0.3s;
+                    //                     }
+                    //                 }
+                    //             }
+                    //             & .rating {
+                    //                 left: 0;
+                    //                 right: 0;
+                    //                 bottom: 10px;
+                    //                 & .star{
+                    //                     width: 12px;
+                    //                     height: 12px;
+                    //                     & img {
+                    //                         filter: grayscale(5);
+                    //                     }
+                    //                     &.fill {
+                    //                         & img {
+                    //                             filter: none;
+                    //                         }
+                    //                     }
+                    //                 }
+                    //             }
+                    //         }
+                    //         & .productDetail{
+                    //             & .productTitle{
+                    //                 font-size: 15px;
+                    //             }
+                    //             & .price {
+                    //                 font-size: 16px;
+                    //                 // margin-bottom: 9px;
+                    //                 & .newPrice{
+
+                    //                 }
+                    //                 & .oldPrice {
+                    //                     color: $gray-600;
+                    //                     font-size: 14px;
+                    //                     text-decoration: line-through;
+                    //                 }
+                    //             }
+                    //             & .btn-cart{
+                    //                 background-color: $white;
+                    //                 position: absolute;
+                    //                 bottom: -50px;
+                    //                 left: 0;
+                    //                 right: 0;
+                    //                 transition: ease-in-out .3s;
+                    //                 & .btnAddToCart {
+                    //                     font-size: 14px;
+                    //                     transition: ease-in-out .3s;
+                    //                     &:hover {
+                    //                         background-color: $theme1;
+                    //                         border-color: $theme1;
+                    //                         color: $white;
+                    //                     }
+                    //                 }
+                    //             }
+
+                    //         }
+                    //         &:hover {
+                    //             & .imgOuter{
+                    //                 & img {
+                    //                     &.default{
+                    //                         opacity: 0;
+                    //                     }
+                    //                     &.hover {
+                    //                         opacity: 1 !important;
+                    //                     }
+                    //                 }
+                    //                 & .btnGroup {
+                    //                     & .productBtn {
+                    //                         opacity: 1;
+                    //                         transform: translateY(0);
+                    //                         &.btn1 {
+                    //                         }
+                    //                         &.btn2 {
+                    //                         }
+                    //                         &.btn3 {
+                    //                         }
+                    //                         & img {
+                    //                             filter: invert(1);
+                    //                         }
+                    //                     }
+                    //                 }
+                    //             }
+                    //             & .productDetail{
+                    //                 & .productTitle{
+                    //                 }
+                    //                 & .price {
+                    //                     & .newPrice{
+                    //                     }
+                    //                     & .oldPrice {
+                    //                     }
+                    //                 }
+                    //                 & .btn-cart{
+                    //                     bottom: 6px;
+                    //                     & .btnAddToCart {
+                    //                     }
+                    //                 }
+    
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    & .productsSlider {
+                        & .owl-stage-outer{
+                            padding: 0;
+                        }
+                        & .owl-nav{
+                            width: auto;
+                            display: flex;
+                            padding: 0;
+                            align-items: center;
+                            position: absolute;
+                            top: -53px;
+                            right: 0;
+                            & .owl-prev, & .owl-next {
+                                border: 1px solid #eee;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0 auto;
+                                margin: 0 3px;
+                                background-color: #eee;
+                                border-radius: 50px;
+                                padding: 11px !important;
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                    & .productBanner {
+                        & .bannerBlock {
+                            &:hover {
+                                & .bannerScale {
+                                    & .bannerData {
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle {
+                                            transform: rotateX(180deg);
+                                        }
+                                        & .bannerDesc{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale {
+                                & .bannerData {
+                                    left: 0;
+                                    right: 0;
+                                    & .bannerSubtitle {
+                                        display: inline-block;
+                                        font-size: 15px;
+                                        font-weight: 400;
+                                        margin-bottom: 20px;
+                                    }
+                                    & .bannerTitle {
+                                        font-size: 37px;
+                                        line-height: 37px;
+                                        font-weight: 700;
+                                        font-family: 'Nunito Sans', sans-serif;
+                                        margin-bottom: 10px;
+                                        transition: all 0.7s;
+                                        &:hover {
+                                            transform: rotateX(180deg);
+                                        }
+                                    }
+                                    & .bannerDesc{
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: $gray-600;
+                                        line-height: 14px;
+                                        margin-bottom: 20px;
+                                    }
+                                    & .bannerBtn{
+                                        display: inline-block;
+                                        & .btnShopNow {
+                                            padding: 7px 15px;
+                                            opacity: 1;
+                                            font-size: 14px;
+                                            text-transform: unset;
+                                            border-radius: 50px;
+                                            transition: ease-in-out 0.3s;
+                                            outline: none;
+                                            background-color: $theme1;
+                                            border: 1px solid $theme1;
+                                            line-height: 20px;
+                                            &:hover {
+                                                background-color: $theme3;
+                                                border: 1px solid $theme3;
+                                                color: $black !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card{
+            &.itemOuter{
+                & .imgOuter{
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        background-image: url(../img/bg/pattern_2.png);
+                        height: 32px;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                        bottom: -15px;
+                        z-index: 1;
+                    }
+                    & img {
+                        transition: ease-in-out .5s;
+                        &.hover {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                    & .btnGroup {
+                        top: 10px;
+                        right: 10px;
+                        & .productBtn {
+                            width: 36px;
+                            height: 36px;
+                            opacity: 0;
+                            transform: translateY(-50px);
+                            &:hover {
+                                background-color: $theme3;
+                                border-color: $theme3;
+                                & img {
+                                    filter: brightness(0) !important;
+                                }
+                            }
+                            &.btn1 {
+                                transition: all ease-in-out 0.6s;
+                            }
+                            &.btn2 {
+                                transition: all ease-in-out 0.4s;
+                            }
+                            &.btn3 {
+                                transition: all ease-in-out 0.2s;
+                            }
+                            & img {
+                                filter: brightness(10) !important;
+                                transition: ease-in-out 0.3s;
+                            }
+                        }
+                    }
+                    & .rating {
+                        left: 0;
+                        right: 0;
+                        bottom: 10px;
+                        & .star{
+                            width: 12px;
+                            height: 12px;
+                            & img {
+                                filter: grayscale(5);
+                            }
+                            &.fill {
+                                & img {
+                                    filter: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetail{
+                    & .productTitle{
+                        font-size: 15px;
+                    }
+                    & .price {
+                        font-size: 16px;
+                        // margin-bottom: 9px;
+                        & .newPrice{
+
+                        }
+                        & .oldPrice {
+                            color: $gray-600;
+                            font-size: 14px;
+                            text-decoration: line-through;
+                        }
+                    }
+                    & .btn-cart{
+                        background-color: $white;
+                        position: absolute;
+                        bottom: -50px;
+                        left: 0;
+                        right: 0;
+                        transition: ease-in-out .3s;
+                        & .btnAddToCart {
+                            font-size: 14px;
+                            transition: ease-in-out .3s;
+                            &:hover {
+                                background-color: $theme1;
+                                border-color: $theme1;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                }
+                &:hover {
+                    & .imgOuter{
+                        & img {
+                            &.default{
+                                opacity: 0;
+                            }
+                            &.hover {
+                                opacity: 1 !important;
+                            }
+                        }
+                        & .btnGroup {
+                            & .productBtn {
+                                opacity: 1;
+                                transform: translateY(0);
+                                &.btn1 {
+                                }
+                                &.btn2 {
+                                }
+                                &.btn3 {
+                                }
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                    & .productDetail{
+                        & .productTitle{
+                        }
+                        & .price {
+                            & .newPrice{
+                            }
+                            & .oldPrice {
+                            }
+                        }
+                        & .btn-cart{
+                            bottom: 6px;
+                            & .btnAddToCart {
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -19,15 +570,951 @@
     }
 
     @include media-breakpoint-down(xl) {
+        .trandingProductMain{
+            & .trandingProductContainer {
+                & .sectionHeader {
+                    & .title{
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+                & .overServices{
+                    & .card{
+                        & .card-body {
+                            & .servicesOuter{
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .serviceDetail{
+                                    & .serviceTitle {
+                                        font-size: 14px;
+                                    }
+                                    & .serviceDec {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .servicesBanner{
+                        & .bannerBlocks {
+                            &.bannerBlockFirst{
+                            }
+                            &:hover {
+                                & .bannerScale{
+                                    & .bannerData{
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale{
+                                & .bannerData{
+                                    & .bannerSubtitle {
+                                        font-size: 10px;
+                                        margin-bottom: 10px;
+                                        padding: 0 10px;
+                                        letter-spacing: 3px;
+                                    }
+                                    & .bannerTitle{
+                                        font-size: 20px;
+                                        line-height: 20px;
+                                        margin-bottom: 12px;
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            padding: 6px 6px;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .trandingProductOuter{
+                    & .nav{
+                        right: 10%;
+                        & .nav-item{
+                            & .nav-link{
+                                &.active, &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .productsSlider {
+                        & .owl-stage-outer{
+                        }
+                        & .owl-nav{
+                            & .owl-prev, & .owl-next {
+                            }
+                        }
+                    }
+                    & .productBanner {
+                        & .bannerBlock {
+                            &:hover {
+                                & .bannerScale {
+                                    & .bannerData {
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle {
+                                        }
+                                        & .bannerDesc{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale {
+                                & .bannerData {
+                                    & .bannerSubtitle {
+                                        font-size: 14px;
+                                    }
+                                    & .bannerTitle {
+                                        font-size: 28px;
+                                        line-height: 28px;
+                                        font-weight: 700;
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerDesc{
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            padding: 7px 12px;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card{
+            &.itemOuter{
+                & .imgOuter{
+                    &::after {
+                    }
+                    & img {
+                        &.hover {
+                        }
+                    }
+                    & .btnGroup {
+                        & .productBtn {
+                            width: 32px;
+                            height: 32px;
+                            &:hover {
+                                & img {
+                                }
+                            }
+                            &.btn1 {
+                            }
+                            &.btn2 {
+                            }
+                            &.btn3 {
+                            }
+                            & img {
+                            }
+                        }
+                    }
+                    & .rating {
+                        & .star{
+                            & img {
+                            }
+                            &.fill {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetail{
+                    & .productTitle{
+                        font-size: 14px;
+                    }
+                    & .price {
+                        font-size: 15px;
+                        & .newPrice{
+                        }
+                        & .oldPrice {
+                        }
+                    }
+                    & .btn-cart{
+                        & .btnAddToCart {
+                            &:hover {
+                            }
+                        }
+                    }
+
+                }
+                &:hover {
+                    & .imgOuter{
+                        & img {
+                            &.default{
+                            }
+                            &.hover {
+                            }
+                        }
+                        & .btnGroup {
+                            & .productBtn {
+                                &.btn1 {
+                                }
+                                &.btn2 {
+                                }
+                                &.btn3 {
+                                }
+                                & img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                    & .productDetail{
+                        & .productTitle{
+                        }
+                        & .price {
+                            & .newPrice{
+                            }
+                            & .oldPrice {
+                            }
+                        }
+                        & .btn-cart{
+                            & .btnAddToCart {
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
+        .trandingProductMain{
+            & .trandingProductContainer {
+                & .sectionHeader {
+                    & .title{
+                    }
+                }
+                & .overServices{
+                    & .card{
+                        & .card-body {
+                            & .servicesOuter{
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .serviceDetail{
+                                    & .serviceTitle {
+                                    }
+                                    & .serviceDec {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .servicesBanner{
+                        & .bannerBlocks {
+                            &.bannerBlockFirst{
+                            }
+                            &:hover {
+                                & .bannerScale{
+                                    & .bannerData{
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale{
+                                & .bannerData{
+                                    & .bannerSubtitle {
+                                    }
+                                    & .bannerTitle{
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .trandingProductOuter{
+                    & .nav{
+                        & .nav-item{
+                            & .nav-link{
+                                &.active, &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .productsSlider {
+                        & .owl-stage-outer{
+                        }
+                        & .owl-nav{
+                            & .owl-prev, & .owl-next {
+                            }
+                        }
+                    }
+                    & .productBanner {
+                        & .bannerBlock {
+                            &:hover {
+                                & .bannerScale {
+                                    & .bannerData {
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle {
+                                        }
+                                        & .bannerDesc{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale {
+                                & .bannerData {
+                                    & .bannerSubtitle {
+                                    }
+                                    & .bannerTitle {
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerDesc{
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card{
+            &.itemOuter{
+                & .imgOuter{
+                    &::after {
+                    }
+                    & img {
+                        &.hover {
+                        }
+                    }
+                    & .btnGroup {
+                        & .productBtn {
+                            width: 32px;
+                            height: 32px;
+                            transform: none !important;
+                            opacity: 1 !important;
+                            transition: ease-in-out .3s !important;
+                            &:hover {
+                                & img {
+                                }
+                            }
+                            &.btn1 {
+                            }
+                            &.btn2 {
+                            }
+                            &.btn3 {
+                            }
+                            & img {
+                                filter: none !important;
+                            }
+                        }
+                    }
+                    & .rating {
+                        & .star{
+                            & img {
+                            }
+                            &.fill {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetail{
+                    & .productTitle{
+                        font-size: 14px;
+                    }
+                    & .price {
+                        font-size: 15px;
+                        & .newPrice{
+                        }
+                        & .oldPrice {
+                        }
+                    }
+                    & .btn-cart{
+                        position: unset !important;
+                        padding-top: 8px;
+                        & .btnAddToCart {
+                            &:hover {
+                            }
+                        }
+                    }
+
+                }
+                &:hover {
+                    & .imgOuter{
+                        & img {
+                            &.default{
+                            }
+                            &.hover {
+                            }
+                        }
+                        & .btnGroup {
+                            & .productBtn {
+                                &.btn1 {
+                                }
+                                &.btn2 {
+                                }
+                                &.btn3 {
+                                }
+                                & img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                    & .productDetail{
+                        & .productTitle{
+                        }
+                        & .price {
+                            & .newPrice{
+                            }
+                            & .oldPrice {
+                            }
+                        }
+                        & .btn-cart{
+                            & .btnAddToCart {
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
+        .trandingProductMain{
+            & .trandingProductContainer {
+                & .sectionHeader {
+                    & .title{
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+                & .overServices{
+                    & .card{
+                        & .card-body {
+                            & .servicesOuter{
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .serviceDetail{
+                                    & .serviceTitle {
+                                        font-size: 14px;
+                                    }
+                                    & .serviceDec {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .servicesBanner{
+                        & .bannerBlocks {
+                            max-width: 280px;
+                            margin: 0 auto;
+                            &.bannerBlockFirst{
+                            }
+                            &:hover {
+                                & .bannerScale{
+                                    & .bannerData{
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale{
+                                & .bannerData{
+                                    & .bannerSubtitle {
+                                        font-size: 10px;
+                                        margin-bottom: 10px;
+                                        padding: 0 10px;
+                                        letter-spacing: 3px;
+                                    }
+                                    & .bannerTitle{
+                                        font-size: 20px;
+                                        line-height: 20px;
+                                        margin-bottom: 12px;
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            padding: 6px 6px;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .trandingProductOuter{
+                    & .nav{
+                        position: unset !important;
+                        justify-content: center;
+                        & .nav-item{
+                            & .nav-link{
+                                &.active, &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .productsSlider {
+                        & .owl-stage-outer{
+                        }
+                        & .owl-nav{
+                            position: unset !important;
+                            padding: 16px 0 0;
+                            justify-content: center;
+                            & .owl-prev, & .owl-next {
+                            }
+                        }
+                    }
+                    & .productBanner {
+                        & .bannerBlock {
+                            &:hover {
+                                & .bannerScale {
+                                    & .bannerData {
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle {
+                                        }
+                                        & .bannerDesc{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale {
+                                & .bannerData {
+                                    & .bannerSubtitle {
+                                    }
+                                    & .bannerTitle {
+                                        font-size: 24px;
+                                        line-height: 24px;
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerDesc{
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
+        .trandingProductMain{
+            & .trandingProductContainer {
+                & .sectionHeader {
+                    & .title{
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+                & .overServices{
+                    & .card{
+                        & .card-body {
+                            & .servicesOuter{
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .serviceDetail{
+                                    & .serviceTitle {
+                                        font-size: 14px;
+                                    }
+                                    & .serviceDec {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .servicesBanner{
+                        & .bannerBlocks {
+                            max-width: 280px;
+                            margin: 0 auto;
+                            &.bannerBlockFirst{
+                            }
+                            &:hover {
+                                & .bannerScale{
+                                    & .bannerData{
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale{
+                                & .bannerData{
+                                    & .bannerSubtitle {
+                                        font-size: 10px;
+                                        margin-bottom: 10px;
+                                        padding: 0 10px;
+                                        letter-spacing: 3px;
+                                    }
+                                    & .bannerTitle{
+                                        font-size: 20px;
+                                        line-height: 20px;
+                                        margin-bottom: 12px;
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            padding: 6px 6px;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .trandingProductOuter{
+                    & .nav{
+                        right: 10%;
+                        & .nav-item{
+                            & .nav-link{
+                                &.active, &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .productsSlider {
+                        & .owl-stage-outer{
+                        }
+                        & .owl-nav{
+                            & .owl-prev, & .owl-next {
+                            }
+                        }
+                    }
+                    & .productBanner {
+                        & .bannerBlock {
+                            &:hover {
+                                & .bannerScale {
+                                    & .bannerData {
+                                        & .bannerSubtitle {
+                                        }
+                                        & .bannerTitle {
+                                        }
+                                        & .bannerDesc{
+                                        }
+                                        & .bannerBtn{
+                                            & .btnShopNow {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .bannerScale {
+                                & .bannerData {
+                                    & .bannerSubtitle {
+                                        font-size: 14px;
+                                    }
+                                    & .bannerTitle {
+                                        font-size: 28px;
+                                        line-height: 28px;
+                                        font-weight: 700;
+                                        &:hover {
+                                        }
+                                    }
+                                    & .bannerDesc{
+                                    }
+                                    & .bannerBtn{
+                                        & .btnShopNow {
+                                            padding: 7px 12px;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card{
+            &.itemOuter{
+                & .imgOuter{
+                    &::after {
+                    }
+                    & img {
+                        &.hover {
+                        }
+                    }
+                    & .btnGroup {
+                        & .productBtn {
+                            width: 32px;
+                            height: 32px;
+                            &:hover {
+                                & img {
+                                }
+                            }
+                            &.btn1 {
+                            }
+                            &.btn2 {
+                            }
+                            &.btn3 {
+                            }
+                            & img {
+                            }
+                        }
+                    }
+                    & .rating {
+                        & .star{
+                            & img {
+                            }
+                            &.fill {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetail{
+                    & .productTitle{
+                        font-size: 14px;
+                    }
+                    & .price {
+                        font-size: 15px;
+                        & .newPrice{
+                        }
+                        & .oldPrice {
+                        }
+                    }
+                    & .btn-cart{
+                        & .btnAddToCart {
+                            &:hover {
+                            }
+                        }
+                    }
+
+                }
+                &:hover {
+                    & .imgOuter{
+                        & img {
+                            &.default{
+                            }
+                            &.hover {
+                            }
+                        }
+                        & .btnGroup {
+                            & .productBtn {
+                                &.btn1 {
+                                }
+                                &.btn2 {
+                                }
+                                &.btn3 {
+                                }
+                                & img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                    & .productDetail{
+                        & .productTitle{
+                        }
+                        & .price {
+                            & .newPrice{
+                            }
+                            & .oldPrice {
+                            }
+                        }
+                        & .btn-cart{
+                            & .btnAddToCart {
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 420px) {
+        .card{
+            &.itemOuter{
+                & .imgOuter{
+                    &::after {
+                    }
+                    & img {
+                        &.hover {
+                        }
+                    }
+                    & .btnGroup {
+                        & .productBtn {
+                            width: 14px;
+                            height: 14px;
+                            padding: 0 !important;
+                            background-color: transparent;
+                            border: none;
+                            &:hover {
+                                & img {
+                                }
+                            }
+                            &.btn1 {
+                            }
+                            &.btn2 {
+                            }
+                            &.btn3 {
+                            }
+                            & img {
+                                filter: none;
+                            }
+                        }
+                    }
+                    & .rating {
+                        & .star{
+                            & img {
+                            }
+                            &.fill {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetail{
+                    & .productTitle{
+                    }
+                    & .price {
+                        & .newPrice{
+                        }
+                        & .oldPrice {
+                        }
+                    }
+                    & .btn-cart{
+                        & .btnAddToCart {
+                            &:hover {
+                            }
+                        }
+                    }
+
+                }
+                &:hover {
+                    & .imgOuter{
+                        & img {
+                            &.default{
+                            }
+                            &.hover {
+                            }
+                        }
+                        & .btnGroup {
+                            & .productBtn {
+                                &.btn1 {
+                                }
+                                &.btn2 {
+                                }
+                                &.btn3 {
+                                }
+                                & img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                    & .productDetail{
+                        & .productTitle{
+                        }
+                        & .price {
+                            & .newPrice{
+                            }
+                            & .oldPrice {
+                            }
+                        }
+                        & .btn-cart{
+                            & .btnAddToCart {
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
     }
 // }
 
