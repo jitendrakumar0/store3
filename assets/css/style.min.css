@@ -195,7 +195,7 @@ body .overflow-auto-hidden {
   border-radius: 50%;
   border: none;
   position: absolute;
-  right: 248px;
+  right: 189px;
   top: 2px;
 }
 .topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn img {
@@ -333,7 +333,7 @@ body .overflow-auto-hidden {
 .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
   background-color: #fff;
   border-radius: 25px;
-  width: 30%;
+  width: 32%;
   height: 46px;
   padding: 8px;
 }
@@ -364,9 +364,12 @@ body .overflow-auto-hidden {
   height: 20px;
   padding: 0 8px;
 }
-.topNavbar .headerFluid .headerContainer .iconBox2 img .badgeBag {
+.topNavbar .headerFluid .headerContainer .iconBox2 .badgeBag {
   position: absolute !important;
-  top: 0 !important;
+  top: 6px !important;
+  right: 0;
+  padding: 3px !important;
+  font-size: 10px;
 }
 .topNavbar .headerFluid .headerContainer .iconBox2 .profileDropdown {
   position: absolute !important;
@@ -475,10 +478,10 @@ body .overflow-auto-hidden {
 @media (max-width: 1399.98px) {
   .topNavbar .topBarFluid .topBarContainer .searchBar .topBarSearchBtn {
     position: absolute;
-    right: 158px;
+    right: 59px;
   }
   .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
-    width: 35%;
+    width: 42%;
   }
 }
 @media (max-width: 1199.98px) {
