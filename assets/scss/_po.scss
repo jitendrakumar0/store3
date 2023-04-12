@@ -1,284 +1,47 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-// [data-page-name=example] {
+[data-page-name=category] {
     @include media-breakpoint(basic) {
-        // .footerFluid {
-        //     margin-top: 30px;
-        //     background: #e8e9ff url('../img/bg/footerBg.png') no-repeat;
-        //     color: $gray-600;
-        //     clear: both;
-        //     line-height: 1.25em;
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-        //     position: relative;
+        & .category {
+            & .categoryFilter {
+                & .filterHeading {
 
-        //     &::before {
-        //         content: "";
-        //         position: absolute;
-        //         width: 100%;
-        //         background-image: url('../img/bg/footeBgCurve.png');
-        //         top: 0px;
-        //     }
+                }
+                & .filterList {
+                    & .filterItem {
+                        margin: 0;
+                        padding: 0;
+                        & .filterItems {
+                            list-style: none;
+                            padding: 4px 15px 10px 15px;
+                            margin-bottom: -1px;
+                            & .filterAccordian {
+                                & .filterAccordianItem {
+                                    & .filterAccordianHeader {
+                                        & .filterAccordianButton {
 
-        //     & .footerContainer {
-        //         & .footerPadding {
-        //             padding: 70px 0 70px;
-        //             & .footerAddress {
-        //                 & .footerAddressItem {
-        //                     padding: 0;
-        //                     margin: 0;
-        //                     & .footerAddressItems {
-        //                         list-style: none;
-        //                         display: flex;
-        //                         align-items: center;
-        //                         margin-bottom: 30px;
-        //                         & .phoneImg {
-        //                             width: 40px;
-        //                             height: 40px;
-        //                             display: flex;
-        //                             justify-content: center;
-        //                             align-items: center;
-        //                             border-radius: 50px;
-        //                             background-color: $theme1;
-        //                             position: relative;
-        //                             padding: 10px;
-        //                             transition: all 0.5s ease-in-out;
-        //                             -webkit-transition: all 0.5s ease-in-out;
-        //                             -moz-transition: all 0.5s ease-in-out;
-        //                             -ms-transition: all 0.5s ease-in-out;
-        //                             -o-transition: all 0.5s ease-in-out;
-        //                             cursor: pointer;
-        //                             &::after {
-        //                                 content: "";
-        //                                 height: 46px;
-        //                                 width: 46px;
-        //                                 left: -3px;
-        //                                 top: -3px;
-        //                                 opacity: 1;
-        //                                 position: absolute;
-        //                                 border-radius: 50%;
-        //                                 border: 1px dashed $theme1;
-        //                                 -webkit-transition: all 0.5s ease-in-out;
-        //                                 -moz-transition: all 0.5s ease-in-out;
-        //                                 -o-transition: all 0.5s ease-in-out;
-        //                                 transition: all 0.5s ease-in-out; 
-        //                             }
+                                        }
+                                    }
+                                    & .filterAccordianCollapse {
+                                        & .filterAccordianBody {
 
-        //                             &:hover {
-        //                                 &::after {
-        //                                     -webkit-animation: spinAround 9s linear infinite;
-        //                                     -moz-animation: spinAround 9s linear infinite;
-        //                                     animation: spinAround 9s linear infinite;
-                                            
-        //                                     @include keyframes-animation(spinAround){
-        //                                         0% {
-        //                                             -webkit-transform: rotate(0deg);
-        //                                                     transform: rotate(0deg);
-        //                                         }
-        //                                         100% {
-        //                                             -webkit-transform: rotate(360deg);
-        //                                                     transform: rotate(360deg);
-        //                                         }
-        //                                     }
-        //                                 }
-        //                             }
-        //                         }
-        //                         & .addressContent {
-        //                             padding-left: 10px;
-        //                             font-size: 14px;
-        //                             font-family: 'Poppins', sans-serif;
-        //                             font-weight: 400;
-        //                             letter-spacing: 0.5px;
-        //                             color: $gray-600;
-        //                         }
-        //                     }
-        //                 }
-        //             }
-
-        //             & .footerSocial {
-        //                 & .footerLogo {
-        //                     max-width: 140px;
-        //                     height: 60px;
-        //                     margin: auto;
-        //                     width: 100%;
-        //                 } 
-        //                 & .footerContent {
-        //                     line-height: 24px;
-        //                     font-size: 14px;
-        //                     font-family: 'Poppins', sans-serif;
-        //                     margin-bottom: 0;
-        //                     letter-spacing: 0.5px;
-        //                     color: $gray-600;
-                            
-        //                 }
-        //                 & .footerSubscribe {
-        //                     position: relative;
-        //                     display: block;
-        //                     & .subsCribeButton {
-        //                         display: inline-block;
-        //                         padding: 8px 15px;
-        //                         border-radius: 0 50px 50px 0px;
-        //                         cursor: pointer;
-        //                         text-transform: uppercase;
-        //                         height: 45px;
-        //                         line-height: 26px;
-        //                         position: absolute;
-        //                         right: 0;
-        //                         top: 0;
-        //                         color: $white;
-        //                         background-color: $theme1;
-        //                         font-size: 14px;
-        //                         -webkit-transition: all 0.4s;
-        //                         -moz-transition: all 0.4s;
-        //                         -o-transition: all 0.4s;
-        //                         transition: all 0.4s;
-        //                         &:hover {
-        //                             background-color: $theme3;
-        //                             color: $black;
-        //                         }
-        //                     }
-        //                 }
-        //                 & .footerSocialIcon {
-        //                     & .footerSocialIconItem {
-        //                         margin: 0;
-        //                         padding: 0;
-        //                         display: flex;
-        //                         justify-content: center;
-        //                         text-align: center;
-        //                         & .footerSocialIconList {
-        //                             list-style: none;
-        //                             padding-right:5px ;
-                                    
-        //                             &:last-child {
-        //                                 padding-right: 0px;
-        //                             }
-        //                             & .socialIcon {
-        //                                 width: 38px;
-        //                                 height: 38px;
-        //                                 cursor: pointer;
-        //                                 border-radius: 50%;
-        //                                 text-align: center;
-        //                                 -webkit-transition: all 0.4s;
-        //                                 -moz-transition: all 0.4s;
-        //                                 -o-transition: all 0.4s;
-        //                                 transition: all 0.4s;
-        //                                 padding: 10px;
-
-        //                                 &.fb {
-        //                                     background-color: rgba($color: $blue, $amount: 30);
-        //                                 }
-        //                                 &.twiter {
-        //                                     background-color: $blue;
-        //                                 }
-        //                                 &.youtube {
-        //                                     background-color:$red ;
-        //                                 }
-        //                                 &.pinterest {
-        //                                     background-color: $red;
-        //                                 }
-        //                                 &.insta {
-        //                                     background-color: $pink;
-        //                                 }
-
-        //                                 &:hover {
-        //                                     background-color: $theme1;
-        //                                 }
-        //                             }
-        //                         }
-        //                     }
-        //                 }
-        //             }
-
-        //             & .footerMenu {
-        //                 width: 50%;
-        //                 margin-left: auto;
-        //                 & .foterMenuHeading {
-        //                     margin: 0 0 20px 0;
-        //                     display: block;
-        //                     color: $theme1;
-        //                     text-transform: uppercase;
-        //                     font-size: 17px;
-        //                     font-weight: 600;
-        //                     cursor: pointer;
-        //                     font-family: 'Poppins', sans-serif;
-        //                 }
-        //                 & .footerMenuList {
-        //                     & .footerMenuItem {
-        //                         margin: 0;
-        //                         padding: 0;
-        //                         & .footerMenuItems {
-        //                             list-style: none;
-        //                             margin-bottom: 15px;
-        //                             &:last-child {
-        //                                 margin-bottom: 0px;
-        //                             }
-        //                             & .footerMenuItemsLink {
-        //                                 font-family: 'Poppins', sans-serif;
-        //                                 font-weight: 400;
-        //                                 letter-spacing: 0.5px;
-        //                                 font-size: 14px;
-        //                                 color: $gray-600;
-        //                                 text-decoration: none;
-        //                                 position: relative;
-        //                                 overflow: hidden;
-        //                                 -webkit-transition: all 0.2s;
-        //                                 -moz-transition: all 0.2s;
-        //                                 -o-transition: all 0.2s;
-        //                                 transition: all 0.2s;
-
-        //                                 &:hover {
-        //                                     color: $theme1;
-        //                                 }
-        //                             }
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-
-        // }
-        // .footerBottomBarFluid {
-        //     background-color: $theme1;
-        //     & .footerBottomBarContainer {
-        //         & .footerBottomBar {
-        //             & .footerBottomBarPadding {
-        //                 padding-top: 8px;
-        //                 padding-bottom: 10px;
-        //                 & .copyrytTxt {
-        //                     color: $white;
-        //                     letter-spacing: 0.5px;
-        //                     font-size: 14px;
-        //                     transition: all 0.2s;
-        //                     font-weight: 400;
-        //                     & a {
-        //                         color: $white;
-        //                     }
-        //                     &:hover {
-        //                         & a {
-        //                             color: $theme3;
-        //                         }
-        //                     }
-        //                 }
-        //                 & .paymentBlock {
-        //                     & .paymentBlockItem {
-        //                         margin: 0;
-        //                         padding: 0;
-        //                         display: flex;
-        //                         & .paymentBlockItems {
-        //                             list-style: none;
-        //                             margin: 0 2px;
-        //                             & .paymentBlockListLink {
-        //                                 width: 40px;
-        //                                 height: 30px;
-        //                             }
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+                                        }
+                                    }
+                                }
+                            }
+                            & .filterItemsLink {
+                                border: 0;
+                                border-radius: 0;
+                                color: lighten($color: $black, $amount: 7);
+                                display: inline-block;
+                                vertical-align: middle;
+                                background: transparent;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -302,7 +65,7 @@
     @include media-breakpoint-down(md) {}
 
     @include media-breakpoint-down(sm) {}
-// }
+}
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
