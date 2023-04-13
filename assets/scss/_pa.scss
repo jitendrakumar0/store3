@@ -342,6 +342,7 @@
                                             content: '';
                                             background-image: url(../img/minusstore3.svg);
                                             background-size: 12px;
+                                            transform: rotate(0);
                                         }
                                     }
                                     &::after{
@@ -477,8 +478,14 @@
                                 padding: 3px 15px;
                                 border-radius: 2px;
                                 line-height: 12px;
+                                &:hover{
+                                    opacity: 0.8;
+                                }
                                 &.sharebg1{
                                     background-color: lighten($color: $blue, $amount: 10);
+                                    &:hover{
+                                        opacity: 0.8;
+                                    }
                                 }
                                 &.sharebg2{
                                     background-color: $orange;
@@ -844,12 +851,67 @@
     }
     // cart offcanvas
     .cartOffcanvasMain{
-        width: 300px !important;
-        & .cartOffcanvasHeader{
-
-        }
+        width: 350px !important;
         & .cartOffcanvasBody{
-            color: $black;
+            
+        & .borderbottom{
+            border-bottom: 1px solid $gray-400;
+            padding-bottom: 20px;
+            & .CartProductImg{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .CartProductImgName{
+                font-size: 16px;
+                color: $black;
+            }
+            & .price{
+                font-size: 15px;
+                color: $gray-700;
+            }
+            & .closeBtn{
+                background-color: $red;
+                background-image: url(../img/whiteclose.svg);
+                background-size: 10px;
+                box-shadow: none;
+                border-radius: 0;
+                opacity: 1;
+            }
+        }
+        }
+        & .cartOffcanvasFooter{
+            padding: 20px;
+            & .viewCartBtn{
+                background-color: $theme3;
+                border: none;
+                color: $black;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 10px 20px;
+                border-radius: 50px;
+                &:hover{
+                    background-color: $theme1;
+                    color: $white;
+                }
+            }
+            & .checkoutBtn{
+                background-color: $theme1;
+                border: none;
+                color: $white;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 10px 20px;
+                border-radius: 50px;
+                &:hover{
+                    background-color: $theme3;
+                    color: $black;
+                }
+            }
         }
     }
         @keyframes cursor {
@@ -2195,6 +2257,8 @@
                         & span{
                         }
                         & .sharelink{
+                            margin-right: 12px;
+                            margin-left: 0;
                             & .sharebg{
                                 padding: 7px 15px;
                                 &.sharebg1{

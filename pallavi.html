@@ -134,7 +134,7 @@
                                                     <span>Login/Register</span>
                                                 </div>
                                             </a>
-                                            <a href="javascript:;" class="cartBox d-flex align-items-center">
+                                            <a href="javascript:;" class="cartBox d-flex align-items-center"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                                 <div class="MyCartLogo">
                                                     <img src="assets/img/cartstore3.svg" alt="" srcset="">
                                                 </div>
@@ -521,9 +521,18 @@
                                     <div class="card itemOuter rounded-3 overflow-hidden">
                                         <div class="imgOuter position-relative">
                                             <a href="javascript:;">
-                                                <img class="default w-100" src="assets/img/productimgstore4.png" alt="">
+                                                <img class="default w-100" src="assets/img/product1.png" alt="">
                                                 <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
                                             </a>
+                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                </ul>
+                                            </div>
                                             <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
                                                 <li class="star fill">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
@@ -531,13 +540,13 @@
                                                 <li class="star fill">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
                                             </ul>
@@ -553,14 +562,71 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="productDetail p-3 text-center position-relative">
+                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
                                             <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
                                             <div class="price text-black">
                                                 <span class="newPrice">$ 99.00</span>
                                                 <span class="oldPrice">$ 109.00</span>
                                             </div>
                                             <div class="btn-cart w-100">
-                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">  
+                                    <div class="card itemOuter rounded-3 overflow-hidden">
+                                        <div class="imgOuter position-relative">
+                                            <a href="javascript:;">
+                                                <img class="default w-100" src="assets/img/productimgstore1.png" alt="">
+                                                <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
+                                            </a>
+                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
+                                                <li class="star fill">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star fill">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                            </ul>
+                                            <div class="btnGroup position-absolute d-flex flex-column gap-2">
+                                                <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
+                                                    <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
+                                                </button>
+                                                <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
+                                                    <img class="w-100" src="assets/img/heartIconFill.png" alt="">
+                                                </button>
+                                                <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
+                                                    <img class="w-100" src="assets/img/campareIconFill.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
+                                            <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
+                                            <div class="price text-black">
+                                                <span class="newPrice">$ 99.00</span>
+                                                <span class="oldPrice">$ 109.00</span>
+                                            </div>
+                                            <div class="btn-cart w-100">
+                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
                                             </div>
                                         </div>
                                     </div>
@@ -569,9 +635,18 @@
                                     <div class="card itemOuter rounded-3 overflow-hidden">
                                         <div class="imgOuter position-relative">
                                             <a href="javascript:;">
-                                                <img class="default w-100" src="assets/img/productimgstore1.png" alt="">
+                                                <img class="default w-100" src="assets/img/productimgstore3.png" alt="">
                                                 <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
                                             </a>
+                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                </ul>
+                                            </div>
                                             <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
                                                 <li class="star fill">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
@@ -579,13 +654,13 @@
                                                 <li class="star fill">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
                                             </ul>
@@ -601,14 +676,71 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="productDetail p-3 text-center position-relative">
+                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
                                             <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
                                             <div class="price text-black">
                                                 <span class="newPrice">$ 99.00</span>
                                                 <span class="oldPrice">$ 109.00</span>
                                             </div>
                                             <div class="btn-cart w-100">
-                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card itemOuter rounded-3 overflow-hidden">
+                                        <div class="imgOuter position-relative">
+                                            <a href="javascript:;">
+                                                <img class="default w-100" src="assets/img/productimgstore4.png" alt="">
+                                                <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
+                                            </a>
+                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
+                                                <li class="star fill">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star fill">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                                <li class="star">
+                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                </li>
+                                            </ul>
+                                            <div class="btnGroup position-absolute d-flex flex-column gap-2">
+                                                <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
+                                                    <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
+                                                </button>
+                                                <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
+                                                    <img class="w-100" src="assets/img/heartIconFill.png" alt="">
+                                                </button>
+                                                <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
+                                                    <img class="w-100" src="assets/img/campareIconFill.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
+                                            <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
+                                            <div class="price text-black">
+                                                <span class="newPrice">$ 99.00</span>
+                                                <span class="oldPrice">$ 109.00</span>
+                                            </div>
+                                            <div class="btn-cart w-100">
+                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
                                             </div>
                                         </div>
                                     </div>
@@ -620,6 +752,15 @@
                                                 <img class="default w-100" src="assets/img/productimgstore5.png" alt="">
                                                 <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
                                             </a>
+                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                </ul>
+                                            </div>
                                             <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
                                                 <li class="star fill">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
@@ -627,13 +768,13 @@
                                                 <li class="star fill">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
-                                                <li class="star fill">
+                                                <li class="star">
                                                     <img class="w-100" src="assets/img/star.png" alt="">
                                                 </li>
                                             </ul>
@@ -649,110 +790,14 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="productDetail p-3 text-center position-relative">
+                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
                                             <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
                                             <div class="price text-black">
                                                 <span class="newPrice">$ 99.00</span>
                                                 <span class="oldPrice">$ 109.00</span>
                                             </div>
                                             <div class="btn-cart w-100">
-                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="card itemOuter rounded-3 overflow-hidden">
-                                        <div class="imgOuter position-relative">
-                                            <a href="javascript:;">
-                                                <img class="default w-100" src="assets/img/productimgstore3.png" alt="">
-                                                <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
-                                            </a>
-                                            <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                            </ul>
-                                            <div class="btnGroup position-absolute d-flex flex-column gap-2">
-                                                <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
-                                                    <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
-                                                </button>
-                                                <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
-                                                    <img class="w-100" src="assets/img/heartIconFill.png" alt="">
-                                                </button>
-                                                <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
-                                                    <img class="w-100" src="assets/img/campareIconFill.png" alt="">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="productDetail p-3 text-center position-relative">
-                                            <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
-                                            <div class="price text-black">
-                                                <span class="newPrice">$ 99.00</span>
-                                                <span class="oldPrice">$ 109.00</span>
-                                            </div>
-                                            <div class="btn-cart w-100">
-                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="card itemOuter rounded-3 overflow-hidden">
-                                        <div class="imgOuter position-relative">
-                                            <a href="javascript:;">
-                                                <img class="default w-100" src="assets/img/productimgstore3.png" alt="">
-                                                <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
-                                            </a>
-                                            <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                                <li class="star fill">
-                                                    <img class="w-100" src="assets/img/star.png" alt="">
-                                                </li>
-                                            </ul>
-                                            <div class="btnGroup position-absolute d-flex flex-column gap-2">
-                                                <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
-                                                    <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
-                                                </button>
-                                                <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
-                                                    <img class="w-100" src="assets/img/heartIconFill.png" alt="">
-                                                </button>
-                                                <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
-                                                    <img class="w-100" src="assets/img/campareIconFill.png" alt="">
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="productDetail p-3 text-center position-relative">
-                                            <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
-                                            <div class="price text-black">
-                                                <span class="newPrice">$ 99.00</span>
-                                                <span class="oldPrice">$ 109.00</span>
-                                            </div>
-                                            <div class="btn-cart w-100">
-                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1144,12 +1189,110 @@
         </div>
         <!-- cart(bag) offcanvas -->
         <div class="offcanvas offcanvas-end cartOffcanvasMain" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header cartOffcanvasHeader d-flex justify-content-end">
-                <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> -->
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header d-block d-sm-none d-flex justify-content-end">
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body cartOffcanvasBody">
-                Your cart is empty now
+                <div class="row pb-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore4.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore3.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore1.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore5.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore4.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer cartOffcanvasFooter">
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <button class="viewCartBtn">View Cart</button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-start">
+                        <button class="checkoutBtn">Checkout</button>
+                    </div>
+                </div>
             </div>
             </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

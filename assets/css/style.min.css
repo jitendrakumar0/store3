@@ -449,6 +449,7 @@ body .overflow-auto-hidden {
   content: "";
   background-image: url(../img/minusstore3.svg);
   background-size: 12px;
+  transform: rotate(0);
 }
 .productDetailPageFluid .productDetailPageContainer .productDetailPageLeftPart .productDetailaAccordion .productDetailaAccordionItem .productDetailaAccordionHeader .productDetailaAccordionBtn::after {
   content: "";
@@ -578,8 +579,14 @@ body .overflow-auto-hidden {
   border-radius: 2px;
   line-height: 12px;
 }
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg:hover {
+  opacity: 0.8;
+}
 .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg.sharebg1 {
   background-color: #6a9eff;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg.sharebg1:hover {
+  opacity: 0.8;
 }
 .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg.sharebg2 {
   background-color: #fd7e14;
@@ -906,9 +913,64 @@ body .overflow-auto-hidden {
 }
 
 .cartOffcanvasMain {
-  width: 300px !important;
+  width: 350px !important;
 }
-.cartOffcanvasMain .cartOffcanvasBody {
+.cartOffcanvasMain .cartOffcanvasBody .borderbottom {
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 20px;
+}
+.cartOffcanvasMain .cartOffcanvasBody .borderbottom .CartProductImg {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.cartOffcanvasMain .cartOffcanvasBody .borderbottom .CartProductImg img {
+  width: 100%;
+  height: 100%;
+}
+.cartOffcanvasMain .cartOffcanvasBody .borderbottom .CartProductImgName {
+  font-size: 16px;
+  color: #000;
+}
+.cartOffcanvasMain .cartOffcanvasBody .borderbottom .price {
+  font-size: 15px;
+  color: #495057;
+}
+.cartOffcanvasMain .cartOffcanvasBody .borderbottom .closeBtn {
+  background-color: #d10015;
+  background-image: url(../img/whiteclose.svg);
+  background-size: 10px;
+  box-shadow: none;
+  border-radius: 0;
+  opacity: 1;
+}
+.cartOffcanvasMain .cartOffcanvasFooter {
+  padding: 20px;
+}
+.cartOffcanvasMain .cartOffcanvasFooter .viewCartBtn {
+  background-color: #FFD91C;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.cartOffcanvasMain .cartOffcanvasFooter .viewCartBtn:hover {
+  background-color: #cb5499;
+  color: #fff;
+}
+.cartOffcanvasMain .cartOffcanvasFooter .checkoutBtn {
+  background-color: #cb5499;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.cartOffcanvasMain .cartOffcanvasFooter .checkoutBtn:hover {
+  background-color: #FFD91C;
   color: #000;
 }
 
@@ -971,6 +1033,10 @@ body .overflow-auto-hidden {
   }
   .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .productDetailPageLeftPartMainHeading {
     font-size: 20px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink {
+    margin-right: 12px;
+    margin-left: 0;
   }
   .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg {
     padding: 7px 15px;
@@ -1511,7 +1577,7 @@ body .overflow-auto-hidden {
   line-height: 1.5;
 }
 .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks:hover .bannerScale .bannerData .bannerTitle {
-  transform: rotateX(180deg);
+  transform: rotateX(360deg);
 }
 .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale {
   transition: all 0.5s;
@@ -1597,20 +1663,31 @@ body .overflow-auto-hidden {
   right: 0;
 }
 .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-prev, .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-next {
-  border: 1px solid #eee;
+  border: 1px solid #e9ecef;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   margin: 0 3px;
-  background-color: #eee;
+  background-color: #e9ecef;
   border-radius: 50px;
   padding: 11px !important;
   width: 30px;
   height: 30px;
+  transition: ease-in-out 0.3s;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-prev img, .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-next img {
+  transition: ease-in-out 0.3s;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-prev:hover, .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-next:hover {
+  border-color: #cb5499;
+  background-color: #cb5499;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-prev:hover img, .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-next:hover img {
+  filter: invert(1);
 }
 .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock:hover .bannerScale .bannerData .bannerTitle {
-  transform: rotateX(180deg);
+  transform: rotateX(360deg);
 }
 .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData {
   left: 0;
@@ -1631,7 +1708,7 @@ body .overflow-auto-hidden {
   transition: all 0.7s;
 }
 .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle:hover {
-  transform: rotateX(180deg);
+  transform: rotateX(360deg);
 }
 .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerDesc {
   font-size: 14px;
@@ -1661,6 +1738,46 @@ body .overflow-auto-hidden {
   color: #000 !important;
 }
 
+.owl-nav {
+  width: auto;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  position: absolute;
+  top: -53px;
+  right: 0;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  border: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin: 0 3px;
+  background-color: #e9ecef;
+  border-radius: 50px;
+  padding: 11px !important;
+  width: 30px;
+  height: 30px;
+  transition: ease-in-out 0.3s;
+}
+.owl-nav .owl-prev img, .owl-nav .owl-next img {
+  transition: ease-in-out 0.3s;
+}
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+  border-color: #cb5499;
+  background-color: #cb5499;
+}
+.owl-nav .owl-prev:hover img, .owl-nav .owl-next:hover img {
+  filter: invert(1);
+}
+
+.card.itemOuter.sold .soldOut {
+  display: block !important;
+}
+.card.itemOuter.sale .saleStart {
+  display: block !important;
+}
 .card.itemOuter .imgOuter::after {
   content: "";
   width: 100%;
@@ -1681,6 +1798,28 @@ body .overflow-auto-hidden {
   top: 0;
   left: 0;
   right: 0;
+}
+.card.itemOuter .imgOuter .soldOut {
+  font-size: 10px;
+  top: 6px;
+  left: 6px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.card.itemOuter .imgOuter .saleStart {
+  transition: ease-in-out 0.3s;
+}
+.card.itemOuter .imgOuter .saleStart ul {
+  opacity: 0.8;
+}
+.card.itemOuter .imgOuter .saleStart ul li {
+  font-size: 12px;
+  line-height: normal;
+}
+.card.itemOuter .imgOuter .saleStart ul li span {
+  font-size: 14px;
+  font-weight: 600;
 }
 .card.itemOuter .imgOuter .btnGroup {
   top: 10px;
@@ -1715,7 +1854,7 @@ body .overflow-auto-hidden {
 .card.itemOuter .imgOuter .rating {
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 4px;
 }
 .card.itemOuter .imgOuter .rating .star {
   width: 12px;
@@ -1760,6 +1899,10 @@ body .overflow-auto-hidden {
 }
 .card.itemOuter:hover .imgOuter img.hover {
   opacity: 1 !important;
+}
+.card.itemOuter:hover .imgOuter .saleStart {
+  opacity: 0;
+  visibility: hidden;
 }
 .card.itemOuter:hover .imgOuter .btnGroup .productBtn {
   opacity: 1;
@@ -1830,9 +1973,6 @@ body .overflow-auto-hidden {
     opacity: 1 !important;
     transition: ease-in-out 0.3s !important;
   }
-  .card.itemOuter .imgOuter .btnGroup .productBtn img {
-    filter: none !important;
-  }
   .card.itemOuter .productDetail .productTitle {
     font-size: 14px;
   }
@@ -1879,20 +2019,20 @@ body .overflow-auto-hidden {
     position: unset !important;
     justify-content: center;
   }
-  .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav {
-    position: unset !important;
-    padding: 16px 0 0;
-    justify-content: center;
-  }
   .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle {
     font-size: 24px;
     line-height: 24px;
   }
+  .owl-nav {
+    position: unset !important;
+    padding: 16px 0 0 !important;
+    justify-content: center;
+  }
 }
 @media (max-width: 575.98px) {
   .trandingProductMain .trandingProductContainer .sectionHeader .title {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
   }
   .trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .serviceDetail .serviceTitle {
     font-size: 14px;
@@ -1908,30 +2048,37 @@ body .overflow-auto-hidden {
     letter-spacing: 3px;
   }
   .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerTitle {
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 8px;
   }
   .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn .btnShopNow {
     padding: 6px 6px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 12px;
   }
   .trandingProductMain .trandingProductContainer .trandingProductOuter .nav {
     right: 10%;
   }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .nav .nav-item .nav-link {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
   .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerSubtitle {
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 4px;
   }
   .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle {
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerDesc {
+    margin-bottom: 8px;
   }
   .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerBtn .btnShopNow {
-    padding: 7px 12px;
+    padding: 4px 8px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 12px;
   }
   .card.itemOuter .imgOuter .btnGroup .productBtn {
     width: 32px;
@@ -1948,6 +2095,12 @@ body .overflow-auto-hidden {
   }
 }
 @media (max-width: 420px) {
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerSubtitle {
+    display: none !important;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerDesc {
+    display: none !important;
+  }
   .card.itemOuter .imgOuter .btnGroup .productBtn {
     width: 14px;
     height: 14px;
@@ -1956,10 +2109,22 @@ body .overflow-auto-hidden {
     border: none;
   }
   .card.itemOuter .imgOuter .btnGroup .productBtn img {
-    filter: none;
+    filter: none !important;
+  }
+  .card.itemOuter .imgOuter .saleStart ul li {
+    font-size: 10px;
+  }
+  .card.itemOuter .imgOuter .saleStart ul li span {
+    font-size: 12px;
+  }
+  .card.itemOuter .productDetail .price {
+    font-size: 12px;
+  }
+  .card.itemOuter .productDetail .btn-cart .btnAddToCart {
+    font-size: 12px;
   }
   .card.itemOuter:hover .imgOuter .btnGroup .productBtn img {
-    filter: invert(1);
+    filter: none !important;
   }
 }
 .form-control {
