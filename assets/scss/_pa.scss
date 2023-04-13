@@ -699,6 +699,38 @@
                     border-bottom: 1px solid $gray-200;
                     padding-bottom: 15px;
                 }
+                & .owl-nav{
+                    position: absolute;
+                    top: -65px;
+                    right: 20px;
+                    display: flex;
+                    align-items: center;
+                    & .owl-prev{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: lighten($color: $black, $amount: 95);
+                        margin-right: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img{
+                            height: 10px;
+                        }
+                    }
+                    & .owl-next{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: lighten($color: $black, $amount: 95);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img{
+                            height: 10px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -725,6 +757,9 @@
                                 border: none !important;
                                 color: $black;
                             }
+                            &:not(.collapsed)::after{
+                                filter: brightness(0);
+                            }
                         }
                     }
                 }
@@ -748,6 +783,9 @@
                                                 background-color: $white !important;
                                                 border: none !important;
                                                 color: $black;
+                                            }
+                                            &:not(.collapsed)::after{
+                                                filter: brightness(0);
                                             }
                                         }
                                     }
@@ -931,6 +969,170 @@
                 }
             }
         }
+        .productDetailPageFluid{
+            & .productDetailPageContainer{
+                & .productDetailPageLeftPart{
+                    & .productDetailPageLeftPartImg{
+                        & img{
+                        }
+                    }
+                    & .productDetailaAccordion{
+                        & .productDetailaAccordionItem{
+                            &.productDetailaAccordionItem1{
+                            }
+                            & .productDetailaAccordionHeader{
+                                & .productDetailaAccordionBtn{
+                                    &:not(.collapsed){
+                                        &::after{
+                                        }
+                                    }
+                                    &::after{
+                                    }
+                                }
+                            }
+                            & .productDetailaCollapse{
+                                & .productDetailaAccordionBody{
+                                    & .productDetailaAccordionBodyMainHeading{
+                                    }
+                                    & .para{
+                                    }
+                                    & .productDetailaAccordionBodySecondHeading{
+                                    }
+                                    & .productDetailaAccordionBodysubHeading{
+                                    }
+                                    & .reviewLbl{
+                                    }
+                                    & .reviewInp{
+                                        &.reviewTxtarea{
+                                        }
+                                        &:focus-visible{
+                                        }
+                                    }
+                                    & .note{
+                                        & span{
+                                        }
+                                    }
+                                    & .rating{
+                                        & span:first-child{
+                                        }
+                                        & span:last-child{
+                                        }
+                                    }
+                                    & .reviewBtnnParent{
+                                        & .reviewBtnn{
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetailPageRightPart{
+                    & .productDetailPageLeftPartMainHeading{
+                    }
+                    & .shareBox{
+                        & span{
+                        }
+                        & .sharelink{
+                            & .sharebg{
+                                &.sharebg1{
+                                }
+                                &.sharebg2{
+                                }
+                                & img{
+                                }
+                                & span{
+                                }
+                            }
+                        }
+                    }
+                    & .starbox{
+                        & .starboxUl{
+                            & .starboxLi{
+                                & .reviewstar{
+                                }
+                            }
+                        }
+                        & .totalReviews{
+                        }
+                        & .Comment{
+                            & img{
+                            }
+                        }
+                    }
+                    & .rupeeBox{
+                        & span{
+                        }
+                    }
+                    & .countdownbox{
+                        #countdown {
+                                .number {
+                                &:not(:last-child) {
+                                    &::after {
+                                    }
+                                }
+                                }
+                                .text {
+                                }
+                            }
+                    }
+                    & .taxBox{
+                        & span{
+                        }
+                    }
+                    & .availablebox{
+                        & .availableboxHead{
+                        }
+                        & .availableboxsubHead{
+                            &::before{
+                            }
+                        }
+                        & .selectBox{
+                        }
+                    }
+                    & .quantityBox{
+                        & .qtyLbl{
+                        }
+                        & .qtyInp{
+                            &:focus-visible{
+                            }
+                        }
+                        & .cartBtn{
+                            &:hover{
+                            }
+                        }
+                        & .circle{
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & img{
+                            }
+                        }
+                    }
+                    & .detailBox{
+                        & .productcode{
+                        }
+                        & .total{
+                        }
+                    }
+                }
+                & .relatedProduct{
+                }
+                & .owl-nav{
+                    & .owl-prev{
+                        & img{
+                        }
+                    }
+                    & .owl-next{
+                        & img{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -1018,6 +1220,205 @@
                                 & .typewriter{
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .productDetailBreadcrumbFluid{
+            & .productDetailBreadcrumbContainer{
+                & .breadcrumbBox{
+                    & .breadcrumbInner{
+                        & .breadcrumbWrapper{
+                            & .breadcrumbWrapperTxt{
+                                & .breadcrumbTxt{
+                                }
+                            }
+                            & .breadcrumbWrapperLi{
+                                & .productBreadcrumbNav{
+                                    & .productBreadcrumbNavOl{
+                                        & .productBreadcrumbNavItem{
+                                            &:first-child{
+                                                &::before{
+                                                }
+                                            }
+                                            &::before{
+                                            }
+                                            & .productBreadcrumbNavItemAnchor{
+                                            }
+                                            &.active{
+                                            }
+                                        }
+                                            & img{
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .productDetailPageFluid{
+            & .productDetailPageContainer{
+                & .productDetailPageLeftPart{
+                    & .productDetailPageLeftPartImg{
+                        & img{
+                        }
+                    }
+                    & .productDetailaAccordion{
+                        & .productDetailaAccordionItem{
+                            &.productDetailaAccordionItem1{
+                            }
+                            & .productDetailaAccordionHeader{
+                                & .productDetailaAccordionBtn{
+                                    &:not(.collapsed){
+                                        &::after{
+                                        }
+                                    }
+                                    &::after{
+                                    }
+                                }
+                            }
+                            & .productDetailaCollapse{
+                                & .productDetailaAccordionBody{
+                                    & .productDetailaAccordionBodyMainHeading{
+                                    }
+                                    & .para{
+                                    }
+                                    & .productDetailaAccordionBodySecondHeading{
+                                    }
+                                    & .productDetailaAccordionBodysubHeading{
+                                    }
+                                    & .reviewLbl{
+                                    }
+                                    & .reviewInp{
+                                        &.reviewTxtarea{
+                                        }
+                                        &:focus-visible{
+                                        }
+                                    }
+                                    & .note{
+                                        & span{
+                                        }
+                                    }
+                                    & .rating{
+                                        & span:first-child{
+                                        }
+                                        & span:last-child{
+                                        }
+                                    }
+                                    & .reviewBtnnParent{
+                                        & .reviewBtnn{
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetailPageRightPart{
+                    & .productDetailPageLeftPartMainHeading{
+                    }
+                    & .shareBox{
+                        & span{
+                        }
+                        & .sharelink{
+                            & .sharebg{
+                                &.sharebg1{
+                                }
+                                &.sharebg2{
+                                }
+                                & img{
+                                }
+                                & span{
+                                }
+                            }
+                        }
+                    }
+                    & .starbox{
+                        & .starboxUl{
+                            & .starboxLi{
+                                & .reviewstar{
+                                }
+                            }
+                        }
+                        & .totalReviews{
+                        }
+                        & .Comment{
+                            & img{
+                            }
+                        }
+                    }
+                    & .rupeeBox{
+                        & span{
+                        }
+                    }
+                    & .countdownbox{
+                        width: 58%;
+                        #countdown {
+                                .number {
+                                &:not(:last-child) {
+                                    &::after {
+                                    }
+                                }
+                                }
+                                .text {
+                                }
+                            }
+                    }
+                    & .taxBox{
+                        & span{
+                        }
+                    }
+                    & .availablebox{
+                        & .availableboxHead{
+                        }
+                        & .availableboxsubHead{
+                            &::before{
+                            }
+                        }
+                        & .selectBox{
+                        }
+                    }
+                    & .quantityBox{
+                        & .qtyLbl{
+                        }
+                        & .qtyInp{
+                            &:focus-visible{
+                            }
+                        }
+                        & .cartBtn{
+                            &:hover{
+                            }
+                        }
+                        & .circle{
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & img{
+                            }
+                        }
+                    }
+                    & .detailBox{
+                        & .productcode{
+                        }
+                        & .total{
+                        }
+                    }
+                }
+                & .relatedProduct{
+                }
+                & .owl-nav{
+                    & .owl-prev{
+                        & img{
+                        }
+                    }
+                    & .owl-next{
+                        & img{
                         }
                     }
                 }
@@ -1112,6 +1513,205 @@
                 }
             }
         }
+        .productDetailBreadcrumbFluid{
+            & .productDetailBreadcrumbContainer{
+                & .breadcrumbBox{
+                    & .breadcrumbInner{
+                        & .breadcrumbWrapper{
+                            & .breadcrumbWrapperTxt{
+                                & .breadcrumbTxt{
+                                }
+                            }
+                            & .breadcrumbWrapperLi{
+                                & .productBreadcrumbNav{
+                                    & .productBreadcrumbNavOl{
+                                        & .productBreadcrumbNavItem{
+                                            &:first-child{
+                                                &::before{
+                                                }
+                                            }
+                                            &::before{
+                                            }
+                                            & .productBreadcrumbNavItemAnchor{
+                                            }
+                                            &.active{
+                                            }
+                                        }
+                                            & img{
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .productDetailPageFluid{
+            & .productDetailPageContainer{
+                & .productDetailPageLeftPart{
+                    & .productDetailPageLeftPartImg{
+                        & img{
+                        }
+                    }
+                    & .productDetailaAccordion{
+                        & .productDetailaAccordionItem{
+                            &.productDetailaAccordionItem1{
+                            }
+                            & .productDetailaAccordionHeader{
+                                & .productDetailaAccordionBtn{
+                                    &:not(.collapsed){
+                                        &::after{
+                                        }
+                                    }
+                                    &::after{
+                                    }
+                                }
+                            }
+                            & .productDetailaCollapse{
+                                & .productDetailaAccordionBody{
+                                    & .productDetailaAccordionBodyMainHeading{
+                                    }
+                                    & .para{
+                                    }
+                                    & .productDetailaAccordionBodySecondHeading{
+                                    }
+                                    & .productDetailaAccordionBodysubHeading{
+                                    }
+                                    & .reviewLbl{
+                                    }
+                                    & .reviewInp{
+                                        &.reviewTxtarea{
+                                        }
+                                        &:focus-visible{
+                                        }
+                                    }
+                                    & .note{
+                                        & span{
+                                        }
+                                    }
+                                    & .rating{
+                                        & span:first-child{
+                                        }
+                                        & span:last-child{
+                                        }
+                                    }
+                                    & .reviewBtnnParent{
+                                        & .reviewBtnn{
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetailPageRightPart{
+                    & .productDetailPageLeftPartMainHeading{
+                    }
+                    & .shareBox{
+                        & span{
+                        }
+                        & .sharelink{
+                            & .sharebg{
+                                &.sharebg1{
+                                }
+                                &.sharebg2{
+                                }
+                                & img{
+                                }
+                                & span{
+                                }
+                            }
+                        }
+                    }
+                    & .starbox{
+                        & .starboxUl{
+                            & .starboxLi{
+                                & .reviewstar{
+                                }
+                            }
+                        }
+                        & .totalReviews{
+                        }
+                        & .Comment{
+                            & img{
+                            }
+                        }
+                    }
+                    & .rupeeBox{
+                        & span{
+                        }
+                    }
+                    & .countdownbox{
+                        #countdown {
+                                .number {
+                                    padding-bottom: 2vw;
+                                &:not(:last-child) {
+                                    &::after {
+                                    }
+                                }
+                                }
+                                .text {
+                                }
+                            }
+                    }
+                    & .taxBox{
+                        & span{
+                        }
+                    }
+                    & .availablebox{
+                        & .availableboxHead{
+                        }
+                        & .availableboxsubHead{
+                            &::before{
+                            }
+                        }
+                        & .selectBox{
+                        }
+                    }
+                    & .quantityBox{
+                        & .qtyLbl{
+                        }
+                        & .qtyInp{
+                            &:focus-visible{
+                            }
+                        }
+                        & .cartBtn{
+                            &:hover{
+                            }
+                        }
+                        & .circle{
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & img{
+                            }
+                        }
+                    }
+                    & .detailBox{
+                        & .productcode{
+                        }
+                        & .total{
+                        }
+                    }
+                }
+                & .relatedProduct{
+                }
+                & .owl-nav{
+                    & .owl-prev{
+                        & img{
+                        }
+                    }
+                    & .owl-next{
+                        & img{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -1201,6 +1801,207 @@
                 }
             }
         }
+        .productDetailBreadcrumbFluid{
+            & .productDetailBreadcrumbContainer{
+                & .breadcrumbBox{
+                    & .breadcrumbInner{
+                        & .breadcrumbWrapper{
+                            & .breadcrumbWrapperTxt{
+                                & .breadcrumbTxt{
+                                }
+                            }
+                            & .breadcrumbWrapperLi{
+                                & .productBreadcrumbNav{
+                                    & .productBreadcrumbNavOl{
+                                        & .productBreadcrumbNavItem{
+                                            &:first-child{
+                                                &::before{
+                                                }
+                                            }
+                                            &::before{
+                                            }
+                                            & .productBreadcrumbNavItemAnchor{
+                                            }
+                                            &.active{
+                                            }
+                                        }
+                                            & img{
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .productDetailPageFluid{
+            & .productDetailPageContainer{
+                & .productDetailPageLeftPart{
+                    & .productDetailPageLeftPartImg{
+                        & img{
+                        }
+                    }
+                    & .productDetailaAccordion{
+                        & .productDetailaAccordionItem{
+                            &.productDetailaAccordionItem1{
+                            }
+                            & .productDetailaAccordionHeader{
+                                & .productDetailaAccordionBtn{
+                                    &:not(.collapsed){
+                                        &::after{
+                                        }
+                                    }
+                                    &::after{
+                                    }
+                                }
+                            }
+                            & .productDetailaCollapse{
+                                & .productDetailaAccordionBody{
+                                    & .productDetailaAccordionBodyMainHeading{
+                                    }
+                                    & .para{
+                                    }
+                                    & .productDetailaAccordionBodySecondHeading{
+                                    }
+                                    & .productDetailaAccordionBodysubHeading{
+                                    }
+                                    & .reviewLbl{
+                                    }
+                                    & .reviewInp{
+                                        &.reviewTxtarea{
+                                        }
+                                        &:focus-visible{
+                                        }
+                                    }
+                                    & .note{
+                                        & span{
+                                        }
+                                    }
+                                    & .rating{
+                                        & span:first-child{
+                                        }
+                                        & span:last-child{
+                                        }
+                                    }
+                                    & .reviewBtnnParent{
+                                        & .reviewBtnn{
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetailPageRightPart{
+                    & .productDetailPageLeftPartMainHeading{
+                        font-size: 25px;
+                    }
+                    & .shareBox{
+                        & span{
+                        }
+                        & .sharelink{
+                            & .sharebg{
+                                &.sharebg1{
+                                }
+                                &.sharebg2{
+                                }
+                                & img{
+                                }
+                                & span{
+                                }
+                            }
+                        }
+                    }
+                    & .starbox{
+                        & .starboxUl{
+                            & .starboxLi{
+                                & .reviewstar{
+                                }
+                            }
+                        }
+                        & .totalReviews{
+                        }
+                        & .Comment{
+                            & img{
+                            }
+                        }
+                    }
+                    & .rupeeBox{
+                        & span{
+                        }
+                    }
+                    & .countdownbox{
+                        #countdown {
+                                .number {
+                                    padding-bottom: 3vw;
+                                &:not(:last-child) {
+                                    &::after {
+                                    }
+                                }
+                                }
+                                .text {
+                                }
+                            }
+                    }
+                    & .taxBox{
+                        & span{
+                        }
+                    }
+                    & .availablebox{
+                        & .availableboxHead{
+                        }
+                        & .availableboxsubHead{
+                            &::before{
+                            }
+                        }
+                        & .selectBox{
+                            width: 100% !important;
+                        }
+                    }
+                    & .quantityBox{
+                        & .qtyLbl{
+                        }
+                        & .qtyInp{
+                            &:focus-visible{
+                            }
+                        }
+                        & .cartBtn{
+                            &:hover{
+                            }
+                        }
+                        & .circle{
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & img{
+                            }
+                        }
+                    }
+                    & .detailBox{
+                        & .productcode{
+                        }
+                        & .total{
+                        }
+                    }
+                }
+                & .relatedProduct{
+                }
+                & .owl-nav{
+                    & .owl-prev{
+                        & img{
+                        }
+                    }
+                    & .owl-next{
+                        & img{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
@@ -1285,6 +2086,219 @@
                                 & .typewriter{
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .productDetailBreadcrumbFluid{
+            & .productDetailBreadcrumbContainer{
+                & .breadcrumbBox{
+                    & .breadcrumbInner{
+                        & .breadcrumbWrapper{
+                            & .breadcrumbWrapperTxt{
+                                & .breadcrumbTxt{
+                                    font-size: 11px;
+                                }
+                            }
+                            & .breadcrumbWrapperLi{
+                                & .productBreadcrumbNav{
+                                    & .productBreadcrumbNavOl{
+                                        & .productBreadcrumbNavItem{
+                                            font-size: 11px;
+                                            &:first-child{
+                                                &::before{
+                                                }
+                                            }
+                                            &::before{
+                                            }
+                                            & .productBreadcrumbNavItemAnchor{
+                                            }
+                                            &.active{
+                                            }
+                                        }
+                                            & img{
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .productDetailPageFluid{
+            & .productDetailPageContainer{
+                & .productDetailPageLeftPart{
+                    & .productDetailPageLeftPartImg{
+                        & img{
+                        }
+                    }
+                    & .productDetailaAccordion{
+                        & .productDetailaAccordionItem{
+                            &.productDetailaAccordionItem1{
+                            }
+                            & .productDetailaAccordionHeader{
+                                & .productDetailaAccordionBtn{
+                                    &:not(.collapsed){
+                                        &::after{
+                                        }
+                                    }
+                                    &::after{
+                                    }
+                                }
+                            }
+                            & .productDetailaCollapse{
+                                & .productDetailaAccordionBody{
+                                    & .productDetailaAccordionBodyMainHeading{
+                                    }
+                                    & .para{
+                                    }
+                                    & .productDetailaAccordionBodySecondHeading{
+                                    }
+                                    & .productDetailaAccordionBodysubHeading{
+                                    }
+                                    & .reviewLbl{
+                                    }
+                                    & .reviewInp{
+                                        &.reviewTxtarea{
+                                        }
+                                        &:focus-visible{
+                                        }
+                                    }
+                                    & .note{
+                                        & span{
+                                        }
+                                    }
+                                    & .rating{
+                                        & span:first-child{
+                                        }
+                                        & span:last-child{
+                                        }
+                                    }
+                                    & .reviewBtnnParent{
+                                        & .reviewBtnn{
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .productDetailPageRightPart{
+                    & .productDetailPageLeftPartMainHeading{
+                        font-size: 20px;
+                    }
+                    & .shareBox{
+                        & span{
+                        }
+                        & .sharelink{
+                            & .sharebg{
+                                padding: 7px 15px;
+                                &.sharebg1{
+                                }
+                                &.sharebg2{
+                                }
+                                & img{
+                                }
+                                & span{
+                                }
+                            }
+                        }
+                    }
+                    & .starbox{
+                        margin-top: 12px;
+                        margin-bottom: 20px;
+                        & .starboxUl{
+                            & .starboxLi{
+                                & .reviewstar{
+                                }
+                            }
+                        }
+                        & .totalReviews{
+                        }
+                        & .Comment{
+                            & img{
+                            }
+                        }
+                    }
+                    & .rupeeBox{
+                        font-size: 20px;
+                        & span{
+                            font-size: 18px;
+                        }
+                    }
+                    & .countdownbox{
+                        width: 76%;
+                        #countdown {
+                                .number {
+                                    font-size: 13px;
+                                    padding-bottom: 4vw;
+                                &:not(:last-child) {
+                                    &::after {
+                                    }
+                                }
+                                }
+                                .text {
+                                    font-size: 12px;
+                                }
+                            }
+                    }
+                    & .taxBox{
+                        & span{
+                        }
+                    }
+                    & .availablebox{
+                        & .availableboxHead{
+                        }
+                        & .availableboxsubHead{
+                            &::before{
+                            }
+                        }
+                        & .selectBox{
+                            width: 100% !important;
+                        }
+                    }
+                    & .quantityBox{
+                        & .qtyLbl{
+                        }
+                        & .qtyInp{
+                            &:focus-visible{
+                            }
+                        }
+                        & .cartBtn{
+                            font-size: 12px;
+                            &:hover{
+                            }
+                        }
+                        & .circle{
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & img{
+                            }
+                        }
+                    }
+                    & .detailBox{
+                        & .productcode{
+                        }
+                        & .total{
+                        }
+                    }
+                }
+                & .relatedProduct{
+                    font-size: 18px;
+                }
+                & .owl-nav{
+                    & .owl-prev{
+                        & img{
+                        }
+                    }
+                    & .owl-next{
+                        & img{
                         }
                     }
                 }

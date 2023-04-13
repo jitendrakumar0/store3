@@ -792,6 +792,38 @@ body .overflow-auto-hidden {
   border-bottom: 1px solid #e9ecef;
   padding-bottom: 15px;
 }
+.productDetailPageFluid .productDetailPageContainer .owl-nav {
+  position: absolute;
+  top: -65px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+.productDetailPageFluid .productDetailPageContainer .owl-nav .owl-prev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productDetailPageFluid .productDetailPageContainer .owl-nav .owl-prev img {
+  height: 10px;
+}
+.productDetailPageFluid .productDetailPageContainer .owl-nav .owl-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productDetailPageFluid .productDetailPageContainer .owl-nav .owl-next img {
+  height: 10px;
+}
 
 .menuOffacnvavsMain {
   width: 300px !important;
@@ -813,6 +845,9 @@ body .overflow-auto-hidden {
   border: none !important;
   color: #000;
 }
+.menuOffacnvavsMain .menuOffcanvasBody .menuoffcanvasAccordion .menuoffcanvasAccordionItem .menuAccordionHeader .menuAccordionHeaderBtn:not(.collapsed)::after {
+  filter: brightness(0);
+}
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody {
   padding-top: 0 !important;
 }
@@ -831,6 +866,9 @@ body .overflow-auto-hidden {
   background-color: #fff !important;
   border: none !important;
   color: #000;
+}
+.menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionHeader2 .accordionBtn2:not(.collapsed)::after {
+  filter: brightness(0);
 }
 .menuOffacnvavsMain .menuOffcanvasBody .menuCollapseDiv .menuAccordionBody .menuAccordionBodyUl .menuAccordionBodyLi .accordion2 .accordionItem2 .accordionCollapse2 .accordionBody2 .accordionBody2Ul .accordionBody2Li {
   padding-bottom: 10px;
@@ -903,6 +941,68 @@ body .overflow-auto-hidden {
   }
   .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .percentBox .percentBoxBg {
     width: 40%;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox {
+    width: 58%;
+  }
+}
+@media (max-width: 991.98px) {
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .number {
+    padding-bottom: 2vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .productDetailPageLeftPartMainHeading {
+    font-size: 25px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .number {
+    padding-bottom: 3vw;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox .selectBox {
+    width: 100% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperTxt .breadcrumbTxt {
+    font-size: 11px;
+  }
+  .productDetailBreadcrumbFluid .productDetailBreadcrumbContainer .breadcrumbBox .breadcrumbInner .breadcrumbWrapper .breadcrumbWrapperLi .productBreadcrumbNav .productBreadcrumbNavOl .productBreadcrumbNavItem {
+    font-size: 11px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .productDetailPageLeftPartMainHeading {
+    font-size: 20px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .shareBox .sharelink .sharebg {
+    padding: 7px 15px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .starbox {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .rupeeBox {
+    font-size: 20px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .rupeeBox span {
+    font-size: 18px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox {
+    width: 76%;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .number {
+    font-size: 13px;
+    padding-bottom: 4vw;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .countdownbox #countdown .text {
+    font-size: 12px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .availablebox .selectBox {
+    width: 100% !important;
+  }
+  .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .cartBtn {
+    font-size: 12px;
+  }
+  .productDetailPageFluid .productDetailPageContainer .relatedProduct {
+    font-size: 18px;
   }
 }
 [data-page-name=category] .category .categoryFilter .filterList .filterItem {
@@ -1371,6 +1471,495 @@ body .overflow-auto-hidden {
   }
   .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe .form-control {
     padding: 10px 60px 10px 10px;
+  }
+}
+.custom-tooltip {
+  --bs-tooltip-bg: #000;
+  font-size: 12px;
+}
+
+.trandingProductMain .trandingProductContainer .sectionHeader {
+  padding: 8px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #ced4da;
+}
+.trandingProductMain .trandingProductContainer .sectionHeader .title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter {
+  padding: 14px 10px;
+}
+.trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .icon {
+  width: 42px;
+}
+.trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .icon img {
+  transition: ease-in-out 0.3s;
+}
+.trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter:hover .icon img {
+  transform: rotateY(180deg);
+}
+.trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .serviceDetail .serviceTitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .serviceDetail .serviceDec {
+  color: #6c757d;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks:hover .bannerScale .bannerData .bannerTitle {
+  transform: rotateX(180deg);
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale {
+  transition: all 0.5s;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData {
+  left: 15px;
+  top: 20px;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerSubtitle {
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+  margin-bottom: 14px;
+  padding: 0 15px;
+  background-color: #fff;
+  letter-spacing: 5px;
+  clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+  transition: all 0.7s;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerTitle {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  transition: all 0.7s;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerTitle:hover {
+  transform: rotateX(180deg);
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn {
+  display: inline-block;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn .btnShopNow {
+  padding: 7px 10px;
+  opacity: 1;
+  font-size: 14px;
+  text-transform: unset;
+  border-radius: 50px;
+  transition: ease-in-out 0.3s;
+  outline: none;
+  background-color: #cb5499;
+  border: 1px solid #cb5499;
+  line-height: 20px;
+}
+.trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn .btnShopNow:hover {
+  background-color: #FFD91C;
+  border: 1px solid #FFD91C;
+  color: #000 !important;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .nav {
+  top: 2px;
+  right: 9%;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .nav .nav-item .nav-link {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #6c757d;
+  padding: 8px 15px;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: capitalize;
+  transition: ease-in-out 0.3s;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .nav .nav-item .nav-link.active, .trandingProductMain .trandingProductContainer .trandingProductOuter .nav .nav-item .nav-link:hover {
+  background: #cb5499;
+  color: #fff;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-stage-outer {
+  padding: 0;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav {
+  width: auto;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  position: absolute;
+  top: -53px;
+  right: 0;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-prev, .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav .owl-next {
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin: 0 3px;
+  background-color: #eee;
+  border-radius: 50px;
+  padding: 11px !important;
+  width: 30px;
+  height: 30px;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock:hover .bannerScale .bannerData .bannerTitle {
+  transform: rotateX(180deg);
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData {
+  left: 0;
+  right: 0;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerSubtitle {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle {
+  font-size: 37px;
+  line-height: 37px;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 10px;
+  transition: all 0.7s;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle:hover {
+  transform: rotateX(180deg);
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerDesc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  line-height: 14px;
+  margin-bottom: 20px;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerBtn {
+  display: inline-block;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerBtn .btnShopNow {
+  padding: 7px 15px;
+  opacity: 1;
+  font-size: 14px;
+  text-transform: unset;
+  border-radius: 50px;
+  transition: ease-in-out 0.3s;
+  outline: none;
+  background-color: #cb5499;
+  border: 1px solid #cb5499;
+  line-height: 20px;
+}
+.trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerBtn .btnShopNow:hover {
+  background-color: #FFD91C;
+  border: 1px solid #FFD91C;
+  color: #000 !important;
+}
+
+.card.itemOuter .imgOuter::after {
+  content: "";
+  width: 100%;
+  background-image: url(../img/bg/pattern_2.png);
+  height: 32px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -15px;
+  z-index: 1;
+}
+.card.itemOuter .imgOuter img {
+  transition: ease-in-out 0.5s;
+}
+.card.itemOuter .imgOuter img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.card.itemOuter .imgOuter .btnGroup {
+  top: 10px;
+  right: 10px;
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn {
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn:hover {
+  background-color: #FFD91C;
+  border-color: #FFD91C;
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn:hover img {
+  filter: brightness(0) !important;
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn.btn1 {
+  transition: all ease-in-out 0.6s;
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn.btn2 {
+  transition: all ease-in-out 0.4s;
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn.btn3 {
+  transition: all ease-in-out 0.2s;
+}
+.card.itemOuter .imgOuter .btnGroup .productBtn img {
+  filter: brightness(10) !important;
+  transition: ease-in-out 0.3s;
+}
+.card.itemOuter .imgOuter .rating {
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.card.itemOuter .imgOuter .rating .star {
+  width: 12px;
+  height: 12px;
+}
+.card.itemOuter .imgOuter .rating .star img {
+  filter: grayscale(5);
+}
+.card.itemOuter .imgOuter .rating .star.fill img {
+  filter: none;
+}
+.card.itemOuter .productDetail .productTitle {
+  font-size: 15px;
+}
+.card.itemOuter .productDetail .price {
+  font-size: 16px;
+}
+.card.itemOuter .productDetail .price .oldPrice {
+  color: #6c757d;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.card.itemOuter .productDetail .btn-cart {
+  background-color: #fff;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  transition: ease-in-out 0.3s;
+}
+.card.itemOuter .productDetail .btn-cart .btnAddToCart {
+  font-size: 14px;
+  transition: ease-in-out 0.3s;
+}
+.card.itemOuter .productDetail .btn-cart .btnAddToCart:hover {
+  background-color: #cb5499;
+  border-color: #cb5499;
+  color: #fff;
+}
+.card.itemOuter:hover .imgOuter img.default {
+  opacity: 0;
+}
+.card.itemOuter:hover .imgOuter img.hover {
+  opacity: 1 !important;
+}
+.card.itemOuter:hover .imgOuter .btnGroup .productBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card.itemOuter:hover .productDetail .btn-cart {
+  bottom: 6px;
+}
+@media (max-width: 1199.98px) {
+  .trandingProductMain .trandingProductContainer .sectionHeader .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .serviceDetail .serviceTitle {
+    font-size: 14px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerSubtitle {
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    letter-spacing: 3px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerTitle {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn .btnShopNow {
+    padding: 6px 6px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .nav {
+    right: 10%;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerSubtitle {
+    font-size: 14px;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerBtn .btnShopNow {
+    padding: 7px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card.itemOuter .imgOuter .btnGroup .productBtn {
+    width: 32px;
+    height: 32px;
+  }
+  .card.itemOuter .productDetail .productTitle {
+    font-size: 14px;
+  }
+  .card.itemOuter .productDetail .price {
+    font-size: 15px;
+  }
+  .card.itemOuter:hover .imgOuter .btnGroup .productBtn img {
+    filter: invert(1);
+  }
+}
+@media (max-width: 991.98px) {
+  .card.itemOuter .imgOuter .btnGroup .productBtn {
+    width: 32px;
+    height: 32px;
+    transform: none !important;
+    opacity: 1 !important;
+    transition: ease-in-out 0.3s !important;
+  }
+  .card.itemOuter .imgOuter .btnGroup .productBtn img {
+    filter: none !important;
+  }
+  .card.itemOuter .productDetail .productTitle {
+    font-size: 14px;
+  }
+  .card.itemOuter .productDetail .price {
+    font-size: 15px;
+  }
+  .card.itemOuter .productDetail .btn-cart {
+    position: unset !important;
+    padding-top: 8px;
+  }
+  .card.itemOuter:hover .imgOuter .btnGroup .productBtn img {
+    filter: invert(1);
+  }
+}
+@media (max-width: 767.98px) {
+  .trandingProductMain .trandingProductContainer .sectionHeader .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .serviceDetail .serviceTitle {
+    font-size: 14px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerSubtitle {
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    letter-spacing: 3px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerTitle {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn .btnShopNow {
+    padding: 6px 6px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .nav {
+    position: unset !important;
+    justify-content: center;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productsSlider .owl-nav {
+    position: unset !important;
+    padding: 16px 0 0;
+    justify-content: center;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 575.98px) {
+  .trandingProductMain .trandingProductContainer .sectionHeader .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .card .card-body .servicesOuter .serviceDetail .serviceTitle {
+    font-size: 14px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerSubtitle {
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    letter-spacing: 3px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerTitle {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .trandingProductMain .trandingProductContainer .overServices .servicesBanner .bannerBlocks .bannerScale .bannerData .bannerBtn .btnShopNow {
+    padding: 6px 6px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .nav {
+    right: 10%;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerSubtitle {
+    font-size: 14px;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerTitle {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  .trandingProductMain .trandingProductContainer .trandingProductOuter .productBanner .bannerBlock .bannerScale .bannerData .bannerBtn .btnShopNow {
+    padding: 7px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card.itemOuter .imgOuter .btnGroup .productBtn {
+    width: 32px;
+    height: 32px;
+  }
+  .card.itemOuter .productDetail .productTitle {
+    font-size: 14px;
+  }
+  .card.itemOuter .productDetail .price {
+    font-size: 15px;
+  }
+  .card.itemOuter:hover .imgOuter .btnGroup .productBtn img {
+    filter: invert(1);
+  }
+}
+@media (max-width: 420px) {
+  .card.itemOuter .imgOuter .btnGroup .productBtn {
+    width: 14px;
+    height: 14px;
+    padding: 0 !important;
+    background-color: transparent;
+    border: none;
+  }
+  .card.itemOuter .imgOuter .btnGroup .productBtn img {
+    filter: none;
+  }
+  .card.itemOuter:hover .imgOuter .btnGroup .productBtn img {
+    filter: invert(1);
   }
 }
 .form-control {
