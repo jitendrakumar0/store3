@@ -8,16 +8,6 @@
     @include media-breakpoint(basic) {
         .trandingProductMain{
             & .trandingProductContainer {
-                & .sectionHeader {
-                    padding: 8px 0;
-                    margin: 0 10px;
-                    border-bottom: 1px solid $gray-400;
-                    & .title{
-                        font-size: 22px;
-                        line-height: 22px;
-                        font-weight: 600;
-                    }
-                }
                 & .overServices{
                     & .card{
                         // border: 1px solid $gray-400;
@@ -412,7 +402,16 @@
                 }
             }
         }
-        
+        .sectionHeader {
+            padding: 8px 0;
+            margin: 0 10px;
+            border-bottom: 1px solid $gray-400;
+            & .title{
+                font-size: 22px;
+                line-height: 22px;
+                font-weight: 600;
+            }
+        }
         .owl-nav{
             width: auto;
             display: flex;
@@ -659,12 +658,6 @@
     @include media-breakpoint-down(xl) {
         .trandingProductMain{
             & .trandingProductContainer {
-                & .sectionHeader {
-                    & .title{
-                        font-size: 20px;
-                        line-height: 20px;
-                    }
-                }
                 & .overServices{
                     & .card{
                         & .card-body {
@@ -792,6 +785,12 @@
                 }
             }
         }
+        .sectionHeader {
+            & .title{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
         .owl-nav{
             & .owl-prev, & .owl-next {
             }
@@ -898,10 +897,6 @@
     @include media-breakpoint-down(lg) {
         .trandingProductMain{
             & .trandingProductContainer {
-                & .sectionHeader {
-                    & .title{
-                    }
-                }
                 & .overServices{
                     & .card{
                         & .card-body {
@@ -1008,6 +1003,9 @@
                         }
                     }
                 }
+            }
+        }.sectionHeader {
+            & .title{
             }
         }
         .owl-nav{
@@ -1121,12 +1119,6 @@
     @include media-breakpoint-down(md) {
         .trandingProductMain{
             & .trandingProductContainer {
-                & .sectionHeader {
-                    & .title{
-                        font-size: 20px;
-                        line-height: 20px;
-                    }
-                }
                 & .overServices{
                     & .card{
                         & .card-body {
@@ -1252,6 +1244,12 @@
                 }
             }
         }
+        .sectionHeader {
+            & .title{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
         .owl-nav{
             position: unset !important;
             padding: 16px 0 0 !important;
@@ -1264,12 +1262,6 @@
     @include media-breakpoint-down(sm) {
         .trandingProductMain{
             & .trandingProductContainer {
-                & .sectionHeader {
-                    & .title{
-                        font-size: 16px;
-                        line-height: 16px;
-                    }
-                }
                 & .overServices{
                     & .card{
                         & .card-body {
@@ -1406,6 +1398,12 @@
                 }
             }
         }
+        .sectionHeader {
+            & .title{
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
         .card{
             &.itemOuter{
                 & .imgOuter{
@@ -1507,10 +1505,6 @@
     @media (max-width: 420px) {
         .trandingProductMain{
             & .trandingProductContainer {
-                & .sectionHeader {
-                    & .title{
-                    }
-                }
                 & .overServices{
                     & .card{
                         & .card-body {
@@ -1623,6 +1617,10 @@
                         }
                     }
                 }
+            }
+        }
+        .sectionHeader {
+            & .title{
             }
         }
         .card{
