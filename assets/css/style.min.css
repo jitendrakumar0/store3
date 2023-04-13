@@ -857,7 +857,13 @@ body .overflow-auto-hidden {
 .shoppingCartFluid .shoppingCartContainer .shoppingCartTopBar .shoppingCartTopBarTxt {
   font-size: 15px;
   color: #ff051e;
-  padding: 12px 14px 12px 14px;
+  padding: 12px 14px 6px 14px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .shoppingCartFluid .shoppingCartContainer .shoppingCartTopBar .shoppingCartTopBarTxt img {
   height: 15px;
