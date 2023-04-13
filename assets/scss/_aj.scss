@@ -339,6 +339,7 @@
                     }
                 }
                 & .owl-nav {
+                    display: none !important;
                     & .owl-prev, & .owl-next {
                     }
                 }
@@ -737,6 +738,46 @@
                             transform: scale(1.75);
                             opacity: 0; } }
                 }
+                & .rightSideSlider {
+                    & .dealsSlider {
+                        & .owl-stage-outer {
+                            padding: 0px !important;
+                        }
+                        & .owl-nav{
+                            width: auto;
+                            display: flex;
+                            padding: 0;
+                            align-items: center;
+                            position: absolute;
+                            top: -53px;
+                            right: 0;
+                            & .owl-prev, & .owl-next {
+                                border: 1px solid $gray-200;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0 auto;
+                                margin: 0 3px;
+                                background-color: $gray-200;
+                                border-radius: 50px;
+                                padding: 11px !important;
+                                width: 30px;
+                                height: 30px;
+                                transition: ease-in-out .3s;
+                                & img {
+                                    transition: ease-in-out .3s;
+                                }
+                                &:hover {
+                                    border-color: $theme1;
+                                    background-color: $theme1;
+                                    & img {
+                                        filter: invert(1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -749,14 +790,587 @@
     @include media-breakpoint-down(xxl) {}
     @include media-breakpoint-down(xl) {}
     @include media-breakpoint-down(lg) {}
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        & .dealsSection {
+            & .innersection {
+                & .leftside {       
+                    & .playBtn {
+                        & .video {
+                            & .rippleEffect {
+                                &::before, &::after{
+                                }
+                                &::after{
+                                }
+                            }
+                        }
+                    }
+                }
+                & .rightSideSlider {
+                    & .dealsSlider {
+                        & .owl-stage-outer {
+                        }
+                        & .owl-nav{
+                            position: unset !important;
+                            padding: 16px 0 0 !important;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @include media-breakpoint-down(sm) {}
 }
 // ! @@@@@@@@@@@@@@@@@@@@@@[ Deals Section ]@@@@@@@@@@@@@@@@@@@@@@
 
+// * @@@@@@@@@@@@@@@@@@@@@@[ Category Card Section Start ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="indexPage"] {
+    @include media-breakpoint(basic) {
+        & .shopCategorySection {
+            & .innersection {
+                & .categorySlider {
+                    & .owl-stage-outer {
+                        padding: 0px !important;
+                        & .owl-stage {
+                            & .owl-item {
+                                & .item  {
+                                    & .categoryCard {
+                                        transition: all 1.5s ease-in-out;
+                                        & .cardImg {
+                                            & img {
+                                                transition: all 1.5s ease-in-out;
+                                            }
+                                        }
+                                        & .cardBtn {
+                                            bottom: 10px;
+                                            left: 0px;
+                                            right: 0px;
+                                            & button {
+                                                font-size: 15px;
+                                                transition: all 0.5s;
+                                                color: $gray-600;
+                                                &:hover{
+                                                    color: $theme1 !important;
+                                                }
+                                            }
+                                        }
+                                        &:hover{
+                                            & .cardImg {
+                                                & img {
+                                                    transform: scale(1.2);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav{
+                        width: auto;
+                        display: flex;
+                        padding: 0;
+                        align-items: center;
+                        position: absolute;
+                        top: -53px;
+                        right: 0;
+                        & .owl-prev, & .owl-next {
+                            border: 1px solid $gray-200;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto;
+                            margin: 0 3px;
+                            background-color: $gray-200;
+                            border-radius: 50px;
+                            padding: 11px !important;
+                            width: 30px;
+                            height: 30px;
+                            transition: ease-in-out .3s;
+                            & img {
+                                transition: ease-in-out .3s;
+                            }
+                            &:hover {
+                                border-color: $theme1;
+                                background-color: $theme1;
+                                & img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(lg) {
+        & .shopCategorySection {
+            & .innersection {
+                & .categorySlider {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .item  {
+                                    & .categoryCard {
+                                        & .cardImg {
+                                            & img {
+                                            }
+                                        }
+                                        & .cardBtn {
+                                            & button {
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav{
+                        & .owl-prev, & .owl-next {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        & .shopCategorySection {
+            & .innersection {
+                & .categorySlider {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .item  {
+                                    & .categoryCard {
+                                        & .cardImg {
+                                            & img {
+                                            }
+                                        }
+                                        & .cardBtn {
+                                            & button {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav{
+                        position: unset !important;
+                        padding: 16px 0 0 !important;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {}
+}
+// ! @@@@@@@@@@@@@@@@@@@@@@[ Category Card Section Start ]@@@@@@@@@@@@@@@@@@@@@@
+
+// * @@@@@@@@@@@@@@@@@@@@@@[ Testimonial Section Start ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="indexPage"] {
+    @include media-breakpoint(basic) {
+        & .clientSection {
+            & .innersection {
+                & .clientSide {
+                    & .sliderSection {
+                        background: url(../../assets/img/bg/testimonial_bg.png) no-repeat, center;
+                        background-size: cover;
+                        padding: 110px 0 70px;
+                        &.productSlider {
+                            background: transparent !important;
+                        }
+                        & .owl-stage-outer {
+                            padding: 0px !important;
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .item  {
+                                        & .card {
+                                            width: 80%;
+                                            margin: auto;
+                                            padding: 90px 40px 40px 40px;
+                                            border-radius: 10px;
+                                            box-shadow: -5px 0px 4.65px 0.35px rgba($black, 0.05);
+                                            & .card-body{
+                                                & .clientContent {
+                                                    font-size: 14px;
+                                                    line-height: 23px;
+                                                    color: $gray-600;
+                                                }
+                                                & .clientName {
+                                                    font-size: 22px;
+                                                    line-height: 24px;
+                                                    margin: 0px 0px 4px;
+                                                }
+                                                & .clientPost {
+                                                    font-size: 15px;
+                                                    line-height: 22px;
+                                                    color: $gray-600;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav{
+                            width: auto;
+                            display: flex;
+                            padding: 0;
+                            align-items: center;
+                            position: absolute;
+                            top: -36px;
+                            right: 6px;
+                            & .owl-prev, & .owl-next {
+                                border: 1px solid $gray-200;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0 auto;
+                                margin: 0 3px;
+                                background-color: $gray-200;
+                                border-radius: 50px;
+                                padding: 11px !important;
+                                width: 30px;
+                                height: 30px;
+                                transition: ease-in-out .3s;
+                                & img {
+                                    transition: ease-in-out .3s;
+                                }
+                                &:hover {
+                                    border-color: $theme1;
+                                    background-color: $theme1;
+                                    & img {
+                                        filter: invert(1);
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-dots {
+                            position: absolute;
+                            top: 50px;
+                            display: flex;
+                            justify-content: center;
+                            & button {
+                                & span {
+                                    display: flex;
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                    border: 0px solid $theme1;
+                                    transform: scale(0.8, 0.8);
+                                    transition: 0.3s;
+                                    filter: grayscale(1);
+                                    background-size: cover;
+                                }
+                                &:first-child{
+                                    & span {
+                                        background: url(../../assets/img/testimonial_2.png) no-repeat, center;
+                                        background-size: cover;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    & span {
+                                        background: url(../../assets/img/testimonial_3.png) no-repeat, center;
+                                        background-size: cover;
+                                    }
+                                }
+                                &:last-child{
+                                    & span {
+                                        background: url(../../assets/img/testimonial_1.png) no-repeat, center;
+                                        background-size: cover;
+                                    }
+                                }
+                                &.active {
+                                    & span {
+                                        transform: scale(1);
+                                        filter: unset;
+                                        border-width:2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .products {
+            transition: all 0.6s ease-in-out;
+            & .productsImg {
+                & .img2 {
+                    opacity: 0;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    transition: all 0.6s ease-in-out;
+                }
+                & .img1 {
+                    opacity: 1;
+                    transition: all 0.6s ease-in-out;
+                }
+                & .rating {
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    & .star {
+                        width: 10px;
+                        height: 10px;
+                        & img {
+                            filter: grayscale(5);
+                        }
+                        &.fill {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                }
+            }
+            & .productsCaption {
+                & .productsName {
+                    color: $gray-600;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    line-height: 18px;
+                    display: block;
+                    font-weight: 500;
+                }
+                & .productsPrice {
+                    font-weight: 500;
+                    color: $gray-600;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.5px;
+                    transition: all 0.5s ease-in-out;
+                }
+                & .btnGroup {
+                    transition: all 0.5s ease-in-out;
+                    opacity: 0;
+                    top: 100%;
+                    & button {
+                        transition: all 0.3s ease-in-out;
+                        width: 28px;
+                        height: 28px;
+                        & img {
+                            filter: brightness(10);
+                        transition: all 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            background-color: $theme3 !important;
+                            border-color: $theme3 !important;
+                            & img {
+                                filter: brightness(0);
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover{
+                & .productsImg {
+                    & .img2 {
+                        opacity: 1;
+                    }
+                    & .img1 {
+                        opacity: 0;
+                    }
+                }
+                & .productsCaption {
+                    & .productsPrice {
+                        opacity: 0;
+                    }
+                    & .btnGroup {
+                        opacity: 1;
+                        top: 50%;
+                    }
+                }
+            }
+        }
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {
+        & .clientSection {
+            & .innersection {
+                & .clientSide {
+                    & .sliderSection {
+                        &.productSlider {
+                        }
+                        & .owl-nav{
+                            top: -34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {
+        & .clientSection {
+            & .innersection {
+                & .clientSide {
+                    & .sliderSection {
+                        padding: 150px 0 40px;
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .item  {
+                                        & .card {
+                                            padding: 30px 20px 30px;
+                                            & .card-body{
+                                                & .clientContent {
+                                                }
+                                                & .clientName {
+                                                }
+                                                & .clientPost {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav{
+                            position: unset !important;
+                            padding: 16px 0 0 !important;
+                            justify-content: center;
+                        }
+                        & .owl-dots {
+                            top: 25px;
+                            & button {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .products {
+            & .productsImg {
+                & .img2 {
+                }
+                & .img1 {
+                }
+                & .rating {
+                }
+            }
+            & .productsCaption {
+                & .productsName {
+                }
+                & .productsPrice {
+                    opacity: 1;
+                }
+                & .btnGroup {
+                    position: unset !important;
+                    opacity: 1;
+                    & button {
+                        width: 24px;
+                        height: 24px;
+                        padding: 6px !important;
+                    }
+                }
+            }
+            &:hover{
+                & .productsImg {
+                    & .img2 {
+                        opacity: 1;
+                    }
+                    & .img1 {
+                        opacity: 0;
+                    }
+                }
+                & .productsCaption {
+                    & .productsPrice {
+                        opacity: 1;
+                    }
+                    & .btnGroup {
+                        opacity: 1;
+                        top: 50%;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        & .clientSection {
+            & .innersection {
+                & .clientSide {
+                    & .sliderSection {
+                        padding: 120px 0 40px;
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .item  {
+                                        & .card {
+                                            width: 90%;
+                                            & .card-body{
+                                                & .clientContent {
+                                                }
+                                                & .clientName {
+                                                }
+                                                & .clientPost {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-dots {
+                            top: 25px;
+                            & button {
+                                & span {
+                                    width: 75px;
+                                    height: 75px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .products {
+            & .productsImg {
+                & .img2 {
+                }
+                & .img1 {
+                }
+                & .rating {
+                }
+            }
+            & .productsCaption {
+                & .productsName {
+                    font-size: 14px;
+                    line-height: 16px
+                }
+                & .productsPrice {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// ! @@@@@@@@@@@@@@@@@@@@@@[ Testimonial Section End ]@@@@@@@@@@@@@@@@@@@@@@
+
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
-        @include dark-media-breakpoint(basic) {}
+        @include dark-media-breakpoint(basic) {
+        }
         // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
         @include dark-media-breakpoint-up(sm) {}
         @include dark-media-breakpoint-up(md) {}
