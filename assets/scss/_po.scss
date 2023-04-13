@@ -1,101 +1,46 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-// [data-page-name=example] {
+[data-page-name=category] {
     @include media-breakpoint(basic) {
-        .footerFluid {
-            margin-top: 30px;
-            background: #e8e9ff url('../img/bg/footerBg.png') no-repeat;
-            color: #888;
-            clear: both;
-            line-height: 1.25em;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
+        & .category {
+            & .categoryFilter {
+                & .filterHeading {
 
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                background-image: url('../img/bg/footeBgCurve.png');
-                top: 0px;
-            }
+                }
+                & .filterList {
+                    & .filterItem {
+                        margin: 0;
+                        padding: 0;
+                        & .filterItems {
+                            list-style: none;
+                            padding: 4px 15px 10px 15px;
+                            margin-bottom: -1px;
+                            & .filterAccordian {
+                                & .filterAccordianItem {
+                                    & .filterAccordianHeader {
+                                        & .filterAccordianButton {
 
-            & .footerContainer {
-                & .footerPadding {
-                    & .footerAddress {
-                        & .footerAddressItem {
-                            padding: 0;
-                            margin: 0;
-                            & .footerAddressItems {
-                                list-style: none;
-                                display: flex;
-                                align-items: center;
-                                margin-bottom: 30px;
-                                & .phoneImg {
-                                    width: 40px;
-                                    height: 40px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    border-radius: 50px;
-                                    background-color: $theme1;
-                                    position: relative;
-                                    padding: 10px;
-                                    transition: all 0.5s ease-in-out;
-                                    -webkit-transition: all 0.5s ease-in-out;
-                                    -moz-transition: all 0.5s ease-in-out;
-                                    -ms-transition: all 0.5s ease-in-out;
-                                    -o-transition: all 0.5s ease-in-out;
-                                    cursor: pointer;
-                                    &::after {
-                                        content: "";
-                                        height: 46px;
-                                        width: 46px;
-                                        left: -3px;
-                                        top: -3px;
-                                        opacity: 1;
-                                        position: absolute;
-                                        border-radius: 50%;
-                                        border: 1px dashed $theme1;
-                                        -webkit-transition: all 0.5s ease-in-out;
-                                        -moz-transition: all 0.5s ease-in-out;
-                                        -o-transition: all 0.5s ease-in-out;
-                                        transition: all 0.5s ease-in-out; 
+                                        }
                                     }
+                                    & .filterAccordianCollapse {
+                                        & .filterAccordianBody {
 
-                                    &:hover {
-                                        &::after {
-                                            -webkit-animation: spinAround 9s linear infinite;
-                                            -moz-animation: spinAround 9s linear infinite;
-                                            animation: spinAround 9s linear infinite;
-                                            
-                                            @include keyframes-animation(spinAround){
-                                                0% {
-                                                    -webkit-transform: rotate(0deg);
-                                                            transform: rotate(0deg);
-                                                }
-                                                100% {
-                                                    -webkit-transform: rotate(360deg);
-                                                            transform: rotate(360deg);
-                                                }
-                                            }
                                         }
                                     }
                                 }
-                                & .addressContent {
-                                    padding-left: 10px;
-                                    font-size: 14px;
-                                    font-family: 'Poppins', sans-serif;
-                                    font-weight: 400;
-                                    letter-spacing: 0.5px;
-                                    color: #888;
-                                }
+                            }
+                            & .filterItemsLink {
+                                border: 0;
+                                border-radius: 0;
+                                color: lighten($color: $black, $amount: 7);
+                                display: inline-block;
+                                vertical-align: middle;
+                                background: transparent;
+                                position: relative;
                             }
                         }
                     }
                 }
             }
-
         }
     }
 
@@ -120,7 +65,7 @@
     @include media-breakpoint-down(md) {}
 
     @include media-breakpoint-down(sm) {}
-// }
+}
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
