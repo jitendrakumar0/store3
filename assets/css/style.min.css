@@ -879,6 +879,24 @@ body .overflow-auto-hidden {
     width: 40%;
   }
 }
+[data-page-name=category] .category .categoryFilter .filterList .filterItem {
+  margin: 0;
+  padding: 0;
+}
+[data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems {
+  list-style: none;
+  padding: 4px 15px 10px 15px;
+  margin-bottom: -1px;
+}
+[data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems .filterItemsLink {
+  border: 0;
+  border-radius: 0;
+  color: #121212;
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent;
+  position: relative;
+}
 .footerFluid {
   margin-top: 30px;
   background: #e8e9ff url("../img/bg/footerBg.png") no-repeat;
@@ -896,6 +914,8 @@ body .overflow-auto-hidden {
   width: 100%;
   background-image: url("../img/bg/footeBgCurve.png");
   top: 0px;
+  height: 20px;
+  transform: rotate(180deg);
 }
 .footerFluid .footerContainer .footerPadding {
   padding: 70px 0 70px;
@@ -911,6 +931,7 @@ body .overflow-auto-hidden {
   margin-bottom: 30px;
 }
 .footerFluid .footerContainer .footerPadding .footerAddress .footerAddressItem .footerAddressItems .phoneImg {
+  margin-right: 10px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -968,12 +989,156 @@ body .overflow-auto-hidden {
   }
 }
 .footerFluid .footerContainer .footerPadding .footerAddress .footerAddressItem .footerAddressItems .addressContent {
-  padding-left: 10px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #6c757d;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem {
+  background: transparent;
+  background-color: transparent;
+  border: 0;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordianHeader {
+  --bs-accordion-border-color: none !important;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordianHeader .accordianButton {
+  background-color: transparent !important;
+  color: #cb5499;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordianHeader .accordianButton::after {
+  background-image: url("../img/svg/topArrow.svg");
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerAddressItem {
+  padding: 0;
+  margin: 0;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerAddressItem .footerAddressItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerAddressItem .footerAddressItems .phoneImg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #cb5499;
+  position: relative;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerAddressItem .footerAddressItems .phoneImg::after {
+  content: "";
+  height: 46px;
+  width: 46px;
+  left: -3px;
+  top: -3px;
+  opacity: 1;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed #cb5499;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerAddressItem .footerAddressItems .phoneImg:hover::after {
+  -webkit-animation: spinAround 9s linear infinite;
+  -moz-animation: spinAround 9s linear infinite;
+  animation: spinAround 9s linear infinite;
+}
+@-webkit-keyframes spinAround {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinAround {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerAddressItem .footerAddressItems .addressContent {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu {
+  width: 100% !important;
+  margin-left: auto;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu .foterMenuHeading {
+  margin: 0 0 20px 0;
+  display: block;
+  color: #cb5499;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu .footerMenuList .footerMenuItem {
+  margin: 0;
+  padding: 0;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu .footerMenuList .footerMenuItem .footerMenuItems {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu .footerMenuList .footerMenuItem .footerMenuItems:last-child {
+  margin-bottom: 0px;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu .footerMenuList .footerMenuItem .footerMenuItems .footerMenuItemsLink {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #6c757d;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footerFluid .footerContainer .footerPadding .footerAddressColapse .accordionCollapse .accordianItem .accordionCollapse .accordionBody .footerMenu .footerMenuList .footerMenuItem .footerMenuItems .footerMenuItemsLink:hover {
+  color: #cb5499;
 }
 .footerFluid .footerContainer .footerPadding .footerSocial .footerLogo {
   max-width: 140px;
@@ -990,6 +1155,8 @@ body .overflow-auto-hidden {
   color: #6c757d;
 }
 .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe {
+  width: 90%;
+  margin: auto;
   position: relative;
   display: block;
 }
@@ -1137,6 +1304,49 @@ body .overflow-auto-hidden {
   height: 30px;
 }
 
+@media (max-width: 991.98px) {
+  @-webkit-keyframes spinAround {}
+  @keyframes spinAround {}
+  @-webkit-keyframes spinAround {}
+  @keyframes spinAround {}
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerContent {
+    width: 80%;
+    margin: auto;
+  }
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  @-webkit-keyframes spinAround {}
+  @keyframes spinAround {}
+  @-webkit-keyframes spinAround {}
+  @keyframes spinAround {}
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe {
+    width: 90%;
+    margin: auto;
+  }
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe .form-control {
+    padding: 10px 75px 10px 10px;
+  }
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe .subsCribeButton {
+    padding: 8px 15px;
+    border-radius: 0 50px 50px 0px;
+  }
+}
+@media (max-width: 575.98px) {
+  @-webkit-keyframes spinAround {}
+  @keyframes spinAround {}
+  @-webkit-keyframes spinAround {}
+  @keyframes spinAround {}
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe {
+    width: 100%;
+  }
+  .footerFluid .footerContainer .footerPadding .footerSocial .footerSubscribe .form-control {
+    padding: 10px 60px 10px 10px;
+  }
+}
 .form-control {
   height: 45px;
   background-color: #fff;
