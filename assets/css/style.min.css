@@ -759,10 +759,10 @@ body .overflow-auto-hidden {
 .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle img {
   height: 12px;
 }
-.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .border {
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .borderr {
   border-top: 1px solid #e9ecef;
 }
-.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .border .detailBox {
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .borderr .detailBox {
   border: 1px solid #e9ecef;
   padding: 8px;
   margin-top: 20px;
