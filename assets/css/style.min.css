@@ -526,14 +526,60 @@ body .overflow-auto-hidden {
     width: 40%;
   }
 }
+[data-page-name=category] .category {
+  margin-top: 30px;
+}
+[data-page-name=category] .category .categoryFilter {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+}
+[data-page-name=category] .category .categoryFilter .filterHeading {
+  border: medium none;
+  color: #121212;
+  font: 400 16px/18px "Poppins", sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  text-align: left;
+  background: #f5f5f5;
+  padding: 15px;
+  text-transform: uppercase !important;
+}
 [data-page-name=category] .category .categoryFilter .filterList .filterItem {
   margin: 0;
   padding: 0;
 }
 [data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems {
   list-style: none;
-  padding: 4px 15px 10px 15px;
+  padding: 10px 15px 4px 15px;
   margin-bottom: -1px;
+}
+[data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems .filterAccordian .filterAccordianItem {
+  border: none;
+  background-color: transparent;
+}
+[data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems .filterAccordian .filterAccordianItem .filterAccordianHeader {
+  border: none;
+  background-color: transparent;
+}
+[data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems .filterAccordian .filterAccordianItem .filterAccordianHeader .filterAccordianButton {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #121212;
+  position: relative;
+  font-size: 14px;
+}
+[data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems .filterAccordian .filterAccordianItem .filterAccordianHeader .filterAccordianButton::after {
+  background-image: url("../img/svg/downArrowBrown.svg");
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 [data-page-name=category] .category .categoryFilter .filterList .filterItem .filterItems .filterItemsLink {
   border: 0;
@@ -543,6 +589,232 @@ body .overflow-auto-hidden {
   vertical-align: middle;
   background: transparent;
   position: relative;
+  font-size: 14px;
+}
+[data-page-name=category] .category .categoryFilter .refineList .refineHeading {
+  color: #121212;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 10px 18px;
+  text-transform: uppercase;
+}
+[data-page-name=category] .category .categoryFilter .refineList .refineItem {
+  margin: 0;
+  padding: 0;
+}
+[data-page-name=category] .category .categoryFilter .refineList .refineItem .refineItems {
+  list-style: none;
+  padding: 0px 18px;
+  margin: 0px 0px 10px;
+}
+[data-page-name=category] .category .categoryFilter .refineList .refineItem .refineItems .refineContent .formCheck {
+  column-gap: 10px;
+}
+[data-page-name=category] .category .categoryFilter .refineList .refineItem .refineItems .refineContent .formCheck .form-check-input {
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  box-shadow: none;
+}
+[data-page-name=category] .category .categoryFilter .refineList .refineItem .refineItems .refineContent .formCheck .form-check-label {
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+  display: contents;
+}
+[data-page-name=category] .category .categoryFilter .filterButton {
+  opacity: 1;
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: unset;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+  background-color: #cb5499;
+  border: 1px solid #cb5499;
+  outline: none;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+}
+[data-page-name=category] .category .categoryFilter .sellerList .bestSellerItem {
+  margin: 0;
+  padding: 0;
+}
+[data-page-name=category] .category .categoryFilter .sellerList .bestSellerItem .bestSellerItems {
+  list-style-type: none;
+  padding: 15px 15px 0px;
+}
+[data-page-name=category] .category .categoryFilter .sellerList .bestSellerItem .bestSellerItems .bestSellerProduct .bestSellerProductImg {
+  margin-right: 10px;
+  max-width: 85px;
+  height: 85px;
+  width: 100%;
+}
+[data-page-name=category] .category .categoryFilter .sellerList .bestSellerItem .bestSellerItems .bestSellerProduct .bestSellerProductCaption .bestSellerProductName {
+  color: #121212;
+  font-size: 15px;
+  margin-bottom: 5px;
+  line-height: 18px;
+  display: block;
+  font-weight: 500;
+}
+[data-page-name=category] .category .categoryFilter .sellerList .bestSellerItem .bestSellerItems .bestSellerProduct .bestSellerProductCaption .bestSellerProductPrice {
+  color: #171717;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.5s;
+}
+[data-page-name=category] .category .categoryFilter .catTrendImg {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 3s ease 0s;
+  display: block;
+}
+[data-page-name=category] .category .categoryFilter .catTrendImg img {
+  width: 100%;
+  max-width: 100%;
+  transition: all 3s ease 0s;
+  border-radius: 10px;
+}
+[data-page-name=category] .category .categoryFilter .catTrendImg:hover img {
+  -webkit-transform: scale(1.1);
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb {
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-color: #f7f7f7;
+  padding: 15px;
+  overflow: hidden;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .productBreadCrumbHeading {
+  color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .toyprodustList .toyprodustItem {
+  padding: 0;
+  margin: 0;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .toyprodustList .toyprodustItem .toyprodustItem {
+  list-style: none;
+  position: relative;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .toyprodustList .toyprodustItem .toyprodustItem .toyprodustHome {
+  width: 14px;
+  height: 14px;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .toyprodustList .toyprodustItem .toyprodustItem .toyprodustItemList {
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .toyprodustList .toyprodustItem .toyprodustItem .toyprodustItemList::before {
+  content: "|";
+  padding: 0 10px 0 5px;
+  top: -1px;
+  font-weight: 400;
+  color: #333333;
+  position: relative;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .productcompareTotal {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .producPaginationRight .productSortByWrapper {
+  margin-right: 15px;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .producPaginationRight .productSortByWrapper .productCompareHeading {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .producPaginationRight .productSortByWrapper .productCompareInput .form-select {
+  font-size: 12px;
+  border: 1px solid white !important;
+  background-color: #fff;
+  color: #1a1a1a;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: left;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 150px;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .producPaginationRight .productShowWrapper .productCompareHeading {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+[data-page-name=category] .category .categoryProduct .productBreadCrumb .producPaginationRight .productShowWrapper .productCompareInput .form-select {
+  font-size: 12px;
+  border: 1px solid white !important;
+  background-color: #fff;
+  color: #1a1a1a;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: left;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  appearance: none !important;
+  -o-appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  width: 100px;
+}
+[data-page-name=category] .category .categoryProduct .productBanner {
+  line-height: 22px;
+  color: #6c757d;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 400;
+}
+[data-page-name=category] .category .categoryProduct .productCategoryImg {
+  margin-bottom: 25px;
+}
+[data-page-name=category] .category .categoryProduct .productCategoryImg .productCategoryInner:hover .productCategoryImgName {
+  color: #000;
+}
+[data-page-name=category] .category .categoryProduct .productCategoryImg .productCategoryInner .productCategoryImgHeight {
+  max-height: 270px;
+  height: 100%;
+}
+[data-page-name=category] .category .categoryProduct .productCategoryImg .productCategoryInner .productCategoryImgName {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c757d;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .footerFluid {
   margin-top: 30px;
