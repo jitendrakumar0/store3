@@ -618,6 +618,8 @@
                         }
                     }
                     & .quantityBox{
+                        border-bottom: 1px solid $gray-200;
+                        padding-bottom: 20px;
                         & .qtyLbl{
                             font-size: 14px;
                             font-weight: 500;
@@ -659,7 +661,7 @@
                             &:hover{
                                 background-color: $theme3;
                                 & img{
-                                    filter: brightness(1);
+                                    filter: brightness(0);
                                 }
                             }
                             & img{
@@ -667,21 +669,35 @@
                             }
                         }
                     }
-                    & .borderr{
-                        border-top: 1px solid $gray-200;
-                        & .detailBox{
-                            border: 1px solid $gray-200;
+                    & .detailBox{
+                        padding: 8px;
+                        margin-top: 20px;
+                        border: 1px solid $gray-200;
+                        & .productcode{
+                            font-weight: 400;
+                            color: $black;
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            background-color: lighten($color: $black, $amount: 96);
                             padding: 8px;
-                            margin-top: 20px;
-                            & .productcode{
-    
-                            }
-                            & .total{
-    
-                            }
+                            text-align: center;
                         }
-
+                        & .total{
+                            font-weight: 400;
+                            color: $black;
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            padding: 8px 0 0 0;
+                        }
                     }
+                }
+                & .relatedProduct{
+                    font-size: 22px;
+                    font-weight: 800;
+                    color: $theme1;
+                    border-bottom: 1px solid $gray-200;
+                    padding-bottom: 15px;
                 }
             }
         }

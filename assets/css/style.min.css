@@ -711,6 +711,10 @@ body .overflow-auto-hidden {
   color: #21325b;
   border-radius: 0 !important;
 }
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 20px;
+}
 .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .qtyLbl {
   font-size: 14px;
   font-weight: 500;
@@ -754,19 +758,41 @@ body .overflow-auto-hidden {
   background-color: #FFD91C;
 }
 .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle:hover img {
-  filter: brightness(1);
+  filter: brightness(0);
 }
 .productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .quantityBox .circle img {
   height: 12px;
 }
-.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .borderr {
-  border-top: 1px solid #e9ecef;
-}
-.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .borderr .detailBox {
-  border: 1px solid #e9ecef;
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .detailBox {
   padding: 8px;
   margin-top: 20px;
+  border: 1px solid #e9ecef;
 }
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .detailBox .productcode {
+  font-weight: 400;
+  color: #000;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  padding: 8px;
+  text-align: center;
+}
+.productDetailPageFluid .productDetailPageContainer .productDetailPageRightPart .detailBox .total {
+  font-weight: 400;
+  color: #000;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 0 0 0;
+}
+.productDetailPageFluid .productDetailPageContainer .relatedProduct {
+  font-size: 22px;
+  font-weight: 800;
+  color: #cb5499;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 15px;
+}
+
 .menuOffacnvavsMain {
   width: 300px !important;
 }
