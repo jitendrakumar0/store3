@@ -97,11 +97,11 @@
         
 
         <!-- style -->
+        <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/style.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/glightbox/glightbox.min.css">
-        <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
         <main class="container-fluid">
@@ -187,11 +187,11 @@
                     <!-- ! [ Banner Section End ] -->
 
                     <!-- * [ Deals Of The Day Section Start ] -->
-                    <div class="container-fluid dealsSection my-5">
+                    <div class="container-fluid dealsSection my-5 mb-md-5 mb-4">
                         <div class="container innersection">
                             <div class="row align-items-center">
-                                <div class="col-lg-6 leftside position-relative box-container">
-                                    <div class="dealsImg rounded-4 overflow-hidden"><img src="assets/img/bg/dealsbanner.png" class="w-100" alt=""></div>
+                                <div class="col-lg-6 leftside position-relative box-container mb-lg-0 mb-3">
+                                    <div class="dealsImg rounded-3 overflow-hidden"><img src="assets/img/bg/dealsbanner.png" class="w-100" alt=""></div>
                                     <div class="playBtn position-absolute d-flex align-items-center justify-content-center box show">
                                         <a class="video glightbox3" href="https://www.youtube.com/watch?v=_9VUPq3SxOc">
                                             <span class="rippleEffect rounded-circle d-flex align-items-center justify-content-center position-relative">
@@ -200,16 +200,18 @@
                                         </a> 
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="sectionHeader bg-transparent mx-0">
-                                        <div class="row align-items-center mx-0">
-                                            <div class="col">
-                                                <div class="title text-theme1">Trending Products</div>
+                                <div class="col-lg-6 rightSideSlider">
+                                    <div class="mb-3">
+                                        <div class="sectionHeader bg-transparent mx-0">
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <div class="title text-theme1">Deals Of The Day</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row mx-0">
-                                        <div class="col-6">
+                                    <div class="owl-carousel dealsSlider row mx-0">
+                                        <div class="item col-12">
                                             <div class="card itemOuter rounded-3 overflow-hidden sale">
                                                 <div class="imgOuter position-relative">
                                                     <a href="javascript:;">
@@ -266,7 +268,121 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="item col-12">
+                                            <div class="card itemOuter rounded-3 overflow-hidden sale">
+                                                <div class="imgOuter position-relative">
+                                                    <a href="javascript:;">
+                                                        <img class="default w-100" src="assets/img/product1.png" alt="">
+                                                        <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
+                                                    </a>
+                                                    <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                                    <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                        <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                            <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                            <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                            <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                            <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                        </ul>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
+                                                        <li class="star fill">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star fill">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                    </ul>
+                                                    <div class="btnGroup position-absolute d-flex flex-column gap-2">
+                                                        <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
+                                                            <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
+                                                        </button>
+                                                        <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
+                                                            <img class="w-100" src="assets/img/heartIconFill.png" alt="">
+                                                        </button>
+                                                        <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
+                                                            <img class="w-100" src="assets/img/campareIconFill.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="productDetail p-sm-3 p-2 text-center position-relative">
+                                                    <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
+                                                    <div class="price text-black">
+                                                        <span class="newPrice">$ 99.00</span>
+                                                        <span class="oldPrice">$ 109.00</span>
+                                                    </div>
+                                                    <div class="btn-cart w-100">
+                                                        <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item col-12">
+                                            <div class="card itemOuter rounded-3 overflow-hidden sale">
+                                                <div class="imgOuter position-relative">
+                                                    <a href="javascript:;">
+                                                        <img class="default w-100" src="assets/img/product1.png" alt="">
+                                                        <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
+                                                    </a>
+                                                    <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                                    <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                        <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                            <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                            <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                            <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                            <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                        </ul>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
+                                                        <li class="star fill">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star fill">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                        <li class="star">
+                                                            <img class="w-100" src="assets/img/star.png" alt="">
+                                                        </li>
+                                                    </ul>
+                                                    <div class="btnGroup position-absolute d-flex flex-column gap-2">
+                                                        <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
+                                                            <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
+                                                        </button>
+                                                        <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
+                                                            <img class="w-100" src="assets/img/heartIconFill.png" alt="">
+                                                        </button>
+                                                        <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
+                                                            <img class="w-100" src="assets/img/campareIconFill.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="productDetail p-sm-3 p-2 text-center position-relative">
+                                                    <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
+                                                    <div class="price text-black">
+                                                        <span class="newPrice">$ 99.00</span>
+                                                        <span class="oldPrice">$ 109.00</span>
+                                                    </div>
+                                                    <div class="btn-cart w-100">
+                                                        <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item col-12">
                                             <div class="card itemOuter rounded-3 overflow-hidden sale">
                                                 <div class="imgOuter position-relative">
                                                     <a href="javascript:;">
@@ -329,6 +445,265 @@
                         </div>
                     </div>
                     <!-- ! [ Deals Of The Day Section Start ] -->
+
+                    <!-- * Shop By Category Section Start -->
+                    <div class="container-fluid mb-md-5 mb-4 shopCategorySection">
+                        <div class="container innersection">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="sectionHeader bg-transparent mx-0">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <div class="title text-theme1">Shop By Category</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mx-0 row owl-carousel categorySlider">
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category6-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Football</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category1-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Toy Mug</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category2-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Toy Car</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category3-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Football</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category4-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Football</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category2-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Football</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category7-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Football</button></div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="item col-12 text-decoration-none">
+                                        <div class="categoryCard rounded-3 overflow-hidden position-relative">
+                                            <div class="cardImg"><img src="assets/img/category5-150x164.png" class="w-100" alt=""></div>
+                                            <div class="cardBtn d-flex justify-content-center position-absolute"><button class="btn btn-sm bg-white rounded-2 px-lg-4 px-3 py-lg-2 py-1 fw-medium border-0">Football</button></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Shop By Category Section Start -->
+
+                    <!-- * Our Client Section Start -->
+                    <div class="container-fluid clientSection mb-md-5 mb-4">
+                        <div class="container innersection">
+                            <div class="row">
+                                <div class="col-xl-8 clientSide">
+                                    <div class="row mx-0 border rounded-3 overflow-hidden">
+                                        <div class="col-12 mb3 bg-white">
+                                            <div class="sectionHeader bg-transparent mx-0">
+                                                <div class="row align-items-center">
+                                                    <div class="col">
+                                                        <div class="title text-theme1">Our Client's Say</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mx-0 row  owl-carousel testimonialSection sliderSection">
+                                            <div class="item col-12">
+                                                <div class="card bg-white border-0">
+                                                    <div class="card-body row mx-0 p-0">
+                                                        <div class="col-auto px-0 d-md-block d-none"><img src="assets/img/svg/testimonialFram.svg" alt=""></div>
+                                                        <div class="col px-0 text-center ps-md-1 clientContent fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol rcumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                                                        <div class="col-12 mt-3 text-center">
+                                                            <div class="clientName text-theme1 fw-semibold">Luies Charls</div>
+                                                            <div class="clientPost fw-normal">(Web designer)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item col-12">
+                                                <div class="card bg-white border-0">
+                                                    <div class="card-body row mx-0 p-0">
+                                                        <div class="col-auto px-0 d-md-block d-none"><img src="assets/img/svg/testimonialFram.svg" alt=""></div>
+                                                        <div class="col px-0 text-center ps-md-1 clientContent fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol rcumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                                                        <div class="col-12 mt-3 text-center">
+                                                            <div class="clientName text-theme1 fw-semibold">John Doe</div>
+                                                            <div class="clientPost fw-normal">(Web designer)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item col-12">
+                                                <div class="card bg-white border-0">
+                                                    <div class="card-body row mx-0 p-0">
+                                                        <div class="col-auto px-0 d-md-block d-none"><img src="assets/img/svg/testimonialFram.svg" alt=""></div>
+                                                        <div class="col px-0 text-center ps-md-1 clientContent fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol rcumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                                                        <div class="col-12 mt-3 text-center">
+                                                            <div class="clientName text-theme1 fw-semibold">John Duff</div>
+                                                            <div class="clientPost fw-normal">(Web designer)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 clientSide">
+                                    <div class="row mx-0 border rounded-3 overflow-hidden">
+                                        <div class="col-12 mb3 bg-white">
+                                            <div class="sectionHeader bg-transparent mx-0">
+                                                <div class="row align-items-center">
+                                                    <div class="col">
+                                                        <div class="title text-theme1">Our Client's Say</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 owl-carousel productSlider sliderSection p-0">
+                                            <div class="row mx-0">
+                                                <div class="col-12">
+                                                    <div class="card itemOuter rounded-3 overflow-hidden">
+                                                        <div class="imgOuter position-relative">
+                                                            <a href="javascript:;">
+                                                                <img class="default w-100" src="assets/img/product1.png" alt="">
+                                                                <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
+                                                            </a>
+                                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                                </ul>
+                                                            </div>
+                                                            <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
+                                                                <li class="star fill">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star fill">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                            </ul>
+                                                            <div class="btnGroup position-absolute d-flex flex-column gap-2">
+                                                                <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
+                                                                    <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
+                                                                </button>
+                                                                <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
+                                                                    <img class="w-100" src="assets/img/heartIconFill.png" alt="">
+                                                                </button>
+                                                                <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
+                                                                    <img class="w-100" src="assets/img/campareIconFill.png" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
+                                                            <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
+                                                            <div class="price text-black">
+                                                                <span class="newPrice">$ 99.00</span>
+                                                                <span class="oldPrice">$ 109.00</span>
+                                                            </div>
+                                                            <div class="btn-cart w-100">
+                                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card itemOuter rounded-3 overflow-hidden">
+                                                        <div class="imgOuter position-relative">
+                                                            <a href="javascript:;">
+                                                                <img class="default w-100" src="assets/img/product1.png" alt="">
+                                                                <img class="hover opacity-0 w-100" src="assets/img/product1.1.png" alt="">
+                                                            </a>
+                                                            <div class="soldOut bg-danger text-white text-uppercase position-absolute d-none">Sold Out</div>
+                                                            <div class="saleStart position-absolute bottom-0 star-0 end-0 w-100 px-sm-2 px-1 z-2 d-none" id="countdown">
+                                                                <ul class="m-0 p-0 list-unstyled d-flex justify-content-around bg-white p-1 px-sm-2 shadow rounded-pill">
+                                                                    <li class="d-inline-block text-center"><span class="d-block days" id="days"></span>Days</li>
+                                                                    <li class="d-inline-block text-center"><span class="d-block hours" id="hours"></span>Hours</li>
+                                                                    <li class="d-inline-block text-center"><span class="d-block minutes" id="minutes"></span>Min</li>
+                                                                    <li class="d-inline-block text-center"><span class="d-block seconds" id="seconds"></span>Sec</li>
+                                                                </ul>
+                                                            </div>
+                                                            <ul class="d-flex align-items-center gap-1 list-unstyled rating justify-content-center position-absolute">
+                                                                <li class="star fill">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star fill">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                                <li class="star">
+                                                                    <img class="w-100" src="assets/img/star.png" alt="">
+                                                                </li>
+                                                            </ul>
+                                                            <div class="btnGroup position-absolute d-flex flex-column gap-2">
+                                                                <button type="button" class="btn btn-theme1 productBtn btn1 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Quick View">
+                                                                    <img class="w-100" src="assets/img/eyeIconFill.png" alt="">
+                                                                </button>
+                                                                <button type="button" class="btn btn-theme1 productBtn btn2 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Wish Lisk">
+                                                                    <img class="w-100" src="assets/img/heartIconFill.png" alt="">
+                                                                </button>
+                                                                <button type="button" class="btn btn-theme1 productBtn btn3 rounded-circle p-2 d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Compare this Product">
+                                                                    <img class="w-100" src="assets/img/campareIconFill.png" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="productDetail p-sm-3 p-2 text-center position-relative">
+                                                            <a href="javascript:;" class="productTitle text-decoration-none text-black">Donec eu libero</a>
+                                                            <div class="price text-black">
+                                                                <span class="newPrice">$ 99.00</span>
+                                                                <span class="oldPrice">$ 109.00</span>
+                                                            </div>
+                                                            <div class="btn-cart w-100">
+                                                                <button type="button" class="btn btn-theme3 rounded-pill btnAddToCart px-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Add to Cart">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Our Client Section End -->
                 </div>
             </div>
         </main>
