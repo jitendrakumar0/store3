@@ -133,7 +133,7 @@
                                                     <span>Login/Register</span>
                                                 </div>
                                             </a>
-                                            <a href="javascript:;" class="cartBox d-flex align-items-center">
+                                            <a href="javascript:;" class="cartBox d-flex align-items-center"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                                 <div class="MyCartLogo">
                                                     <img src="assets/img/cartstore3.svg" alt="" srcset="">
                                                 </div>
@@ -196,8 +196,8 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="percentBox d-flex justify-content-end">
-                                                        <div class="percentBoxBg d-flex align-items-center">
-                                                            <img src="assets/img/percentimg.png" alt="">
+                                                        <div class="percentBoxBg d-flex align-items-center position-relative">
+                                                            <img src="assets/img/percentimg.png" alt="" >
                                                             <div class="typeWriterContainer position-relative">
                                                                 <div class="typewriter">Flat 20% On All Toys</div>
                                                             </div>
@@ -210,22 +210,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid headerFluid d-block d-lg-none">
+                        <div class="container-fluid headerFluid d-block d-lg-none bg-white">
                             <div class="container headerContainer">
                                 <div class="row align-items-center">
-                                    <div class="col-auto">
+                                    <div class="col-3">
                                         <div class="iconBox1 d-flex align-items-center">
                                             <img src="assets/img/menu1.svg" alt="" srcset="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                             <img src="assets/img/searchstroe3.svg" alt="" srcset=""data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6">
                                         <div class="logoParent1 d-flex justify-content-center">
                                             <img src="assets/img/logostore3.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-auto">
-                                        <div class="iconBox2 d-flex align-items-center position-relative">
+                                    <div class="col-3">
+                                        <div class="iconBox2 d-flex align-items-center justify-content-end position-relative">
                                             <img src="assets/img/accountstoree3.svg" alt="" srcset=""data-bs-toggle="dropdown" aria-expanded="false">
                                             <ul class="dropdown-menu profileDropdown">
                                                 <li class="profileDropdownLi"><a class="dropdown-item profileDropdownAnchor" href="javascript:;">Register</a></li>
@@ -1506,23 +1506,190 @@
                 </div>
             </div>
         </main>
-        <!---- manu offcanvas -->
+        <!-- manu offcanvas -->
         <div class="offcanvas offcanvas-start menuOffacnvavsMain" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header menuOffcanvsHeader d-flex justify-content-end">
                 <button type="button" class="btn-close menuOffcanvsHeaderBtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body menuOffcanvasBody">
-                    <div class="accordion menuoffcanvasAccordion" id="accordionExample">
+            <div class="offcanvas-body menuOffcanvasBody pt-0">
+                <div class="accordion menuoffcanvasAccordion" id="accordionExample00">
                     <div class="accordion-item menuoffcanvasAccordionItem">
                         <div class="accordion-header menuAccordionHeader">
-                        <button class="accordion-button menuAccordionHeaderBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button menuAccordionHeaderBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Toy
                         </button>
                         </div>
-                        <div id="collapseOne" class="accordion-collapse menuCollapseDiv collapse show" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse menuCollapseDiv collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body menuAccordionBody">
                             <ul class="menuAccordionBodyUl list-unstyled">
-                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Magic Band</a></li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor"></a>
+                                    <div class="accordion accordion2" id="accordionExample">
+                                        <div class="accordion-item accordionItem2">
+                                            <h2 class="accordion-header accordionHeader2">
+                                                <button class="accordion-button accordionBtn2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                                    Magic Band
+                                                </button>
+                                            </h2>
+                                        <div id="collapseOne1" class="accordion-collapse collapse accordionCollapse2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body accordionBody2">
+                                            <ul class="list-unstyled accordionBody2Ul">
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Bath Safty</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Face Cloth</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Sailor Dress</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Robot Kit</a></li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Fidget Spinner</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion menuoffcanvasAccordion" id="accordionExample11">
+                    <div class="accordion-item menuoffcanvasAccordionItem">
+                        <div class="accordion-header menuAccordionHeader">
+                        <button class="accordion-button menuAccordionHeaderBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Kids
+                        </button>
+                        </div>
+                        <div id="collapseTwo" class="accordion-collapse menuCollapseDiv collapse" data-bs-parent="#accordionExample11">
+                        <div class="accordion-body menuAccordionBody">
+                            <ul class="menuAccordionBodyUl list-unstyled">
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor"></a>
+                                    <div class="accordion accordion2" id="accordionExample11">
+                                        <div class="accordion-item accordionItem2">
+                                            <h2 class="accordion-header accordionHeader2">
+                                                <button class="accordion-button accordionBtn2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                                    Magic Band
+                                                </button>
+                                            </h2>
+                                        <div id="collapseOne1" class="accordion-collapse collapse accordionCollapse2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body accordionBody2">
+                                            <ul class="list-unstyled accordionBody2Ul">
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Bath Safty</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Face Cloth</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Sailor Dress</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Robot Kit</a></li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Fidget Spinner</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion menuoffcanvasAccordion" id="accordionExample111">
+                    <div class="accordion-item menuoffcanvasAccordionItem">
+                        <div class="accordion-header menuAccordionHeader">
+                        <button class="accordion-button menuAccordionHeaderBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Collection
+                        </button>
+                        </div>
+                        <div id="collapseThree" class="accordion-collapse menuCollapseDiv collapse" data-bs-parent="#accordionExample11">
+                        <div class="accordion-body menuAccordionBody">
+                            <ul class="menuAccordionBodyUl list-unstyled">
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor"></a>
+                                    <div class="accordion accordion2" id="accordionExample11">
+                                        <div class="accordion-item accordionItem2">
+                                            <h2 class="accordion-header accordionHeader2">
+                                                <button class="accordion-button accordionBtn2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                                    Magic Band
+                                                </button>
+                                            </h2>
+                                        <div id="collapseOne1" class="accordion-collapse collapse accordionCollapse2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body accordionBody2">
+                                            <ul class="list-unstyled accordionBody2Ul">
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Bath Safty</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Face Cloth</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Sailor Dress</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Robot Kit</a></li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Fidget Spinner</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion menuoffcanvasAccordion" id="accordionExample111">
+                    <div class="accordion-item menuoffcanvasAccordionItem">
+                        <div class="accordion-header menuAccordionHeader">
+                        <button class="accordion-button menuAccordionHeaderBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Bath Toys
+                        </button>
+                        </div>
+                        <div id="collapseFour" class="accordion-collapse menuCollapseDiv collapse" data-bs-parent="#accordionExample11">
+                        <div class="accordion-body menuAccordionBody">
+                            <ul class="menuAccordionBodyUl list-unstyled">
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor"></a>
+                                    <div class="accordion accordion2" id="accordionExample11">
+                                        <div class="accordion-item accordionItem2">
+                                            <h2 class="accordion-header accordionHeader2">
+                                                <button class="accordion-button accordionBtn2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                                    Bath Toys
+                                                </button>
+                                            </h2>
+                                        <div id="collapseOne1" class="accordion-collapse collapse accordionCollapse2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body accordionBody2">
+                                            <ul class="list-unstyled accordionBody2Ul">
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Bath Safty</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Face Cloth</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Sailor Dress</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Robot Kit</a></li>
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Fidget Spinner</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion menuoffcanvasAccordion" id="accordionExample111">
+                    <div class="accordion-item menuoffcanvasAccordionItem">
+                        <div class="accordion-header menuAccordionHeader">
+                        <button class="accordion-button menuAccordionHeaderBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Bath Suits
+                        </button>
+                        </div>
+                        <div id="collapseFive" class="accordion-collapse menuCollapseDiv collapse" data-bs-parent="#accordionExample11">
+                        <div class="accordion-body menuAccordionBody">
+                            <ul class="menuAccordionBodyUl list-unstyled">
+                                <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor"></a>
+                                    <div class="accordion accordion2" id="accordionExample11">
+                                        <div class="accordion-item accordionItem2">
+                                            <h2 class="accordion-header accordionHeader2">
+                                                <button class="accordion-button accordionBtn2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                                    Bath Toys
+                                                </button>
+                                            </h2>
+                                        <div id="collapseOne1" class="accordion-collapse collapse accordionCollapse2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body accordionBody2">
+                                            <ul class="list-unstyled accordionBody2Ul">
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Bath Safty</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Face Cloth</a></li>
+                                                <li class="accordionBody2Li"><a href="javascript:;" class="accordionBody2LiAnchor">Sailor Dress</a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
                                 <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Robot Kit</a></li>
                                 <li class="menuAccordionBodyLi"> <a href="javascript:;" class="menuAccordionBodyAnchor">Fidget Spinner</a></li>
                             </ul>
@@ -1532,6 +1699,128 @@
                 </div>
             </div>
         </div>
+        <!-- search offcanvas -->
+        <div class="offcanvas offcanvas-top searchOffcanvasMain" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <!-- <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div> -->
+            <div class="offcanvas-body searchOffcanvasBody">
+                <div class="searchOffcanvasInpBox position-relative">
+                    <input type="text" class="searchOffcanvasInp form-control" name="" id="" placeholder="Search">
+                    <button class="searchOffcanvasInpBtn"><img src="assets/img/searchstroe3.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <!-- cart(bag) offcanvas -->
+        <div class="offcanvas offcanvas-end cartOffcanvasMain" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+                <div class="t1 text-dark fw-bold">My Shopping Cart</div>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body cartOffcanvasBody">
+                <div class="row pb-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore4.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore3.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore1.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore5.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2 align-items-start borderbottom">
+                    <div class="col">
+                        <div class="row d-flex justify-content-between">
+                            <a href="javascript:;" class="col-auto">
+                                <div class="CartProductImg">
+                                    <img src="assets/img/productimgstore4.png" alt="" srcset="">
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="col">
+                                <div class="CartProductImgName">1* docu kslaklkk</div>
+                                <div class="price">₹110.0</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn-close closeBtn" data-bs-dismiss="" aria-label=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer cartOffcanvasFooter">
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <button class="viewCartBtn">View Cart</button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-start">
+                        <button class="checkoutBtn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>

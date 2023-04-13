@@ -264,7 +264,7 @@
             &.nav-active{
                 position: sticky;
                 top:-100px;
-                z-index: 9999;
+                z-index: 99;
                 animation: slidedown 0.7s;
                 @keyframes slidedown {
                     0%{
