@@ -1,4 +1,4 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[ Hero Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
+// * @@@@@@@@@@@@@@@@@@@@@@[ Hero Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name="indexPage"] {
     @include media-breakpoint(basic) {
         & .herosection {
@@ -488,7 +488,7 @@
 }
 // ! @@@@@@@@@@@@@@@@@@@@@@[ Hero Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
 
-// ? @@@@@@@@@@@@@@@@@@@@@@[ Banner Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
+// * @@@@@@@@@@@@@@@@@@@@@@[ Banner Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name="indexPage"] {
     @include media-breakpoint(basic) {
         & .bannerSection {
@@ -663,7 +663,6 @@
             }
         }
     }
-
     @media only screen and (max-width: 350px) {
         & .bannerSection {
             & .innersection {
@@ -689,6 +688,71 @@
 }
 // ! @@@@@@@@@@@@@@@@@@@@@@[ Banner Section Start  ]@@@@@@@@@@@@@@@@@@@@@@
 
+
+// * @@@@@@@@@@@@@@@@@@@@@@[ Deals Section ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="indexPage"] {
+    @include media-breakpoint(basic) {
+        & .dealsSection {
+            & .innersection {
+                & .leftside {       
+                    & .playBtn {
+                        inset: 0;
+                        margin: auto;
+                        & .video {
+                            & .rippleEffect {
+                                width: 70px;
+                                height: 70px;
+                                &::before, &::after{
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    border-radius: 50%;
+                                    border: 1px solid $theme1;
+                                    -webkit-animation: ripple 2s linear infinite;
+                                    animation: ripple 2s linear infinite;
+                                    transition: all 0.4s ease-in-out;
+                                }
+                                &::after{
+                                    animation: ripple 2s linear 1s infinite;
+                                }
+                            }
+                        }
+                    }
+                    @keyframes ripple {
+                        0% {
+                            -webkit-transform: scale(1);
+                            transform: scale(1); }
+                        
+                        75% {
+                            -webkit-transform: scale(1.5);
+                            transform: scale(1.5);
+                            opacity: 1; }
+                        
+                        100% {
+                            -webkit-transform: scale(1.75);
+                            transform: scale(1.75);
+                            opacity: 0; } }
+                }
+            }
+        }
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(sm) {}
+}
+// ! @@@@@@@@@@@@@@@@@@@@@@[ Deals Section ]@@@@@@@@@@@@@@@@@@@@@@
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
