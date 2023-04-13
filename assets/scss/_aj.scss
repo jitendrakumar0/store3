@@ -1195,6 +1195,33 @@
                 }
             }
         }
+        & .brandlogoSection {
+            & .innersection {
+                & .brandlogoslider {
+                    & .owl-stage-outer {
+                        padding: 0px !important;
+                        & .owl-stage {
+                            & .owl-item {
+                                & .item {
+                                    & .cardImg {
+                                        transition: all 1s ease-in-out;
+                                        & img {
+                                            transition: all 1s ease-in-out;
+                                            object-fit: none;
+                                        }
+                                        &:hover{
+                                            & img {
+                                                transform: scale(0.8);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
