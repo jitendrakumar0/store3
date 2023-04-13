@@ -321,8 +321,8 @@
                             }
                         }
                         & .productCategoryImgHeight {
-                            max-height: 270px;
-                            height: 100%;
+                            // max-height: 270px;
+                            // height: 100%;
                         }
                         & .productCategoryImgName {
                             display: block;
@@ -341,6 +341,25 @@
                 }
                 
             }
+            & .paginationRow {
+                background-color: #f7f7f7;
+                padding: 15px 0;
+                & .pageText {
+                    font-size: 16px;
+                }
+                & .pagination {
+                    & .page-item {
+                        & .page-link {
+                            font-size: 14px;
+                            &:is(:hover, :active, :focus, .active) {
+                                background-color: $theme1;
+                                color: $white;
+                                border-color:$theme1 !important ;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -356,15 +375,83 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        
+        & .paginationRow {
+            & .pageText {
+            }
+            & .pagination {
+                & .page-item {
+                    & .page-link {
+                        &:is(:hover, :active, :focus, .active) {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        & .paginationRow {
+            & .pageText {
+            }
+            & .pagination {
+                & .page-item {
+                    & .page-link {
+                        &:is(:hover, :active, :focus, .active) {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        & .paginationRow {
+            & .pageText {
+            }
+            & .pagination {
+                & .page-item {
+                    & .page-link {
+                        &:is(:hover, :active, :focus, .active) {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        & .paginationRow {
+            & .pageText {
+                font-size: 14px !important;
+            }
+            & .pagination {
+                & .page-item {
+                    & .page-link {
+                        font-size: 12px !important;
+                        &:is(:hover, :active, :focus, .active) {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        & .paginationRow {
+            & .pageText {
+            }
+            & .pagination {
+                & .page-item {
+                    & .page-link {
+                        &:is(:hover, :active, :focus, .active) {
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 [data-bs-theme=dark] {

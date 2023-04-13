@@ -1,5 +1,116 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
     @include media-breakpoint(basic) {
+        
+        .newsCarousel {
+            & .owl-stage-outer {
+                padding: 0;
+            }
+            & .owl-nav {
+                width: auto;
+                display: flex;
+                padding: 0;
+                align-items: center;
+                position: absolute;
+                top: -56px;
+                right: 0;
+                & .owl-prev,
+                & .owl-next {
+                    border: 1px solid #e9ecef !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    margin: 0 3px;
+                    background-color: #e9ecef !important;
+                    border-radius: 50px;
+                    padding: 11px !important ;
+                    width: 30px;
+                    height: 30px;
+                    transition: ease-in-out .3s;
+                    & img {
+                        height: 10px;
+                        transition: ease-in-out .3s;
+                    }
+                    &:hover {
+                        background-color: $theme1 !important;
+                        & img {
+                            filter: invert(1);
+                        }
+                    }
+                }
+            }
+            .newsCard {
+                background: #f6f7f9;
+                padding: 15px;
+                border-radius: 10px;
+                overflow: hidden;
+                & .newsImgWrapper {
+                    height: 190px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: all 2s;
+                    }
+                }
+                & .newsDate {
+                    display: inline-block;
+                    margin-bottom: 14px;
+                    font-size: 11px;
+                    line-height: 13px;
+                    letter-spacing: 0.8px;
+                    font-weight: 400;
+                    color: #3e3e3e;
+                    background-color: #ffd91c;
+                    padding: 7px 25px;
+                    clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+                }
+                & .newsTitle {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #cb5499;
+                    text-overflow: ellipsis;
+                    padding-bottom: 5px;
+                    letter-spacing: 0.5px;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                & .newsDes {
+                    font-size: 14px;
+                    letter-spacing: 0.1px;
+                    color: #888;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                & .moreNews {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #cb5499;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #cb5499;
+                    transition: all 0.7s ease;
+                    &:hover {
+                        letter-spacing: 1px;
+                    }
+                }
+                &:hover {
+                    & .newsImgWrapper {
+                        & img {
+                            transform: scale(2);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -15,18 +126,208 @@
 
 
     @include media-breakpoint-down(xxl) {
+        .newsCarousel {
+            & .owl-stage-outer {
+            }
+            & .owl-nav {
+                & .owl-prev,
+                & .owl-next {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+            .newsCard {
+                & .newsImgWrapper {
+                    & img {
+                    }
+                }
+                & .newsDate {
+                }
+                & .newsTitle {
+                }
+                & .newsDes {
+                }
+                & .moreNews {
+                    &:hover {
+                    }
+                }
+                &:hover {
+                    & .newsImgWrapper {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
+        .newsCarousel {
+            & .owl-stage-outer {
+            }
+            & .owl-nav {
+                & .owl-prev,
+                & .owl-next {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+            .newsCard {
+                & .newsImgWrapper {
+                    & img {
+                    }
+                }
+                & .newsDate {
+                }
+                & .newsTitle {
+                }
+                & .newsDes {
+                }
+                & .moreNews {
+                    &:hover {
+                    }
+                }
+                &:hover {
+                    & .newsImgWrapper {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
+        .newsCarousel {
+            & .owl-stage-outer {
+            }
+            & .owl-nav {
+                & .owl-prev,
+                & .owl-next {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+            .newsCard {
+                & .newsImgWrapper {
+                    & img {
+                    }
+                }
+                & .newsDate {
+                }
+                & .newsTitle {
+                }
+                & .newsDes {
+                }
+                & .moreNews {
+                    &:hover {
+                    }
+                }
+                &:hover {
+                    & .newsImgWrapper {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
+        .newsCarousel {
+            & .owl-stage-outer {
+            }
+            & .owl-nav {
+                & .owl-prev,
+                & .owl-next {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+            .newsCard {
+                & .newsImgWrapper {
+                    & img {
+                    }
+                }
+                & .newsDate {
+                }
+                & .newsTitle {
+                }
+                & .newsDes {
+                }
+                & .moreNews {
+                    &:hover {
+                    }
+                }
+                &:hover {
+                    & .newsImgWrapper {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
+        .newsCarousel {
+            & .owl-stage-outer {
+            }
+            & .owl-nav {
+                & .owl-prev,
+                & .owl-next {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+            .newsCard {
+                & .newsImgWrapper {
+                    height: unset;
+                    & img {
+                    }
+                }
+                & .col-sm-7 {
+                    margin-top: 15px;
+                    padding: 0;
+                }
+                & .newsDate {
+                }
+                & .newsTitle {
+                }
+                & .newsDes {
+                }
+                & .moreNews {
+                    &:hover {
+                    }
+                }
+                &:hover {
+                    & .newsImgWrapper {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
