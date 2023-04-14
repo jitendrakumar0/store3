@@ -301,6 +301,7 @@ body .overflow-auto-hidden {
   background-color: #fff;
   border: 1px solid;
   width: 500px;
+  z-index: 9;
 }
 .topNavbar .navItemsListBarFluid .navItemsListBarContainer .navItemsListBar .navItemsListBarUl .navItemsListBarLi .dropdownList .dropdownlistPadding {
   padding: 20px 20px;

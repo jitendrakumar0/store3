@@ -153,6 +153,7 @@
                                     background-color: $white;
                                     border: 1px solid;
                                     width: 500px;
+                                    z-index: 9;
                                     & .dropdownlistPadding{
                                         padding: 20px 20px;
                                         & .dropMainHeading{
