@@ -998,6 +998,121 @@
                 }
             }
         }
+        .checkoutFluid{
+            & .checkoutContainer{
+                & .checkoutAccordion{
+                    & .checkoutAccordionItem{
+                        border-radius: 0 !important;
+                        & .checkoutAccordionHeader{
+                            & .checkoutAccordionBtn{
+                                box-shadow: none !important;
+                                border-color: transparent !important;
+                                background-color: lighten($color: $black, $amount: 96);
+                                font-size: 13px;
+                                font-weight: 500;
+                                border-radius: 0 !important;
+                                padding: 15px;
+                                color: $theme1;
+                                &:hover{
+                                    color: $theme1;
+                                }
+                                &:not(.collapsed){
+                                    color: $theme1 !important;
+                                }
+                                &::after{
+                                    background-image: url(../img/downarrpink.svg);
+                                    background-size: 8px;
+                                    background-position: center;
+                                    transform: rotate(0);
+                                }
+                            }
+                        }
+                        & .checkoutCollapse{
+                            & .checkoutAccordionBody{
+                                & .formHeading{
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: $black;
+                                    margin-bottom: 15px;
+                                }
+                                & .formSubHeading{
+                                    color: $gray-700;
+                                    line-height: 22px;
+                                    font-size: 13px;
+                                    margin-bottom: 15px;
+                                }
+                                & .spanClass{
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    color: $black;
+                                }
+                                & .para{
+                                    color: $gray-700;
+                                    line-height: 22px;
+                                    font-size: 13px;
+                                    margin-bottom: 15px;
+                                    margin-top: 15px;
+                                }
+                                & .btnn{
+                                    border-radius: 50px;
+                                    border: none;
+                                    background-color: $theme1;
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    color: $white;
+                                    padding: 10px 20px;
+                                    &:hover{
+                                        background-color: $theme3;
+                                        color: $black;
+                                    }
+                                }
+                                & .inp{
+                                    font-size: 13px;
+                                    color: $gray-700;
+                                    width: 100%;
+                                    height: 35px;
+                                    border-radius: 0;
+                                    border: 1px solid $gray-400;
+                                    padding-left: 15px;
+                                    &:focus-visible{
+                                        outline: unset !important;
+                                    }
+                                }
+                                & .lbl{
+                                    color: $black;
+                                    line-height: 22px;
+                                    font-size: 13px;
+                                    display: block;
+                                    margin-bottom: 4px;
+                                }
+                                & .fpass{
+                                    color: $black;
+                                    display: block;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    margin-bottom: 15px;
+                                    &:hover{
+                                        color: $theme1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .step{
+                    width: 100%;
+                    padding: 15px 15px;
+                    background-color: lighten($color: $black, $amount: 96);
+                    border: 1px solid;
+                    border-color: lighten($color: $black, $amount: 85);
+                }
+                & .stepTxt{
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+            }
+        }
     }
     // menu offcanvas
     .menuOffacnvavsMain{
