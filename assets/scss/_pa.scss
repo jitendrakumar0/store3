@@ -130,6 +130,7 @@
                             & .navItemsListBarLi{
                                 transition: 0.3s linear;
                                 transform: translateY(0);
+                                z-index: 99;
                                 & .navItemsListBarAnchor{
                                     color: $white;
                                     line-height: 20px;
